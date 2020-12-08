@@ -1,0 +1,5 @@
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
+@media (max-width: 767px) {
+  .stackContainer--product {
+    margin: 0 -15px;
+    width: calc(100% + 30px); } }

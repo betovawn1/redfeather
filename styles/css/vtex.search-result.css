@@ -1,0 +1,196 @@
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
+.gallery {
+  padding-left: 0; }
+  @media (min-width: 767px) {
+    .gallery .galleryItem {
+      padding: 0 0 25px; } }
+  @media (max-width: 767px) {
+    .gallery .galleryItem {
+      padding: 0 0 15px; } }
+  .gallery .galleryItem :global(.vtex-product-summary-2-x-container) :global(.vtex-product-summary-2-x-image) {
+    height: auto !important;
+    max-height: unset !important; }
+
+.filters--layout {
+  width: 100%; }
+
+.filtersWrapper {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  align-items: flex-start;
+  flex-direction: column; }
+  .filtersWrapper .filter__container--title .filterMessage {
+    font-size: 0; }
+    .filtersWrapper .filter__container--title .filterMessage::before {
+      font-size: 14px;
+      content: "Filtrar por:";
+      text-transform: uppercase; }
+  .filtersWrapper .filter__container {
+    border: 0;
+    width: 100%; }
+    .filtersWrapper .filter__container .filter {
+      width: 100%; }
+    .filtersWrapper .filter__container .filterTitle {
+      font-size: 13px;
+      text-transform: uppercase; }
+      .filtersWrapper .filter__container .filterTitle .filterIcon {
+        padding: 0 5px; }
+        .filtersWrapper .filter__container .filterTitle .filterIcon .caretIcon {
+          width: 8px;
+          height: 8px;
+          color: #000; }
+  .filtersWrapper .filter__container--title,
+  .filtersWrapper .filter__container--departamento,
+  .filtersWrapper .filter__container--especificacoes-tecnicas,
+  .filtersWrapper .filter__container--medidas,
+  .filtersWrapper .filter__container--netshoesproductgroup,
+  .filtersWrapper .filter__container--marca {
+    display: none; }
+
+.orderByButton {
+  padding: 13px;
+  margin-left: auto;
+  width: auto !important;
+  border-radius: 0; }
+  @media (max-width: 767px) {
+    .orderByButton {
+      margin: 0;
+      padding: 10px 15px; } }
+  .orderByButton .filterPopupTitle {
+    font-size: 12px;
+    text-transform: initial; }
+    @media (max-width: 767px) {
+      .orderByButton .filterPopupTitle {
+        font-size: 14px; } }
+    .orderByButton .filterPopupTitle .orderByText {
+      color: #707070;
+      font-weight: 600; }
+      @media (max-width: 767px) {
+        .orderByButton .filterPopupTitle .orderByText {
+          display: none; } }
+  .orderByButton .filterPopupArrowIcon {
+    padding-right: 0;
+    height: 8px;
+    line-height: .6;
+    padding-left: 8px; }
+    .orderByButton .filterPopupArrowIcon .caretIcon {
+      width: 8px;
+      height: 8px; }
+
+.buttonShowMore {
+  margin: 35px 0; }
+  .buttonShowMore :global(.vtex-button) {
+    border-radius: 0; }
+    .buttonShowMore :global(.vtex-button) :global(.vtex-button__label) {
+      font-size: 13px; }
+
+.sidebar .filterBreadcrumbsText {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.sidebar .filterBreadcrumbsItem .caretIcon {
+  color: #000;
+  margin-left: 8px; }
+
+.sidebar .filterBreadcrumbsItem .filterBreadcrumbsItemName {
+  color: #000;
+  font-size: 16px; }
+
+.sidebar .accordionFilterContainer {
+  padding-left: 15px;
+  padding-right: 15px; }
+  .sidebar .accordionFilterContainer .accordionFilterItem {
+    height: auto; }
+    .sidebar .accordionFilterContainer .accordionFilterItem .accordionFilterContent {
+      padding: 0; }
+  .sidebar .accordionFilterContainer .accordionFilterItemTitle {
+    font-size: 14px; }
+  .sidebar .accordionFilterContainer .accordionFilterItemIcon .caretIcon {
+    transform: rotate(-90deg); }
+
+.sidebar .filterAccordionItemBox {
+  height: auto;
+  padding: 10px 0; }
+
+.sidebar .filterApplyButtonWrapper :global(.vtex-button) {
+  background-color: black;
+  color: white; }
+
+.filterPopupButton {
+  padding: 13px;
+  margin-left: auto;
+  width: auto !important;
+  border: 1px solid #f3f3f3;
+  background-color: #f3f3f3;
+  border-radius: 0;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 767px) {
+    .filterPopupButton {
+      margin: 0;
+      padding: 10px 15px; } }
+  .filterPopupButton .filterPopupTitle {
+    font-size: 12px;
+    text-transform: initial; }
+    @media (max-width: 767px) {
+      .filterPopupButton .filterPopupTitle {
+        font-size: 14px; } }
+    .filterPopupButton .filterPopupTitle .orderByText {
+      color: #707070;
+      font-weight: 600; }
+  .filterPopupButton .filterPopupArrowIcon {
+    padding-right: 0; }
+
+@media (min-width: 1025px) {
+  .searchNotFound {
+    margin-top: 175px; } }
+
+:global(.vtex-checkbox__label) {
+  font-size: 13px; }
+
+.galleryTitle--layout {
+  margin: 25px auto;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase; }
+  @media (max-width: 767px) {
+    .galleryTitle--layout {
+      margin: 15px 0;
+      padding: 0 15px;
+      font-size: 18px;
+      text-align: center; } }
+
+.layoutSwitcher {
+  padding: 0; }
+  .layoutSwitcher :global(.vtex-button) {
+    border: 0; }
+    .layoutSwitcher :global(.vtex-button) :global(.vtex-button__label) {
+      padding: 8px;
+      padding-right: 0; }
+
+.singleGridIcon, .gridIcon {
+  color: #000; }
+
+.filterPopupButton {
+  height: 40px;
+  padding: 10px 15px; }
+
+.filtersWrapperMobile .filterPopupArrowIcon {
+  padding-top: 0; }
+  .filtersWrapperMobile .filterPopupArrowIcon::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='393pt' viewBox='-4 0 393 393.99003' width='393pt'%3E%3Cpath d='m368.3125 0h-351.261719c-6.195312-.0117188-11.875 3.449219-14.707031 8.960938-2.871094 5.585937-2.3671875 12.3125 1.300781 17.414062l128.6875 181.28125c.042969.0625.089844.121094.132813.183594 4.675781 6.3125 7.203125 13.957031 7.21875 21.816406v147.796875c-.027344 4.378906 1.691406 8.582031 4.777344 11.6875 3.085937 3.105469 7.28125 4.847656 11.65625 4.847656 2.226562 0 4.425781-.445312 6.480468-1.296875l72.3125-27.574218c6.480469-1.976563 10.78125-8.089844 10.78125-15.453126v-120.007812c.011719-7.855469 2.542969-15.503906 7.214844-21.816406.042969-.0625.089844-.121094.132812-.183594l128.683594-181.289062c3.667969-5.097657 4.171875-11.820313 1.300782-17.40625-2.832032-5.511719-8.511719-8.9726568-14.710938-8.960938zm-131.53125 195.992188c-7.1875 9.753906-11.074219 21.546874-11.097656 33.664062v117.578125l-66 25.164063v-142.742188c-.023438-12.117188-3.910156-23.910156-11.101563-33.664062l-124.933593-175.992188h338.070312zm0 0'/%3E%3C/svg%3E"); }
+  .filtersWrapperMobile .filterPopupArrowIcon .filterIcon {
+    display: none; }
+
+.orderByDropdown {
+  padding: 0; }

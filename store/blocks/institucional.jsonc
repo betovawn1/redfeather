@@ -1,0 +1,18 @@
+{
+    "store.custom#institucional": {
+        "blocks": [
+            "flex-layout.row#institucional-1"
+        ]
+    },
+    "flex-layout.row#institucional-1": {
+        "children": [
+            "rich-text#institucional-content"
+        ]
+    },
+    "rich-text#institucional-content": {
+        "props": {
+            "blockClass": "institucional-content-1",
+            "text": "# Nossas Lojas\n\n## Subtitulo\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet aliquam odio nec tempus. Maecenas a blandit ante. Praesent rutrum facilisis consectetur. Cras vitae mauris pellentesque, ultrices massa id, auctor quam. Curabitur egestas tincidunt urna vel feugiat. Nunc tempor mi odio, eget sodales velit lobortis at. Vestibulum lobortis semper felis luctus ultricies. Proin quis pellentesque nulla, ac pretium libero. Proin tempus magna mi, scelerisque vestibulum mauris sodales ac. Duis ut placerat lorem, id mattis ipsum. Nullam aliquet tellus vitae scelerisque pulvinar. Curabitur elementum libero eu sollicitudin tincidunt. In mollis condimentum neque vitae interdum. Suspendisse lacus diam, finibus non nisl quis, convallis dapibus risus. Quisque sed nisl lectus.\n\n## Seção 2\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet aliquam odio nec tempus. Maecenas a blandit ante. Praesent rutrum facilisis consectetur. Cras vitae mauris pellentesque, ultrices massa id, auctor quam. Curabitur egestas tincidunt urna vel feugiat. Nunc tempor mi odio, eget sodales velit lobortis at. Vestibulum lobortis semper felis luctus ultricies. Proin quis pellentesque nulla, ac pretium libero. Proin tempus magna mi, scelerisque vestibulum mauris sodales ac. Duis ut placerat lorem, id mattis ipsum. Nullam aliquet tellus vitae scelerisque pulvinar. Curabitur elementum libero eu sollicitudin tincidunt. In mollis condimentum neque vitae interdum. Suspendisse lacus diam, finibus non nisl quis, convallis dapibus risus. Quisque sed nisl lectus.\n\n![](https://redfeather.vtexassets.com/arquivos/main-banner.jpg)\n\n[Acesse esse link](#)"
+        }
+    }
+}

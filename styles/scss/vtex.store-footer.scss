@@ -1,0 +1,78 @@
+@import "variables";
+
+.socialNetworkWrapper {
+    .socialNetworksContainer {
+        width: min-content;
+        margin: 15px 0 0;
+        .socialNetworkLink {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .socialNetworkLink--facebook {
+
+            &::before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                display: block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url($facebookIcon);
+            }
+            .socialNetworkImage {
+                display: none;
+            }
+        }
+        .socialNetworkLink--instagram {
+
+            &::before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                display: block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url($instagramIcon);
+            }
+            .socialNetworkImage {
+                display: none;
+            }
+        }
+        .socialNetworkLink--youtube {
+
+            &::before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                display: block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url($youtubeIcon);
+            }
+            .socialNetworkImage {
+                display: none;
+            }
+        }
+        .socialNetworkLink--pinterest {
+
+            &::before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                display: block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url($pinterestIcon);
+            }
+            .socialNetworkImage {
+                display: none;
+            }
+        }
+    }
+}

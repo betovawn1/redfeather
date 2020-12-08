@@ -1,0 +1,558 @@
+@import "variables";
+
+.flexRowContent--header-main-row-desktop {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.flexCol--utils-desktop {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    .flexColChild {
+        &:last-child {
+            margin-left: 20px;
+        }
+    }
+}
+.flexRow--header-main-row-desktop {
+    padding: 25px 30px;
+    @media (min-width: $minDesktop) {
+        border-bottom: 1px solid $lighterGrey;
+    }
+}
+.flexRowContent--1-header-mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 56px;
+    :global(.vtex-store-components-3-x-logoImage--logo-header) {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+}
+.flexRow--main-header-mobile {
+    padding: 15px 20px;
+    border-bottom: 1px solid $lightGrey;
+}
+.flexCol--utils-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.flexRowContent--main-header-mobile {
+    @media (max-width: $minDesktop) and (min-width: $maxMobile) {
+        display: flex;
+        flex-direction: column;
+        .stretchChildrenWidth {
+            &:first-child,
+            &:last-child {
+                width: 100% !important;
+            }
+        }
+    }
+}
+.flexRow--video-institucional-home {
+    padding: 30px 30px 0;
+}
+.flexRowContent--video-institucional-home {
+    @media (min-width: $maxMobile) and (max-width: $maxTablet) {
+        .stretchChildrenWidth {
+            &:first-child {
+                width: 55% !important;
+            }
+            &:last-child {
+                width: 45% !important;
+            }
+        }
+    }
+}
+.flexRow--menu-footer {
+    border-top: 1px solid $lightGrey;
+    .flexRowContent--menu-footer {
+        padding: 30px 30px 0;
+        @media (max-width: $maxTablet) {
+            flex-wrap: wrap;
+            padding: 15px 30px 0;
+        }
+        @media (max-width: $maxMobile) {
+            padding-top: 0;
+            padding: 0 15px 0;
+        }
+        .stretchChildrenWidth {
+            padding-right: 0;
+            @media (max-width: $maxTablet) {
+                padding-top: 15px;
+                width: 50% !important;
+            }
+            @media (max-width: $maxMobile) {
+                padding-top: 0;
+                margin-left: -15px;
+                padding-left: 15px;
+                margin-right: -15px;
+                padding-right: 15px;
+                border-bottom: 1px solid $lightGrey;
+                width: calc(100% + 30px) !important;
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
+.flexRow--payment-methods {
+    padding: 15px 30px;
+    margin-top: 30px;
+    border-top: 1px solid $lightGrey;
+    @media (max-width: $maxTablet) {
+        padding: 0 30px 15px;
+    }
+    @media (max-width: $maxMobile) {
+        padding: 15px;
+        margin-top: 0;
+        border-bottom: 1px solid $lightGrey;
+    }
+}
+.flexRow--credits {
+    padding: 15px 30px;
+    border-top: 1px solid $lightGrey;
+    @media (max-width: $maxMobile) {
+        padding: 20px 15px;
+    }
+    .flexRowContent {
+        align-items: center;
+    }
+    .stretchChildrenWidth {
+        &:first-child {
+            @media (min-width: $maxMobile) {
+                max-width: 70%;
+            }
+            @media (max-width: $maxMobile) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    @media (max-width: $maxMobile) {
+        border-top: 0;
+    }
+}
+.flexRow--buy-button {
+    margin-bottom: 30px;
+    .flexRowContent--buy-button {
+        @media (max-width: $maxMobile) {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        .stretchChildrenWidth {
+            &:first-child {
+                width: 40% !important;
+            }
+            &:last-child {
+                width: 60% !important;
+                align-items: flex-end;
+                @media (max-width: $maxMobile) {
+                    margin-top: 15px;
+                    width: 55% !important;
+                }
+            }
+            :global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
+                margin: 0;
+            }
+            :global(.vtex-numeric-stepper__input),
+            :global(.vtex-numeric-stepper__plus-button),
+            :global(.vtex-numeric-stepper__minus-button) {
+                outline: 0;
+                height: 55px;
+                @media (max-width: $maxMobile) {
+                    height: 40px !important;
+                }
+                border-radius: 0;
+                border-width: 1px;
+                border-color: $lighterGrey;
+                background-color: $lighterGrey;
+            }
+            :global(.vtex-numeric-stepper__input) {
+                color: $grey;
+                border-left: 0;
+                border-right: 0;
+                font-size: $size3;
+                @media (max-width: $maxMobile) {
+                    font-size: 20px;
+                }
+            }
+            :global(.vtex-numeric-stepper__minus-button) {
+                width: 55px !important;
+                @media (max-width: $maxMobile) {
+                    width: 40px !important;
+                }
+                border-right: 0;
+                background-size: 14px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url($iconArrowDown);
+                :global(.vtex-numeric-stepper__minus-button__text) {
+                    font-size: 0;
+                }
+            }
+            :global(.vtex-numeric-stepper__plus-button) {
+                width: 55px !important;
+                @media (max-width: $maxMobile) {
+                    width: 40px !important;
+                }
+                border-left: 0;
+                background-size: 14px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url($iconArrowUp);
+                :global(.vtex-numeric-stepper__plus-button__text) {
+                    font-size: 0;
+                }
+            }
+            :global(.vtex-button) {
+                height: 55px;
+                border-radius: 0;
+                :global(.vtex-add-to-cart-button-0-x-buttonText) {
+                    font-size: 0 !important;
+                    display: flex;
+                    align-items: center;
+                    &::before {
+                        content: "comprar";
+                        font-size: $size2;
+                        text-transform: uppercase;
+                    }
+                    &::after {
+                        content: "\f10d";
+                        font-size: $size5;
+                        margin-left: 20px;
+                        font-family: $flaticon;
+                        text-transform: uppercase;
+                    }
+                }
+                @media (max-width: $maxMobile) {
+                    height: 40px !important;
+                    :global(.vtex-add-to-cart-button-0-x-buttonText) {
+                        font-size: $size1;
+                    }
+                }
+            }
+        }
+    }
+}
+.flexRow--pdp-description {
+    padding-bottom: 0;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+
+    @media (max-width: $maxMobile) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .flexRowContent--pdp-description {
+        margin: 0;
+        :global(.vtex-store-components-3-x-productDescriptionContainer) {
+            margin: 0;
+            max-width: 100%;
+            :global(.vtex-store-components-3-x-productDescriptionTitle) {
+                display: none;
+                width: fit-content;
+                z-index: 1;
+                border-bottom: 0;
+                font-size: $size3;
+                position: relative;
+                padding-left: 25px;
+                padding-right: 25px;
+                margin-bottom: 50px;
+                padding-bottom: 15px;
+                background-color: $light;
+                text-transform: uppercase;
+                border-bottom: 1px solid $dark;
+            }
+            :global(.vtex-store-components-3-x-productDescriptionText) {
+                position: relative;
+                &::before {
+                    left: 0;
+                    top: -51px;
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    display: block;
+                    padding: 0 30px;
+                    display: none;
+                    position: absolute;
+                    margin-left: -30px;
+                    margin-right: -30px;
+                    background-color: $lightGrey;
+                    @media (max-width: $maxMobile) {
+                        padding: 0 15px;
+                        margin-left: -15px;
+                        margin-right: -15px;
+                    }
+                }
+            }
+            :global(.vtex-store-components-3-x-container) {
+                padding: 0;
+            }
+        }
+    }
+}
+.flexCol--pdp-right-col {
+    :global(.vtex-product-identifier-0-x-product-identifier) {
+        color: $midGrey;
+        font-size: $size1;
+    }
+    :global(.vtex-store-components-3-x-productBrand) {
+        color: $dark;
+        font-size: $size4;
+    }
+}
+.flexRow--filter {
+    padding: 0 30px 0;
+    @media (min-width: $maxMobile) {
+        border-top: 1px solid $lightGrey;
+        border-bottom: 1px solid $lightGrey;
+    }
+
+    :global(.vtex-breadcrumb-1-x-container) {
+        padding: 0 !important;
+    }
+
+    @media (max-width: $maxMobile) {
+        padding: 0 15px;
+    }
+    .flexRowContent--filter {
+        display: flex;
+        align-items: center;
+        @media (min-width: $maxMobile) {
+            .stretchChildrenWidth {
+                display: flex;
+                justify-content: center;
+                :global(.vtex-store-drawer-0-x-openIconContainer--filters) {
+                    display: flex;
+                    justify-content: center;
+                }
+                &:first-child {
+                    justify-content: flex-start;
+                    :global(.vtex-breadcrumb-1-x-container) {
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                }
+                &:first-child {
+                    justify-content: flex-end;
+                }
+            }
+        }
+        @media (max-width: $maxMobile) {
+            .stretchChildrenWidth {
+                margin-right: 5%;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.flexRow--result {
+    padding: 0 25px;
+    @media (max-width: $maxMobile) {
+        padding: 0 10px;
+    }
+}
+.flexRow--pdp-product-main {
+    padding: 0 30px;
+    @media (max-width: $maxMobile) {
+        padding: 0 15px;
+    }
+}
+.flexRowContent--selling-price {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    @media (max-width: $maxMobile) {
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+}
+.flexRowContent--pdp-product-main {
+    @media (max-width: $maxMobile) {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+.flexCol--filterCol {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.flexRow--category-text-seo {
+    padding: 30px;
+    border: 1px solid $lightGrey;
+}
+.flexRowContent--pdp-breadcrumbs {
+    margin: 0;
+    :global(.vtex-breadcrumb-1-x-container) {
+        padding-top: 25px !important;
+        text-align: left !important;
+        padding-bottom: 30px !important;
+        @media (max-width: $maxMobile) {
+            display: none;
+            padding-top: 5px !important;
+            padding-bottom: 15px !important;
+        }
+    }
+}
+.flexRowContent--pdp-product-main {
+    margin-top: 0;
+    padding-top: 0;
+}
+.flexRow--product-main-mobile {
+    padding: 15px 15px 25px;
+}
+.flexRow--blog-preview {
+    :global(.vtex-store-components-3-x-container) {
+        margin: 0;
+        padding: 0 30px;
+        max-width: unset;
+        @media (max-width: $maxMobile) {
+            padding: 0 15px;
+        }
+    }
+}
+.flexRowContent--main-bg-category {
+    :global(.vtex-store-components-3-x-imageElement) {
+        width: 100%;
+        height: auto;
+        max-width: unset;
+    }
+}
+.flexRow--submenu-atividade {
+    width: 100%;
+    .flexRowContent {
+        display: flex;
+        padding: 0 30px;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: $maxMobile) {
+            padding: 0;
+            flex-direction: column;
+        }
+        .stretchChildrenWidth {
+            padding-right: 15px;
+            @media (max-width: $maxMobile) {
+                width: 100% !important;
+                padding-right: 0;
+                height: auto;
+                line-height: 0;
+            }
+            &:last-child {
+                width: 33% !important;
+                height: auto;
+                position: static !important;
+                transform: unset !important;
+                transition: unset;
+                padding-right: 0;
+                @media (max-width: $maxMobile) {
+                    width: 100% !important;
+                }
+            }
+            .flexColChild {
+                @media (max-width: $maxMobile) {
+                    margin-bottom: 4%;
+                }
+                @media (min-width: $maxMobile) {
+                    &:first-child {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            &:last-child {
+                .flexColChild {
+                    margin-bottom: 0;
+                }
+            }
+            :global(.vtex-store-components-3-x-imageElement) {
+                width: 100%;
+                height: auto;
+                max-width: unset;
+            }
+        }
+    }
+}
+.menuItem--atividade {
+    .submenuAccordion {
+        padding: 0;
+    }
+}
+@media (max-width: $maxMobile) {
+    .flexCol--submenu-atividade-image-pair {
+        flex-direction: row;
+        .flexColChild--submenu-atividade-image-pair {
+            width: 48%;
+            &:first-child {
+                margin-right: 4%;
+            }
+        }
+    }
+}
+.flexRow--franqueado-2 {
+    padding: 30px 30px 0;
+    @media (max-width: $maxMobile) {
+        padding: 0;
+    }
+}
+.flexRowContent--list-and-selling-price {
+    display: flex;
+    align-items: flex-end;
+    .stretchChildrenWidth {
+        &:first-child {
+            margin-right: 5px;
+        }
+    }
+}
+.flexRow--header-sup {
+    background-color: $dark;
+}
+.flexCol--product-summary-description {
+    justify-content: space-between;
+}
+@media (min-width: $maxMobile) {
+    .flexColChild--filterCol {
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+.flexRowContent--list-and-selling-price-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :global(.vtex-product-price-1-x-sellingPriceValue) {
+        &::before {
+            display: none;
+        }
+        :global(.vtex-product-price-1-x-currencyContainer) {
+            font-size: $size2;
+            font-weight: $regular;
+        }
+    }
+    :global(.vtex-product-price-1-x-listPrice) {
+        :global(.vtex-product-price-1-x-listPriceValue) {
+            color: $grey;
+            :global(.vtex-product-price-1-x-currencyContainer) {
+                color: $grey;
+                font-size: $size1;
+                font-weight: $extraLight;
+                margin-right: 5px;
+            }
+        }
+    }
+}

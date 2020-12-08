@@ -1,0 +1,254 @@
+@import "variables";
+
+.gallery {
+    padding-left: 0;
+    .galleryItem {
+        @media (min-width: $maxMobile) {
+            padding: 0 0 25px;
+        }
+        @media (max-width: $maxMobile) {
+            padding: 0 0 15px;
+        }
+        :global(.vtex-product-summary-2-x-container) {
+            // max-width: unset !important;
+            :global(.vtex-product-summary-2-x-image) {
+                height: auto !important;
+                max-height: unset !important;
+            }
+        }
+    }
+}
+.filters--layout {
+    width: 100%;
+}
+.filtersWrapper {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    .filter__container--title {
+        .filterMessage {
+            font-size: 0;
+            &::before {
+                font-size: $size2;
+                content: "Filtrar por:";
+                text-transform: uppercase;
+            }
+        }
+    }
+    .filter__container {
+        border: 0;
+        width: 100%;
+        .filter {
+            width: 100%;
+        }
+        .filterTitle {
+            font-size: $size1;
+            text-transform: uppercase;
+            .filterIcon {
+                padding: 0 5px;
+                .caretIcon {
+                    width: 8px;
+                    height: 8px;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    .filter__container--title,
+    .filter__container--departamento,
+    .filter__container--especificacoes-tecnicas,
+    .filter__container--medidas,
+    .filter__container--netshoesproductgroup,
+    .filter__container--marca {
+        display: none;
+    }
+}
+.orderByButton {
+    padding: 13px;
+    margin-left: auto;
+    width: auto !important;
+    // border: 1px solid $lightGrey;
+    border-radius: 0;
+    @media (max-width: $maxMobile) {
+        margin: 0;
+        padding: 10px 15px;
+    }
+    .filterPopupTitle {
+        font-size: $size0;
+        text-transform: initial;
+        @media (max-width: $maxMobile) {
+            font-size: 14px;
+        }
+        .orderByText {
+            color: $grey;
+            font-weight: $regular;
+            @media (max-width: $maxMobile) {
+                display: none;
+            }
+        }
+    }
+    .filterPopupArrowIcon {
+        padding-right: 0;
+        height: 8px;
+        line-height: .6;
+        padding-left: 8px;
+        .caretIcon {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
+.buttonShowMore {
+    margin: 35px 0;
+    :global(.vtex-button) {
+        border-radius: 0;
+        :global(.vtex-button__label) {
+            font-size: $size1;
+        }
+    }
+}
+
+.sidebar {
+    .filterBreadcrumbsText {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .filterBreadcrumbsItem {
+        .caretIcon {
+            color: #000;
+            margin-left: 8px;
+        }
+        .filterBreadcrumbsItemName {
+            color: #000;
+            font-size: 16px;
+        }
+    }
+    .accordionFilterContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+        .accordionFilterItem {
+            height: auto;
+            .accordionFilterContent {
+                padding: 0;
+            }
+        }
+        .accordionFilterItemTitle {
+            font-size: 14px;
+        }
+        .accordionFilterItemIcon {
+            .caretIcon {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+    .filterAccordionItemBox {
+        height: auto;
+        padding: 10px 0;
+    }
+    .filterApplyButtonWrapper {
+        :global(.vtex-button) {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+.filterPopupButton {
+    padding: 13px;
+    margin-left: auto;
+    width: auto !important;
+    border: 1px solid $lighterGrey;
+    background-color: $lighterGrey;
+    border-radius: 0;
+
+    display: flex;
+    align-items: center;
+    @media (max-width: $maxMobile) {
+        margin: 0;
+        padding: 10px 15px;
+    }
+    .filterPopupTitle {
+        font-size: $size0;
+        text-transform: initial;
+        @media (max-width: $maxMobile) {
+            font-size: 14px;
+        }
+        .orderByText {
+            color: $grey;
+            font-weight: $regular;
+        }
+    }
+    .filterPopupArrowIcon {
+        padding-right: 0;
+    }
+}
+
+@media (min-width: $minDesktop) {
+    .searchNotFound {
+        margin-top: 175px;
+    }
+}
+
+.filterTemplateOverflow {
+
+}
+:global(.vtex-checkbox__label) {
+    font-size: $size1;
+}
+:global(.vtex__icon-close) {
+}
+.galleryTitle--layout {
+    margin: 25px auto;
+    padding: 0;
+    font-size: $size5;
+    font-weight: $extraLight;
+    text-transform: uppercase;
+    @media (max-width: $maxMobile) {
+        margin: 15px 0;
+        padding: 0 15px;
+        font-size: $size4;
+        text-align: center;
+    }
+}
+.layoutSwitcher {
+    padding: 0;
+    :global(.vtex-button) {
+        border: 0;
+        :global(.vtex-button__label) {
+            padding: 8px;
+            padding-right: 0;
+        }
+    }
+}
+.singleGridIcon, .gridIcon {
+    color: $dark;
+}
+.filterPopupButton {
+    height: 40px;
+    padding: 10px 15px;
+}
+.filtersWrapperMobile {
+    .filterPopupArrowIcon {
+        padding-top: 0;
+
+        &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            display: block;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url($filterIcon1);
+        }
+        .filterIcon {
+            display: none;
+        }
+    }
+}
+.orderByDropdown {
+    padding: 0;
+}

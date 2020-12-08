@@ -1,0 +1,60 @@
+@import "variables";
+
+.openIconContainer {
+    padding: 0;
+    &::before {
+        width: 23px;
+        height: 17px;
+        display: block;
+        content: "\f17b";
+        font-size: $size5;
+        font-family: $flaticon;
+    }
+    .menuIcon {
+        display: none;
+    }
+}
+.openIconContainer--filters {
+    &::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        display: block;
+        margin-left: 10px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url($filterIcon1);
+
+        @media (max-width: $maxMobile) {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    .menuIcon--filters {
+        display: none;
+    }
+} 
+.openIconContainer--filters {
+    display: flex;
+    padding: 13px 15px;
+    align-items: center;
+    // margin-right: 25px;
+    justify-content: flex-start;
+    // border: 1px solid $lightGrey;
+    &::before {
+        width: auto !important;
+        content: "FILTRar";
+        display: inline-block;
+        color: $dark;
+        font-family: $montserrat;
+        vertical-align: middle;
+        font-size: $size0;
+        line-height: 15px;
+        text-transform: uppercase;
+        height: 15px;
+        @media (max-width: $maxMobile) {
+            font-size: $size2;
+        }
+    }
+}

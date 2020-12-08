@@ -1,0 +1,476 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#header-sup",
+      "flex-layout.row#desktop"
+    ]
+  },
+  "flex-layout.row#header-sup": {
+    "props": {
+      "blockClass": "header-sup"
+    },
+    "children": ["rich-text#header-sup"]
+  },
+  "rich-text#header-sup": {
+    "props": {
+      "text": "[(11) 3926-1098](https://api.whatsapp.com/send?phone=551139261098)",
+      "blockClass": "header-sup"
+    }
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "blockClass": "header-main-row-desktop"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#menu-desktop",
+      "flex-layout.col#search-bar-desktop",
+      "flex-layout.col#utils-desktop"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "14%"
+    },
+    "children": [
+      "logo"
+    ]
+  },
+  "flex-layout.col#menu-desktop": {
+    "props": {
+      "width": "55%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#menu-header"
+    ]
+  },
+  "flex-layout.col#search-bar-desktop": {
+    "props": {
+      "width": "grow"
+    },
+    "children": [
+      "search-bar"
+    ]
+  },
+  "flex-layout.col#utils-desktop": {
+    "props": {
+      "width": "8%",
+      "blockClass": "utils-desktop"
+    },
+    "children": [
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "vtex.menu@2.x:menu#atendimento": {
+    "children": [
+      "menu-item#nossas-lojas-header",
+      "menu-item#atendimento-header"
+    ]
+  },
+  "menu-item#nossas-lojas-header": {
+    "props": {
+      "id": "menu-item-nossas-lojas",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "nossas-lojas-header",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nossas-lojas",
+        "noFollow": false,
+        "tagTitle": "Nossas Lojas",
+        "text": "Nossas Lojas"
+      }
+    }
+  },
+  "menu-item#atendimento-header": {
+    "props": {
+      "id": "menu-item-atendimento",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "atendimento-header",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#atendimento-header"]
+  },
+  "vtex.menu@2.x:submenu#atendimento-header": {
+    "children": [
+      "rich-text#info-sac-footer"
+    ]
+  },
+  "image#menu-header": {
+    "props": {
+      "src": "https://uvline.myvtex.com/arquivos/menu-header.png"
+    }
+  },
+  //MENU HEADER -- INIT
+  "flex-layout.row#menu-header": {
+    "children": [
+      "vtex.menu@2.x:menu#menu-header"
+    ]
+  },
+  "vtex.menu@2.x:menu#menu-header-mobile": {
+    "props": {
+      "blockClass": [
+        "top-menu",
+        "top-menu-mobile"
+      ],
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        }
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#menu-header": {
+    "props": {
+      "blockClass": "top-menu",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "#",
+            "tagTitle": "Bonés",
+            "text": "Bonés"
+          }
+        }
+      ]
+    }
+  },
+  //MENU HEADER -- END
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://redfeather.vtexassets.com/arquivos/logo-red-feather.svg?1",
+      "blockClass": "logo-header"
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#mobile"
+    ]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "flex-layout.row#row-1-header-mobile"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "flex-layout.row#row-1-header-mobile": {
+    "props": {
+      "blockClass": "1-header-mobile",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#menu-mobile",
+      "flex-layout.col#logo-mobile",
+      "flex-layout.col#utils-mobile"
+    ]
+  },
+  "flex-layout.col#menu-mobile": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "drawer#mobile"
+    ]
+  },
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "width": "60%"
+    },
+    "children": [
+      "logo"
+    ]
+  },
+  "flex-layout.col#utils-mobile": {
+    "props": {
+      "width": "20%",
+      "blockClass": "utils-mobile"
+    },
+    "children": [
+      // "login",
+      "minicart.v2"
+    ]
+  },
+  "drawer#mobile": {
+    "props": {
+      "orientation": "horizontal"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#menu-header-mobile"
+    ]
+  },
+  //MINICART - init
+  "minicart.v2": {
+    "children": [
+      "minicart-base-content"
+    ]
+  },
+  "minicart-base-content": {
+    "blocks": [
+      "minicart-empty-state"
+    ],
+    "children": [
+      "minicart-product-list",
+      "flex-layout.row#minicart-footer"
+    ]
+  },
+  "flex-layout.row#minicart-footer": {
+    "props": {
+      "blockClass": "minicart-footer"
+    },
+    "children": [
+      "flex-layout.col#minicart-footer"
+    ]
+  },
+  "flex-layout.col#minicart-footer": {
+    "children": [
+      "minicart-summary",
+      "minicart-checkout-button"
+    ]
+  },
+  "minicart-product-list": {
+    "blocks": [
+      "product-list#minicart"
+    ]
+  },
+  "product-list#minicart": {
+    "blocks": [
+      "product-list-content-mobile"
+    ]
+  },
+  "minicart-summary": {
+    "blocks": [
+      "checkout-summary.compact#minicart"
+    ]
+  },
+  "checkout-summary.compact#minicart": {
+    "children": [
+      "summary-totalizers#minicart"
+    ],
+    "props": {
+      "totalizersToShow": [
+        "Items",
+        "Discounts"
+      ]
+    }
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false
+    }
+  },
+  "minicart-empty-state": {
+    "children": [
+      "flex-layout.row#empty-state"
+    ]
+  },
+  "flex-layout.row#empty-state": {
+    "children": [
+      "flex-layout.col#empty-state"
+    ]
+  },
+  "flex-layout.col#empty-state": {
+    "children": [
+      "rich-text#minicart-default-empty-state"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "rowGap": 5
+    }
+  },
+  "rich-text#minicart-default-empty-state": {
+    "props": {
+      "text": "Seu carrinho está vazio."
+    }
+  }
+  //MINICART - end
+}

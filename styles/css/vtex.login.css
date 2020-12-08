@@ -1,0 +1,91 @@
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
+@media (max-width: 1025px) {
+  .container {
+    margin-right: 15px; } }
+
+.container :global(.vtex-button) {
+  border: 0; }
+  .container :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0 !important; }
+    .container :global(.vtex-button) :global(.vtex-button__label) .label {
+      padding: 0;
+      font-size: 0; }
+      .container :global(.vtex-button) :global(.vtex-button__label) .label::before {
+        width: 17px;
+        color: #000;
+        display: block;
+        content: "\f193";
+        font-size: 24px;
+        font-family: "Flaticon"; }
+
+.inputContainerEmail :global(.vtex-input-prefix__group) {
+  border-width: 1px;
+  border-radius: 0; }
+
+.options .formTitle {
+  margin-top: 0;
+  font-size: 13px;
+  text-transform: uppercase; }
+
+.options .optionsList {
+  margin-top: 8px;
+  margin-bottom: 0; }
+  .options .optionsList :global(.vtex-button) {
+    border-radius: 0; }
+
+.sendButton :global(.vtex-button) {
+  border-radius: 0; }
+  .sendButton :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 13px;
+    text-transform: uppercase; }
+
+.inputContainerPassword :global(.vtex-input-prefix__group) {
+  border-width: 1px;
+  border-radius: 0; }
+
+.inputContainerAccessCode :global(.vtex-input-prefix__group) {
+  border-width: 1px;
+  border-radius: 0; }
+  .inputContainerAccessCode :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+    font-size: 12px;
+    text-align: center; }
+
+.formTitle {
+  margin-top: 0;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.formFooter {
+  border: 0; }
+
+.accessCodeOptionBtn :global(.vtex-button), .emailPasswordOptionBtn :global(.vtex-button) {
+  berder: 0; }
+  .accessCodeOptionBtn :global(.vtex-button) :global(.vtex-button__label), .emailPasswordOptionBtn :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0;
+    font-size: 12px; }
+
+.arrowUp {
+  display: none; }
+
+.contentForm {
+  padding: 0; }
+  .contentForm .accountOptions .button {
+    padding: 0; }
+  .contentForm .accountOptions :global(.vtex-button__label) {
+    padding: 0; }
+
+.content--accountOptions {
+  padding: 6px 12px; }
+
+@media (min-width: 1025px) {
+  :global(.vtex-my-account-1-x-menu), :global(.vtex-account__page) {
+    margin-top: 175px; } }
+
+.oauthLabel {
+  color: #0f3e99;
+  font-size: 13px; }
+
+:global(.vtex-styleguide-9-x-input) {
+  color: #000;
+  font-size: 13px; }

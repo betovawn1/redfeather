@@ -1,0 +1,104 @@
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
+.container {
+  border-radius: 0;
+  max-width: 95% !important;
+  transition: box-shadow 0.3s linear; }
+  .container .image {
+    object-fit: cover !important; }
+    @media (max-width: 767px) {
+      .container .image {
+        max-width: 100% !important;
+        max-height: 300px !important;
+        object-fit: contain !important; } }
+
+.element {
+  position: relative;
+  padding: 0; }
+  .element :global(.vtex-product-price-1-x-savings) {
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: max-content;
+    padding: 5px 10px;
+    position: absolute;
+    font-size: 12px;
+    background-color: #000; }
+    @media (max-width: 767px) {
+      .element :global(.vtex-product-price-1-x-savings) {
+        font-size: 9px; } }
+  .element :global(.vtex-stack-layout-0-x-stackContainer) :global(.vtex-stack-layout-0-x-stackItem):last-child {
+    position: static; }
+  .element :global(.vtex-button) {
+    border: 0;
+    height: 40px;
+    margin: 15px 0 0;
+    padding: 0;
+    width: calc(100% - 30px);
+    border-radius: 0;
+    overflow: hidden;
+    min-height: unset; }
+    .element :global(.vtex-button) :global(.vtex-button__label) {
+      padding: 0;
+      border-radius: 0; }
+      .element :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-add-to-cart-button-0-x-buttonText) {
+        font-size: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 13px; }
+        .element :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
+          content: "comprar";
+          font-size: 13px; }
+        .element :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-add-to-cart-button-0-x-buttonText)::after {
+          content: "\f10d";
+          font-size: 18px;
+          font-family: "Flaticon";
+          margin-left: 10px; }
+  .element .nameContainer {
+    padding: 10px 5px; }
+  .element .brandName {
+    height: auto;
+    display: block;
+    font-size: 14px; }
+    @media (max-width: 767px) {
+      .element .brandName {
+        margin-bottom: 12px;
+        font-size: 16px;
+        height: auto; } }
+  .element .priceContainer {
+    padding: 0;
+    height: auto; }
+  .element :global(.vtex-store-components-3-x-sellingPrice) {
+    padding: 0; }
+  .element :global(.vtex-store-components-3-x-sellingPriceValue) {
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .element :global(.vtex-store-components-3-x-installmentsPrice) {
+    color: #707070;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .element :global(.vtex-store-components-3-x-installmentsPrice) {
+        font-size: 11px; } }
+
+.productPriceClass {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center; }
+  .productPriceClass .listPriceContainer .listPriceLabel {
+    display: none; }
+  .productPriceClass .sellingPriceContainer .sellingPriceLabel {
+    font-size: 0; }
+    .productPriceClass .sellingPriceContainer .sellingPriceLabel::before {
+      content: "Por: ";
+      font-size: 14px; }
+  .productPriceClass .installmentContainer {
+    width: 100%; }

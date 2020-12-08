@@ -1,0 +1,49 @@
+@import "variables";
+
+.minicartWrapperContainer {
+    .minicartContainer {
+        .openIconContainer {
+            padding: 0;
+            :global(.vtex-button) {
+                border: 0;
+                :global(.vtex-button__label) {
+                    padding: 0;
+                    .minicartIconContainer {
+                        &::before {
+                            color: $dark;
+                            content: "\f10d";
+                            font-size: $size5;
+                            font-family: $flaticon;
+                        }
+                        
+                        .cartIcon {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.minicartTitle {
+    display: none;
+}
+.minicartQuantityBadge {
+    border-radius: 50%;
+}
+.opened {
+    @media (min-width: $maxMobile) {
+        max-width: 50% !important;
+    }
+    :global(.vtex-product-list-0-x-quantitySelectorContainer),
+    :global(.vtex-product-list-0-x-productPriceContainer) {
+        display: none !important;
+    }
+    :global(.vtex-product-list-0-x-productName) {
+        font-size: 14px;
+    }
+    :global(.vtex-product-list-0-x-productVariationsItem),
+    :global(.vtex-product-list-0-x-productVariationsItem) {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,171 @@
+@import "variables";
+
+.slide {
+    .imageElement {
+        width: 100%;
+        height: auto;
+        max-width: unset;
+        max-height: unset !important;
+    }
+}
+
+.paginationDotsContainer--carousel-home {
+    padding-bottom: 15px;
+}
+
+.sliderLayoutContainer--shelf {
+    padding-bottom: 35px;
+    @media (max-width: $maxMobile) {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+    .sliderRightArrow--shelf {
+
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url($rightArrow);
+            @media (max-width: $maxMobile) {
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .caretIcon {
+            display: none;
+        }
+    }
+    .sliderLeftArrow--shelf {
+
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url($leftArrow);
+            @media (max-width: $maxMobile) {
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .caretIcon {
+            display: none;
+        }
+    }
+}
+.sliderTrack--shelf {
+    padding: 10px 0;
+    @media (max-width: $maxMobile) {
+        padding: 0;
+    }
+}
+
+.sliderLayoutContainer--por-categoria-slider {
+    padding: 0 50px;
+    margin-top: 20px;
+    .sliderRightArrow {
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url($rightArrow);
+            @media (max-width: $maxMobile) {
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .caretIcon {
+            display: none;
+        }
+    }
+    .sliderLeftArrow {
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url($leftArrow);
+            @media (max-width: $maxMobile) {
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .caretIcon {
+            display: none;
+        }
+    }
+    .paginationDotsContainer {
+        display: none;
+    }
+}
+.sliderLayoutContainer--carousel-home-2 {
+    padding: 0 50px;
+    @media (max-width: $maxMobile) {
+        padding: 0 15px;
+    }
+    .sliderLeftArrow--carousel-home-2 {
+        background: rgba(0,0,0,.5) !important;
+        width: 110px;
+        height: 110px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        transition: width .2s linear;
+        @media (max-width: $maxMobile) {
+            width: 100px;
+            height: 100px;
+            padding: 0;
+        }
+        @media (min-width: $maxMobile) {
+            &:hover {
+                width: 220px;
+            }
+        }
+        .caretIcon {
+            color: $light;
+            opacity: .5;
+        }
+    }
+    .sliderRightArrow--carousel-home-2 {
+        background: rgba(0,0,0,.5) !important;
+        width: 110px;
+        height: 110px;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        transition: width .2s linear;
+        @media (max-width: $maxMobile) {
+            width: 100px;
+            height: 100px;
+            padding: 0;
+        }
+        @media (min-width: $maxMobile) {
+            &:hover {
+                width: 220px;
+            }
+        }
+        .caretIcon {
+            color: $light;
+            opacity: .5;
+        }
+    }
+}
+.sliderLayoutContainer--carousel-home {
+    padding: 0;
+}

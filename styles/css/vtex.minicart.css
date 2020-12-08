@@ -1,0 +1,35 @@
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
+.minicartWrapperContainer .minicartContainer .openIconContainer {
+  padding: 0; }
+  .minicartWrapperContainer .minicartContainer .openIconContainer :global(.vtex-button) {
+    border: 0; }
+    .minicartWrapperContainer .minicartContainer .openIconContainer :global(.vtex-button) :global(.vtex-button__label) {
+      padding: 0; }
+      .minicartWrapperContainer .minicartContainer .openIconContainer :global(.vtex-button) :global(.vtex-button__label) .minicartIconContainer::before {
+        color: #000;
+        content: "\f10d";
+        font-size: 24px;
+        font-family: "Flaticon"; }
+      .minicartWrapperContainer .minicartContainer .openIconContainer :global(.vtex-button) :global(.vtex-button__label) .minicartIconContainer .cartIcon {
+        display: none; }
+
+.minicartTitle {
+  display: none; }
+
+.minicartQuantityBadge {
+  border-radius: 50%; }
+
+@media (min-width: 767px) {
+  .opened {
+    max-width: 50% !important; } }
+
+.opened :global(.vtex-product-list-0-x-quantitySelectorContainer),
+.opened :global(.vtex-product-list-0-x-productPriceContainer) {
+  display: none !important; }
+
+.opened :global(.vtex-product-list-0-x-productName) {
+  font-size: 14px; }
+
+.opened :global(.vtex-product-list-0-x-productVariationsItem),
+.opened :global(.vtex-product-list-0-x-productVariationsItem) {
+  font-size: 13px; }

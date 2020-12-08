@@ -1,0 +1,73 @@
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
+.listContainer {
+  position: relative;
+  justify-content: flex-start; }
+  .listContainer::before {
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    margin: 0 -30px;
+    position: absolute;
+    width: calc(100% + 60px);
+    background-color: #dedede; }
+    @media (max-width: 767px) {
+      .listContainer::before {
+        margin: 0;
+        width: 100%; } }
+  .listContainer .listItem {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    position: relative; }
+    .listContainer .listItem :global(.vtex-button) {
+      border: 0; }
+    .listContainer .listItem.listItemActive {
+      border-bottom: 1px solid #000; }
+      .listContainer .listItem.listItemActive :global(.vtex-button) {
+        color: #000;
+        background-color: #fff; }
+
+.listContainer--submenu-atividade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; }
+  .listContainer--submenu-atividade :global(.vtex-button__label) {
+    font-size: 14px; }
+  .listContainer--submenu-atividade::before {
+    display: none !important; }
+  .listContainer--submenu-atividade .listItem :global(.vtex-button) {
+    color: #707070;
+    background-color: transparent !important; }
+  .listContainer--submenu-atividade .listItem.listItemActive :global(.vtex-button) {
+    color: #000; }
+  @media (max-width: 767px) {
+    .listContainer--submenu-atividade .listItem :global(.vtex-button) {
+      max-height: 25px;
+      min-height: 25px; }
+      .listContainer--submenu-atividade .listItem :global(.vtex-button) :global(.vtex-button__label) {
+        font-size: 14px;
+        padding: 0 10px !important; } }
+
+.container--submenu-atividade {
+  width: 100%; }
+
+.contentItem--measures,
+.contentItem--composition {
+  color: #707070;
+  padding: 15px;
+  font-size: 14px; }
+
+@media (max-width: 767px) {
+  .container--product-description-pdp .listItem :global(.vtex-button) {
+    color: #707070;
+    max-height: 40px;
+    min-height: 40px;
+    background-color: transparent; }
+    .container--product-description-pdp .listItem :global(.vtex-button) :global(.vtex-button__label) {
+      font-size: 13px;
+      padding: 0 12px !important; }
+  .container--product-description-pdp .listItem.listItemActive :global(.vtex-button) {
+    color: #000; } }

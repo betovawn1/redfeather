@@ -1,0 +1,73 @@
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
+.latestPostsBlockContainer {
+  padding-bottom: 5px; }
+  .latestPostsBlockContainer :global(.vtex-card) {
+    color: #000;
+    text-decoration: none; }
+  .latestPostsBlockContainer .latestPostsBlockTitle {
+    color: #000;
+    display: flex;
+    text-align: left;
+    font-size: 32px;
+    align-items: center;
+    font-weight: 300;
+    justify-content: flex-start; }
+    @media (max-width: 767px) {
+      .latestPostsBlockContainer .latestPostsBlockTitle {
+        font-size: 24px; } }
+    .latestPostsBlockContainer .latestPostsBlockTitle::before {
+      width: 38px;
+      color: #000;
+      height: 44px;
+      display: block;
+      content: "\f125";
+      font-size: 40px;
+      font-family: "Flaticon";
+      font-weight: 300;
+      margin-right: 15px; }
+      @media (max-width: 767px) {
+        .latestPostsBlockContainer .latestPostsBlockTitle::before {
+          width: 29px;
+          height: 33px;
+          font-size: 32px;
+          margin-right: 10px; } }
+  .latestPostsBlockContainer .latestPostsBlockFlexItem {
+    width: 49%;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.22); }
+    .latestPostsBlockContainer .latestPostsBlockFlexItem:first-child {
+      margin-right: 2%; }
+    @media (max-width: 767px) {
+      .latestPostsBlockContainer .latestPostsBlockFlexItem {
+        width: 100%;
+        height: 150px; } }
+    .latestPostsBlockContainer .latestPostsBlockFlexItem .teaserTitle .teaserTitleLink {
+      color: #000 !important;
+      font-size: 24px;
+      text-decoration: none;
+      font-weight: 300; }
+
+.teaserImage {
+  width: 50%;
+  float: left;
+  height: 200px;
+  object-fit: cover;
+  object-position: center; }
+  @media (max-width: 767px) {
+    .teaserImage {
+      width: 35%;
+      height: 100px; } }
+
+.teaserGradientOverlay {
+  left: 50%;
+  height: 200px;
+  background: unset !important; }
+  @media (max-width: 767px) {
+    .teaserGradientOverlay {
+      left: 35%; } }
+  .teaserGradientOverlay .teaserTextOverlay {
+    filter: invert(1);
+    top: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    bottom: unset !important; }

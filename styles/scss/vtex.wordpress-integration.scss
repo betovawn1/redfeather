@@ -1,0 +1,87 @@
+@import "variables";
+
+.latestPostsBlockContainer {
+    padding-bottom: 5px;
+    :global(.vtex-card) {
+        color: $dark;
+        text-decoration: none;
+    }
+    .latestPostsBlockTitle {
+        color: $dark;
+        display: flex;
+        text-align: left;
+        font-size: $size6;
+        align-items: center;
+        font-weight: $extraLight;
+        justify-content: flex-start;
+
+        @media (max-width: $maxMobile) {
+            font-size: $size5;
+        }
+        &::before {
+            width: 38px;
+            color: $dark;
+            height: 44px;
+            display: block;
+            content: "\f125";
+            font-size: $size7;
+            font-family: $flaticon;
+            font-weight: $extraLight;
+            margin-right: 15px;
+
+            @media (max-width: $maxMobile) {
+                width: 29px;
+                height: 33px;
+                font-size: $size6;
+                margin-right: 10px;
+            }
+        }
+    }
+    .latestPostsBlockFlexItem {
+        width: 49%;
+        padding: 0;
+        box-shadow: 0 0 10px rgba(0,0,0,.22);
+        &:first-child {
+            margin-right: 2%;
+        }
+        @media (max-width: $maxMobile) {
+            width: 100%;
+            height: 150px;
+        }
+        .teaserTitle {
+            .teaserTitleLink {
+                color: $dark !important;
+                font-size: $size5;
+                text-decoration: none;
+                font-weight: $extraLight;
+            }
+        }
+    }
+}
+
+.teaserImage {
+    width: 50%;
+    float: left;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    @media (max-width: $maxMobile) {
+        width: 35%;
+        height: 100px;
+    }
+}
+.teaserGradientOverlay {
+    left: 50%;
+    height: 200px;
+    background: unset !important;
+    @media (max-width: $maxMobile) {
+        left: 35%;
+    }
+    .teaserTextOverlay {
+        filter: invert(1);
+        top: 0;
+        margin-top: 20px;
+        margin-right: 20px;
+        bottom: unset !important;
+    }
+}

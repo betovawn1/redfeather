@@ -1,0 +1,32 @@
+{
+    "store.custom#contact-us": {
+        "children": [
+            "flex-layout.row#contact-us"
+        ]
+    },
+    "flex-layout.row#contact-us": {
+        "props": {
+            "blockClass": "contact"
+        },
+        "children": [
+            "flex-layout.col#contact-us"
+        ]
+    },
+    "flex-layout.col#contact-us": {
+        "children": [
+            "rich-text#contact-us",
+            "form#contact-us"
+        ]
+    },
+    "rich-text#contact-us": {
+        "props": {
+            "text": "## Contact Us"
+        }
+    },
+    "form#contact-us": {
+        "props": {
+            "entity": "CT",
+            "schema": "contact"
+        }
+    }
+}

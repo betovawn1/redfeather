@@ -1,0 +1,336 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#main-carousel",
+      "slider-layout#por-categoria",
+      "rich-text#collection-title-1",
+      "flex-layout.row#shelf-1",
+      "list-context.image-list#carousel-2",
+      "rich-text#collection-title-2",
+      "flex-layout.row#shelf-2",
+      "rich-text#title-newsletter",
+      "newsletter"
+    ]
+  },
+  "list-context.image-list#carousel-2": {
+    "children": [
+      "slider-layout#carousel-2"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://redfeather.vtexassets.com/arquivos/carousel-1.jpg",
+          "mobileImage": "https://redfeather.vtexassets.com/arquivos/carousel-1.jpg"
+        },
+        {
+          "image": "https://redfeather.vtexassets.com/arquivos/carousel-2.jpg",
+          "mobileImage": "https://redfeather.vtexassets.com/arquivos/carousel-2.jpg"
+        },
+        {
+          "image": "https://redfeather.vtexassets.com/arquivos/carousel-3.jpg",
+          "mobileImage": "https://redfeather.vtexassets.com/arquivos/carousel-3.jpg"
+        },
+        {
+          "image": "https://redfeather.vtexassets.com/arquivos/carousel-4.jpg",
+          "mobileImage": "https://redfeather.vtexassets.com/arquivos/carousel-4.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#por-categoria": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "por-categoria-slider",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never"
+    },
+    "children": [
+      "link#por-categoria-1",
+      "link#por-categoria-2",
+      "link#por-categoria-3",
+      "link#por-categoria-4"
+    ]
+  },
+  "link#por-categoria-1": {
+    "props": {
+      "href": "#",
+      "blockClass": "por-categoria"
+    },
+    "children": ["info-card#por-categoria-1"]
+  },
+  "link#por-categoria-2": {
+    "props": {
+      "href": "#",
+      "blockClass": "por-categoria"
+    },
+    "children": ["info-card#por-categoria-2"]
+  },
+  "link#por-categoria-3": {
+    "props": {
+      "href": "#",
+      "blockClass": "por-categoria"
+    },
+    "children": ["info-card#por-categoria-3"]
+  },
+  "link#por-categoria-4": {
+    "props": {
+      "href": "#",
+      "blockClass": "por-categoria"
+    },
+    "children": ["info-card#por-categoria-4"]
+  },
+  "link#por-categoria-5": {
+    "props": {
+      "href": "#",
+      "blockClass": "por-categoria"
+    },
+    "children": ["info-card#por-categoria-5"]
+  },
+  "info-card#por-categoria-1": {
+    "props": {
+      "id": "info-card-garantia",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "textMode": "rich-text",
+      "headline": "![](https://redfeather.vtexassets.com/arquivos/credit-card.png?1)",
+      "subhead": "**primeira troca grátis**\nconsulte o regulamento",
+      "callToActionMode": "none",
+      "blockClass": "por-categoria",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#por-categoria-2": {
+    "props": {
+      "id": "info-card-silencioso",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "textMode": "rich-text",
+      "headline": "![](https://redfeather.vtexassets.com/arquivos/secure.png?1)",
+      "subhead": "**parcele suas compras**\nem até 3 x sem juros",
+      "callToActionMode": "none",
+      "blockClass": "por-categoria",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#por-categoria-3": {
+    "props": {
+      "id": "info-card-consumo",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "textMode": "rich-text",
+      "headline": "![](https://redfeather.vtexassets.com/arquivos/algodao.png?1)",
+      "subhead": "**compra segura**",
+      "callToActionMode": "none",
+      "blockClass": "por-categoria",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#por-categoria-4": {
+    "props": {
+      "id": "info-card-instalacao",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "textMode": "rich-text",
+      "headline": "![](https://redfeather.vtexassets.com/arquivos/truck.png?1)",
+      "subhead": "**Matérias primas nobres**",
+      "callToActionMode": "none",
+      "blockClass": "por-categoria",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#por-categoria-5": {
+    "props": {
+      "id": "info-card-instalacao",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "textMode": "rich-text",
+      "headline": "![](https://origens.vtexassets.com/arquivos/categoria-5.png?1)",
+      "subhead": "Calçados",
+      "callToActionMode": "none",
+      "blockClass": "por-categoria",
+      "textAlignment": "left"
+    }
+  },
+  "slider-layout#carousel-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "autoplay": {
+        "timeout": 5000
+      },
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "blockClass": "carousel-home-2"
+    }
+  },
+  "rich-text#float-contacts": {
+    "props": {
+      "blockClass": "float-contacts",
+      "text": "[Whatsapp](https://www.google.com) [Lojas](https://www.google.com) [Contato](https://www.google.com)"
+    }
+  },
+  "list-context.image-list#main-carousel-category": {
+    "children": [
+      "slider-layout#main-carousel"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://redfeather.vtexassets.com/arquivos/main-banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "list-context.image-list#main-carousel": {
+    "children": [
+      "slider-layout#main-carousel"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "https://redfeather.vtexassets.com/arquivos/main-banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#main-carousel": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel-home"
+    }
+  },
+  "rich-text#collection-title-1": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": "### Novidades"
+    }
+  },
+  "rich-text#collection-title-2": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": "### Camisetas"
+    }
+  },
+  "rich-text#collection-title-3": {
+    "props": {
+      "blockClass": "collection-title",
+      "text": "### Nome da Coleção \n Lorem ipsum sit dollor met conducteur adiscipling"
+    }
+  },
+  "flex-layout.row#shelf-1": {
+    "children": [
+      "list-context.product-list#demo-1"
+    ]
+  },
+  "list-context.product-list#demo-1": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#main-showcase"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "flex-layout.row#shelf-2": {
+    "children": [
+      "list-context.product-list#demo-2"
+    ]
+  },
+  "list-context.product-list#demo-2": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#main-showcase"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "flex-layout.row#shelf-3": {
+    "children": [
+      "list-context.product-list#demo-3"
+    ]
+  },
+  "list-context.product-list#demo-3": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#main-showcase"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#main-showcase": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never"
+    }
+  },
+  "slider-layout#main-relatedProducts": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never"
+    }
+  },
+  "iframe#instagram": {
+    "props": {
+      "src": "https://www.wedigi.com.br/we.digi.tech/api/instagram/wdt-instagram.php?account=uvlineoficial",
+      "width": "1920",
+      "height": "400"
+    }
+  },
+  "rich-text#title-instagram": {
+    "props": {
+      "text": "@uvlineoficial",
+      "blockClass": [
+        "title-instagram"
+      ]
+    }
+  },
+  "rich-text#title-blog": {
+    "props": {
+      "text": "Blog",
+      "blockClass": [
+        "title-instagram"
+      ]
+    }
+  }
+}

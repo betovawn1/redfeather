@@ -1,0 +1,8 @@
+@import "variables";
+
+.stackContainer--product {
+    @media (max-width: $maxMobile) {
+        margin: 0 -15px;
+        width: calc(100% + 30px);
+    }
+}

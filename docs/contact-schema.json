@@ -1,0 +1,31 @@
+{
+    "title": "contact",
+    "type": "object",
+    "properties": {
+        "nome": {
+            "type": "string",
+            "title": "Nome"
+        },
+        "email": {
+            "type": "string",
+            "format": "email",
+            "title": "Email"
+        },
+        "assunto": {
+            "type": "string",
+            "title": "Assunto"
+        },
+        "mensagem": {
+            "type": "string",
+            "title": "Mensagem"
+        }
+    },
+    "required": [
+        "nome",
+        "email",
+        "mensagem"
+    ],
+    "v-security": {
+        "publicJsonSchema": true
+    }
+}

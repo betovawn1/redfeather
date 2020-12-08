@@ -1,0 +1,231 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "rich-text#title-newsletter": {
+    "props": {
+      "blockClass": "title-newsletter",
+      "text": "### Cadastre-se \n Receba nossas promoções diretamente no seu e-mail"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "http://www.facebook.com/redfeatherbrasil", "name": "Facebook" },
+        { "url": "http://www.instagram.com/redfeatherbrasil", "name": "Instagram"}
+      ]
+    }
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#servicos",
+      "vtex.menu@2.x:menu#sac",
+      "vtex.menu@2.x:menu#socials"
+    ],
+    "props": {
+      "blockClass": "menu-footer",
+      "paddingTop": 6,
+      "paddingBottom": 3,
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "rich-text#footer-2-row"
+    ],
+    "props": {
+      "blockClass": "payment-methods"
+    }
+  },
+  "rich-text#footer-2-row": {
+    "props": {
+      "text": "![](https://uvline.vtexassets.com/arquivos/payment-methods.png)",
+      "blockClass": "seals"
+    }
+  },
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "rich-text#footer",
+      "rich-text#dev-seals"
+    ],
+    "props": {
+      "blockClass": "credits",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "COPYRIGHT© 2020 Red Feather - TODOS OS DIREITOS RESERVADOS RED FEATHER INDUSTRIA E COMERCIO DE ROUPAS LTDA-ME., com sede na Rua Engenheiro Aubertin, 170, Loja 1 - Lapa de Baixo - SÃO PAULO/SP, inscrita no CNPJ/MF sob o nº 14.342.798./0001-64.",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#dev-seals": {
+    "props": {
+      "text": "![](https://uvline.vtexassets.com/arquivos/vtex-logo.png) ![](https://uvline.vtexassets.com/arquivos/wedigi-logo.png)",
+      "blockClass": "dev-seals"
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "vtex.menu@2.x:menu#sac": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer"
+    },
+    "children": [
+      "rich-text#title-footer-menu-sac",
+      "rich-text#info-sac-footer"
+    ]
+  },
+  "rich-text#title-footer-menu-sac": {
+    "props": {
+      "text": "Contato",
+      "blockClass": "menu-footer"
+    }
+  },
+  "rich-text#info-sac-footer": {
+    "props": {
+      "text": "**(11) 3926-1098** [sac@redfeather.com.br](mailto:sac@redfeather.com.br) Rua Engenheiro Aubertin, 170, Loja 1 - LAPA DE BAIXO - SÃO PAULO/SP",
+      "blockClass": "info-sac-footer"
+    }
+  },
+  "vtex.menu@2.x:menu#servicos": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        // {
+        //   "id": "menu-item-fale-conosco",
+        //   "type": "custom",
+        //   "iconId": null,
+        //   "highlight": false,
+        //   "itemProps": {
+        //     "type": "internal",
+        //     "href": "#",
+        //     "noFollow": false,
+        //     "tagTitle": "Fale Conosco",
+        //     "text": "Fale Conosco"
+        //   }
+        // }, 
+        {
+          "id": "menu-item-nos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/nos",
+            "noFollow": false,
+            "tagTitle": "Nós",
+            "text": "Nós"
+          }
+        }, 
+        {
+          "id": "menu-item-entrega",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/entrega",
+            "noFollow": false,
+            "tagTitle": "Entrega",
+            "text": "Entrega"
+          }
+        }, 
+        {
+          "id": "menu-item-politica-de-privacidade",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-privacidade",
+            "noFollow": false,
+            "tagTitle": "Política de Privacidade",
+            "text": "Política de Privacidade"
+          }
+        }, 
+        {
+          "id": "menu-item-politica-de-troca-e-devolucao",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-troca-e-devolucao",
+            "noFollow": false,
+            "tagTitle": "Política de Troca e Devolução",
+            "text": "Política de Troca e Devolução"
+          }
+        }, 
+        {
+          "id": "menu-item-formas-de-pagamento",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/formas-de-pagamento",
+            "noFollow": false,
+            "tagTitle": "Formas de Pagamento",
+            "text": "Formas de Pagamento"
+          }
+        }, 
+        {
+          "id": "menu-item-minha-conta",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account",
+            "noFollow": false,
+            "tagTitle": "Minha Conta",
+            "text": "Minha Conta"
+          }
+        }
+      ]
+    },
+    "children": [
+      "rich-text#title-footer-suporte"
+    ]
+  },
+  "rich-text#title-footer-suporte": {
+    "props": {
+      "text": "Suporte",
+      "blockClass": "menu-footer"
+    }
+  },
+  "vtex.menu@2.x:menu#socials": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer"
+    },
+    "children": [
+      "rich-text#title-footer-socials",
+      "social-networks"
+    ]
+  },
+  "rich-text#title-footer-socials": {
+    "props": {
+      "text": "Redes Sociais",
+      "blockClass": "menu-footer"
+    }
+  }
+}

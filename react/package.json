@@ -1,0 +1,10 @@
+{
+  "name": "redfeather",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sergio Luiz",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}

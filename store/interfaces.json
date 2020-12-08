@@ -1,0 +1,8 @@
+{
+    "custom-filter": {
+        "component": "Filter"
+    },
+    "measurement-chart": {
+        "component": "MeasurementChart"
+    }
+}

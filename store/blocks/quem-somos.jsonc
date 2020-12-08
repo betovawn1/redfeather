@@ -1,0 +1,26 @@
+{
+    "store.custom#quem-somos": {
+        "blocks": [
+            "flex-layout.row#quem-somos-1",
+            "iframe#quem-somos"
+        ]
+    },
+    "flex-layout.row#quem-somos-1": {
+        "children": [
+            "rich-text#quem-somos-content"
+        ]
+    },
+    "rich-text#quem-somos-content": {
+        "props": {
+            "blockClass": "institucional-content-1",
+            "text": "# Nós\n\n**De onde Viemos?**\nA marca pertence a um jovem publicitário e administrador que, após trabalhar 7 anos no mercado varejista em grandes lojas  decidiu que queria fazer uma marca com a sua cara.\n\n**Quem Somos?**\nMuito prazer, somos a Red e temos muito a dizer. Falamos sobre música, cinema, atitude, trends. Falamos sobre arte, design, conceito e irreverência. Mas não falamos com palavras e sim com estampas, criações que expressam nossos sentimentos e convicções. A cada dois meses lançamos uma nova coleção com uma seleção de ideias e viagens exclusivas da marca, que por acaso vem estampadas em camisetas de altíssima qualidade. Não acreditamos em seguir tendências, acreditamos no estilo próprio e na possibilidade de fazer algo novo. Curtiu? Então seja bem vindo.\n\n**Para Onde Vamos?**\nQueremos ser uma marca internacionalmente reconhecida e apreciada. Ambição ou ilusão? Só o tempo dirá.\n\n**Nossa Missão:**\nInovar e surpreender através de nossas roupas; oferecer um produto de qualidade e alto conforto com preço justo; tratar nossos clientes com atenção, respeito e dedicação; Fazer da Red Feather uma empresa responsável ambiental e socialmente; Representar o Brasil positivamente, como uma marca 100% brasileira.\n\n**Nossa Visão:**\nSer conhecida e apreciada em âmbito internacional; Nos tornar referência em moda e atitude globalmente; Sermos percebidos como exemplo de empresa responsável sócio e ecologicamente; Sermos motivo de orgulho brasileiro."
+        }
+    },
+    "iframe#quem-somos": {
+        "props": {
+            "src": "//www.youtube.com/embed/8C5P15T1VqI",
+            "width": "4096px",
+            "height": "600px"
+        }
+    }
+}

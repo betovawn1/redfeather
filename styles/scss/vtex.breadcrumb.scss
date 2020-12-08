@@ -1,0 +1,32 @@
+
+@import "variables";
+
+.container {
+    padding: 15px 30px;
+    text-align: right;
+    @media (max-width: $maxMobile) {
+        padding: 15px;
+    }
+    .link, .term {
+        color: $grey;
+        font-size: $size0;
+        &.homeLink {
+            &::before {
+                content: "";
+                width: 12px;
+                height: 12px;
+                display: block;
+                background-size: 12px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url($greyHouseIcon);
+            }
+            .homeIcon {
+                display: none;
+            }
+        }
+    }
+    .caretIcon {
+        color: $lightGrey;
+    }
+}

@@ -1,0 +1,105 @@
+@import "variables";
+
+.listContainer {
+    position: relative;
+    justify-content: flex-start;
+
+    &::before {
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 1px;
+        margin: 0 -30px;
+        position: absolute;
+        width: calc(100% + 60px);
+        background-color: $lightGrey;
+
+        @media (max-width: $maxMobile) {
+            margin: 0;
+            width: 100%;
+        }
+    }
+    .listItem {
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        position: relative;
+        :global(.vtex-button) {
+            border: 0;
+        }
+
+        &.listItemActive {
+            border-bottom: 1px solid $dark;
+            :global(.vtex-button) {
+                color: $dark;
+                background-color: $light;
+            }
+        }
+    }
+}
+.listContainer--submenu-atividade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    :global(.vtex-button__label) {
+        font-size: 14px;
+    }
+    &::before {
+        display: none !important;
+    }
+    .listItem {
+        :global(.vtex-button) {
+            color: $grey;
+            background-color: transparent !important;
+        }
+        &.listItemActive {
+            :global(.vtex-button) {
+                color: $dark;
+            }
+        }
+    }
+    @media (max-width: $maxMobile) {
+        .listItem {
+            :global(.vtex-button) {
+                max-height: 25px;
+                min-height: 25px;
+                :global(.vtex-button__label) {
+                    font-size: 14px;
+                    padding: 0 10px !important;
+                }
+            }
+        }
+    }
+}
+.container--submenu-atividade {
+    width: 100%;
+}
+.contentItem--measures,
+.contentItem--composition {
+    color: $grey;
+    padding: 15px;
+    font-size: $size2;
+}
+@media (max-width: $maxMobile) {
+    .container--product-description-pdp {
+        .listItem {
+            :global(.vtex-button) {
+                color: $grey;
+                max-height: 40px;
+                min-height: 40px;
+                background-color: transparent;
+                :global(.vtex-button__label) {
+                    font-size: 13px;
+                    padding: 0 12px !important;
+                }
+            }
+            &.listItemActive {
+                :global(.vtex-button) {
+                    color: $dark;
+                }
+            }
+        }
+    }
+}
