@@ -13,8 +13,7 @@
 	max-width: unset !important;
 }
 
-:global(.vtex-rich-text-0-x-container--header-sup-whatsapp){
-
+:global(.vtex-rich-text-0-x-container--header-sup-whatsapp) {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -39,10 +38,9 @@
 		background-image: url($whatsappIcon);
 	}
 
-	:global(.vtex-rich-text-0-x-wrapper--header-sup-whatsapp){
-		
+	:global(.vtex-rich-text-0-x-wrapper--header-sup-whatsapp) {
 		:global(.vtex-rich-text-0-x-paragraph--header-sup-whatsapp) {
-			:global(.vtex-rich-text-0-x-link--header-sup-whatsapp){
+			:global(.vtex-rich-text-0-x-link--header-sup-whatsapp) {
 				text-decoration: none;
 				color: $dark;
 				font-size: 16px;
@@ -117,18 +115,18 @@
 :global(.vtex-flex-layout-0-x-flexCol--utils-desktop) {
 	display: flex;
 	justify-content: center;
-	
-	:global(.vtex-flex-layout-0-x-flexColChild){
+
+	:global(.vtex-flex-layout-0-x-flexColChild) {
 		:global(.vtex-login-2-x-container) {
 			:global(.vtex-button__label) {
 				:global(.vtex-login-2-x-label) {
 					font-weight: $regular;
-				} 
+				}
 			}
 		}
 
 		:global(.vtex-minicart-2-x-minicartWrapperContainer) {
-			:global(.vtex-button__label){
+			:global(.vtex-button__label) {
 				font-weight: $regular;
 			}
 		}
@@ -187,7 +185,7 @@
 }
 
 .newsletter {
-	padding: 0 30px 55px;
+	padding: 0 80px 55px;
 	.container {
 		margin: 0 auto;
 		padding: 0;
@@ -237,11 +235,11 @@
 			}
 			.inputGroup {
 				width: 100%;
+				margin: 0;
 				display: flex;
 				position: relative;
-				margin: 0 auto 0;
 				padding-top: 0;
-				justify-content: center;
+				justify-content: flex-start;
 				:global(.vtex-input) {
 					max-width: 400px;
 					:global(.vtex-input-prefix__group) {
@@ -252,17 +250,18 @@
 						border-right: 0;
 						border-radius: 0;
 						border-width: 1px;
-						border-color: $dark;
+						border-color: $light;
 						:global(.vtex-styleguide-9-x-input) {
-							color: $grey;
+							color: $light;
 							padding: 0;
 							font-size: 14px;
 							padding-left: 10px;
+							background-color: transparent;
 							@media (max-width: $maxMobile) {
 								border-bottom: 1px solid $dark;
 							}
 							&::placeholder {
-								color: $grey;
+								color: $light;
 								font-size: 14px;
 							}
 						}
@@ -274,17 +273,16 @@
 						border: 0;
 						margin: 0;
 						border-radius: 0;
-						color: $dark;
+						color: $light;
 						padding-right: 10px;
 						text-transform: uppercase;
-						border-bottom: 1px solid $dark;
+						border-bottom: 1px solid $light;
 						background-color: transparent;
 						:global(.vtex-button__label) {
 							padding-left: 0;
 							padding-right: 0;
 							font-size: $size2;
 
-							
 							&::after {
 								width: 17px;
 								height: 12px;
@@ -405,7 +403,7 @@
 		// }
 	}
 }
-.skuSelectorItem{
+.skuSelectorItem {
 	.skuSelectorInternalBox {
 		border-color: $dark;
 		background-color: $light;
@@ -561,7 +559,8 @@
 		.specificationsTableRow {
 			display: flex;
 			flex-direction: column;
-			.specificationItemProperty, .specificationItemSpecifications {
+			.specificationItemProperty,
+			.specificationItemSpecifications {
 				width: 100% !important;
 			}
 			.specificationItemProperty {
@@ -703,6 +702,56 @@
 			&:last-child {
 				display: block;
 			}
+		}
+	}
+}
+
+.infoCardContainer--card-home {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	.infoCardTextContainer {
+		top: 135%;
+		left: 50%;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		background-color: rgba(0, 0, 0, 0.5);
+
+		transition: top 0.3s linear;
+
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding: 0 30px;
+		.infoCardHeadline,
+		.infoCardSubhead {
+			color: $light;
+			text-align: left;
+		}
+		.infoCardHeadline {
+			font-size: $size5;
+		}
+	}
+	&:hover {
+		.infoCardTextContainer {
+			top: 50%;
+			justify-content: center;
+		}
+	}
+	.infoCardImageContainer {
+		width: 100%;
+		height: 100%;
+		line-height: 0;
+		.infoCardImage {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
 		}
 	}
 }

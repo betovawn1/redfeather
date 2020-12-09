@@ -303,15 +303,16 @@
     }
 }
 .container--title-newsletter {
+    padding: 0 80px;
     margin-top: 50px;
     .wrapper {
         width: 100%;
         .heading-level-3 {
-            color: $dark;
+            color: $light;
             margin: 0 0 20px;
             display: block;
-            font-size: $size7;
-            text-align: center;
+            font-size: $size6;
+            text-align: left;
             margin-left: auto;
             margin-right: auto;
             text-transform: uppercase;
@@ -320,10 +321,10 @@
             }
         }
         .paragraph {
-            color: $dark;
+            color: $light;
             display: block;
             font-size: $size4;
-            text-align: center;
+            text-align: left;
             margin-left: auto;
             margin-right: auto;
             font-weight: $extraLight;
@@ -600,10 +601,10 @@
     .wrapper {
         .paragraph {
             margin: 0;
-            padding: 7px 0;
+            padding: 12px 0;
             .link {
                 color: $light;
-                font-size: $size1;
+                font-size: $size2;
                 text-decoration: none;
 
                 display: flex;

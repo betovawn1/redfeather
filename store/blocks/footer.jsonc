@@ -12,12 +12,6 @@
       "flex-layout.row#footer-3-desktop"
     ]
   },
-  "rich-text#title-newsletter": {
-    "props": {
-      "blockClass": "title-newsletter",
-      "text": "### Cadastre-se \n Receba nossas promoções diretamente no seu e-mail"
-    }
-  },
   "social-networks": {
     "props": {
       "socialNetworks": [

@@ -3,3 +3,9 @@
   .stackContainer--product {
     margin: 0 -15px;
     width: calc(100% + 30px); } }
+
+.stackContainer--prodsum .stackItem:last-child {
+  top: unset;
+  width: 100%;
+  bottom: 0;
+  position: absolute; }

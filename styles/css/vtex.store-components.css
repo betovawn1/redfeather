@@ -131,7 +131,7 @@
         border-color: #dedede; }
 
 .newsletter {
-  padding: 0 30px 55px; }
+  padding: 0 80px 55px; }
   .newsletter .container {
     margin: 0 auto;
     padding: 0; }
@@ -174,11 +174,11 @@
           right: -50px; }
       .newsletter .container .form .inputGroup {
         width: 100%;
+        margin: 0;
         display: flex;
         position: relative;
-        margin: 0 auto 0;
         padding-top: 0;
-        justify-content: center; }
+        justify-content: flex-start; }
         .newsletter .container .form .inputGroup :global(.vtex-input) {
           max-width: 400px; }
           .newsletter .container .form .inputGroup :global(.vtex-input) :global(.vtex-input-prefix__group) {
@@ -189,17 +189,18 @@
             border-right: 0;
             border-radius: 0;
             border-width: 1px;
-            border-color: #000; }
+            border-color: #fff; }
             .newsletter .container .form .inputGroup :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
-              color: #707070;
+              color: #fff;
               padding: 0;
               font-size: 14px;
-              padding-left: 10px; }
+              padding-left: 10px;
+              background-color: transparent; }
               @media (max-width: 767px) {
                 .newsletter .container .form .inputGroup :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
                   border-bottom: 1px solid #000; } }
               .newsletter .container .form .inputGroup :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
-                color: #707070;
+                color: #fff;
                 font-size: 14px; }
         .newsletter .container .form .inputGroup .buttonContainer {
           padding: 0; }
@@ -207,10 +208,10 @@
             border: 0;
             margin: 0;
             border-radius: 0;
-            color: #000;
+            color: #fff;
             padding-right: 10px;
             text-transform: uppercase;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid #fff;
             background-color: transparent; }
             .newsletter .container .form .inputGroup .buttonContainer :global(.vtex-button) :global(.vtex-button__label) {
               padding-left: 0;
@@ -447,7 +448,8 @@
   .specificationsTableBody .specificationsTableRow {
     display: flex;
     flex-direction: column; }
-    .specificationsTableBody .specificationsTableRow .specificationItemProperty, .specificationsTableBody .specificationsTableRow .specificationItemSpecifications {
+    .specificationsTableBody .specificationsTableRow .specificationItemProperty,
+    .specificationsTableBody .specificationsTableRow .specificationItemSpecifications {
       width: 100% !important; }
     .specificationsTableBody .specificationsTableRow .specificationItemProperty {
       font-weight: 600; } }
@@ -564,3 +566,42 @@
   display: none; }
   .carouselContainer--tabela-de-medida .productImagesGallerySwiperContainer .productImagesGallerySlide:last-child {
     display: block; }
+
+.infoCardContainer--card-home {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative; }
+  .infoCardContainer--card-home .infoCardTextContainer {
+    top: 135%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: top 0.3s linear;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 30px; }
+    .infoCardContainer--card-home .infoCardTextContainer .infoCardHeadline,
+    .infoCardContainer--card-home .infoCardTextContainer .infoCardSubhead {
+      color: #fff;
+      text-align: left; }
+    .infoCardContainer--card-home .infoCardTextContainer .infoCardHeadline {
+      font-size: 24px; }
+  .infoCardContainer--card-home:hover .infoCardTextContainer {
+    top: 50%;
+    justify-content: center; }
+  .infoCardContainer--card-home .infoCardImageContainer {
+    width: 100%;
+    height: 100%;
+    line-height: 0; }
+    .infoCardContainer--card-home .infoCardImageContainer .infoCardImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }

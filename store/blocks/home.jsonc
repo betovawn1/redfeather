@@ -3,175 +3,155 @@
     "blocks": [
       "list-context.image-list#main-carousel",
       "flex-layout.row#header-sup",
-      "slider-layout#por-categoria",
       "rich-text#collection-title-1",
       "flex-layout.row#shelf-1",
-      "list-context.image-list#carousel-2",
+      "flex-layout.row#video-home-1",
+      "flex-layout.row#banners-home-1",
       "rich-text#collection-title-2",
       "flex-layout.row#shelf-2",
-      "rich-text#title-newsletter",
-      "newsletter"
+      "flex-layout.row#cards-home-1",
+      "flex-layout.row#newsletter"
     ]
   },
-  "list-context.image-list#carousel-2": {
-    "children": [
-      "slider-layout#carousel-2"
-    ],
+  "flex-layout.row#newsletter": {
     "props": {
-      "images": [
-        {
-          "image": "https://redfeather.vtexassets.com/arquivos/carousel-1.jpg",
-          "mobileImage": "https://redfeather.vtexassets.com/arquivos/carousel-1.jpg"
-        },
-        {
-          "image": "https://redfeather.vtexassets.com/arquivos/carousel-2.jpg",
-          "mobileImage": "https://redfeather.vtexassets.com/arquivos/carousel-2.jpg"
-        },
-        {
-          "image": "https://redfeather.vtexassets.com/arquivos/carousel-3.jpg",
-          "mobileImage": "https://redfeather.vtexassets.com/arquivos/carousel-3.jpg"
-        },
-        {
-          "image": "https://redfeather.vtexassets.com/arquivos/carousel-4.jpg",
-          "mobileImage": "https://redfeather.vtexassets.com/arquivos/carousel-4.jpg"
-        }
-      ]
+      "blockClass": "newsletter"
+    },
+    "children": ["flex-layout.col#newsletter"]
+  },
+  "flex-layout.col#newsletter": {
+    "children": ["rich-text#title-newsletter", "newsletter"]
+  },
+  "rich-text#title-newsletter": {
+    "props": {
+      "blockClass": "title-newsletter",
+      "text": "### Cadastre-se \n Receba nossas promoções diretamente no seu e-mail"
     }
   },
-  "slider-layout#por-categoria": {
+  "flex-layout.row#cards-home-1": {
     "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "por-categoria-slider",
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never"
+      "blockClass": "cards-home-1"
     },
     "children": [
-      "link#por-categoria-1",
-      "link#por-categoria-2",
-      "link#por-categoria-3",
-      "link#por-categoria-4"
+      "info-card#card-home-1",
+      "info-card#card-home-2",
+      "info-card#card-home-3",
+      "info-card#card-home-4",
+      "info-card#card-home-5",
+      "info-card#card-home-6"
     ]
   },
-  "link#por-categoria-1": {
+  "info-card#card-home-1": {
     "props": {
-      "href": "#",
-      "blockClass": "por-categoria"
-    },
-    "children": ["info-card#por-categoria-1"]
-  },
-  "link#por-categoria-2": {
-    "props": {
-      "href": "#",
-      "blockClass": "por-categoria"
-    },
-    "children": ["info-card#por-categoria-2"]
-  },
-  "link#por-categoria-3": {
-    "props": {
-      "href": "#",
-      "blockClass": "por-categoria"
-    },
-    "children": ["info-card#por-categoria-3"]
-  },
-  "link#por-categoria-4": {
-    "props": {
-      "href": "#",
-      "blockClass": "por-categoria"
-    },
-    "children": ["info-card#por-categoria-4"]
-  },
-  "link#por-categoria-5": {
-    "props": {
-      "href": "#",
-      "blockClass": "por-categoria"
-    },
-    "children": ["info-card#por-categoria-5"]
-  },
-  "info-card#por-categoria-1": {
-    "props": {
-      "id": "info-card-garantia",
+      "id": "card-home",
       "isFullModeStyle": false,
-      "textPosition": "left",
-      "textMode": "rich-text",
-      "headline": "![](https://redfeather.vtexassets.com/arquivos/credit-card.png?1)",
-      "subhead": "**primeira troca grátis**\nconsulte o regulamento",
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-1.png",
+      "headline": "CAMISAS",
+      "subhead": "Sabendo que as camisas são elementos imprescindíveis do vestuário masculino, a Red Feather buscou uma modelagem slim com corte Italiano anatômico, desenhado justamente para ter um caimento perfeito no corpo. Venha conferir nossas coleções.",
       "callToActionMode": "none",
-      "blockClass": "por-categoria",
-      "textAlignment": "left"
+      "blockClass": "card-home",
+      "textAlignment": "center"
     }
   },
-  "info-card#por-categoria-2": {
+  "info-card#card-home-2": {
     "props": {
-      "id": "info-card-silencioso",
+      "id": "card-home",
       "isFullModeStyle": false,
-      "textPosition": "left",
-      "textMode": "rich-text",
-      "headline": "![](https://redfeather.vtexassets.com/arquivos/secure.png?1)",
-      "subhead": "**parcele suas compras**\nem até 3 x sem juros",
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-2.png",
+      "headline": "CAMISETAS",
+      "subhead": "Se você está buscando camisetas confortáveis e estilosas, encontrou o seu site favorito, a Red Feather busca por um design exclusivo, com a qualidade dos tecidos. Venha conferir as nossas coleções.",
       "callToActionMode": "none",
-      "blockClass": "por-categoria",
-      "textAlignment": "left"
+      "blockClass": "card-home",
+      "textAlignment": "center"
     }
   },
-  "info-card#por-categoria-3": {
+  "info-card#card-home-3": {
     "props": {
-      "id": "info-card-consumo",
+      "id": "card-home",
       "isFullModeStyle": false,
-      "textPosition": "left",
-      "textMode": "rich-text",
-      "headline": "![](https://redfeather.vtexassets.com/arquivos/algodao.png?1)",
-      "subhead": "**compra segura**",
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-3.png",
+      "headline": "SHORTS",
+      "subhead": "Quem faz seu estilo é você, nós só trazemos as tendências. Os Shorts Red Feather, vem com diversas cores, tamanhos e modelos. Mas, como todas as nossas peças, eles são diferenciados, por seus estilos, estampas e corte. Venha conferir.",
       "callToActionMode": "none",
-      "blockClass": "por-categoria",
-      "textAlignment": "left"
+      "blockClass": "card-home",
+      "textAlignment": "center"
     }
   },
-  "info-card#por-categoria-4": {
+  "info-card#card-home-4": {
     "props": {
-      "id": "info-card-instalacao",
+      "id": "card-home",
       "isFullModeStyle": false,
-      "textPosition": "left",
-      "textMode": "rich-text",
-      "headline": "![](https://redfeather.vtexassets.com/arquivos/truck.png?1)",
-      "subhead": "**Matérias primas nobres**",
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-4.png",
+      "headline": "BERMUDAS",
+      "subhead": "Encontre Bermudas Masculinas de diversos modelos, com estilo, conforto e toda a versatilidade da marca Red Feather. Peças para o dia a dia, o básico que você procura com o toque de estilo da nossa marca.",
       "callToActionMode": "none",
-      "blockClass": "por-categoria",
-      "textAlignment": "left"
+      "blockClass": "card-home",
+      "textAlignment": "center"
     }
   },
-  "info-card#por-categoria-5": {
+  "info-card#card-home-5": {
     "props": {
-      "id": "info-card-instalacao",
+      "id": "card-home",
       "isFullModeStyle": false,
-      "textPosition": "left",
-      "textMode": "rich-text",
-      "headline": "![](https://origens.vtexassets.com/arquivos/categoria-5.png?1)",
-      "subhead": "Calçados",
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-5.png",
+      "headline": "CALÇAS",
+      "subhead": "Calças fazem parte do cotidiano, então a Red Feather decidiu que o seu dia a dia seria bem mais estiloso e confortável, com leveza e elegância. Todas as calças da nossa marca têm o nosso estilo, os detalhes foram cuidadosamente pensados, um a um, e o resultado final você vai perceber assim que vestir, espero que curta. Venha conferir.",
       "callToActionMode": "none",
-      "blockClass": "por-categoria",
-      "textAlignment": "left"
+      "blockClass": "card-home",
+      "textAlignment": "center"
     }
   },
-  "slider-layout#carousel-2": {
+  "info-card#card-home-6": {
     "props": {
-      "itemsPerPage": {
-        "desktop": 3,
-        "tablet": 2,
-        "phone": 1
-      },
-      "infinite": true,
-      "autoplay": {
-        "timeout": 5000
-      },
-      "showPaginationDots": "never",
-      "showNavigationArrows": "always",
-      "blockClass": "carousel-home-2"
+      "id": "card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://redfeather.vtexassets.com/arquivos/card-home-6.png",
+      "headline": "INFANTIL",
+      "subhead": "Agora nossos meninos vão andar no estilo igual papai. Nova linha pais e filhos já disponível.",
+      "callToActionMode": "none",
+      "blockClass": "card-home",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#video-home-1": {
+    "props": {
+      "blockClass": "video-home-1"
+    },
+    "children": [
+      "image#video-home-1"
+    ]
+  },
+  "image#video-home-1": {
+    "props": {
+      "src": "https://redfeather.vtexassets.com/arquivos/video-home.png",
+      "title": "Redfeather Campanha 2021",
+      "link": "https://www.youtube.com.br/"
+    }
+  },
+  "flex-layout.row#banners-home-1": {
+    "props": {
+      "blockClass": "banners-home-1"
+    },
+    "children": ["image#banner-home-1", "image#banner-home-2"]
+  },
+  "image#banner-home-1": {
+    "props": {
+      "src": "https://redfeather.vtexassets.com/arquivos/banner-home-1.png",
+      "title": "Camisa Linho Gola Padre",
+      "link": "/Camisas"
+    }
+  },
+  "image#banner-home-2": {
+    "props": {
+      "src": "https://redfeather.vtexassets.com/arquivos/banner-home-2.png",
+      "title": "Conjuntos de Moletom",
+      "link": "/Moletom"
     }
   },
   "rich-text#float-contacts": {
@@ -301,8 +281,8 @@
   "slider-layout#main-showcase": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
+        "desktop": 3,
+        "tablet": 2,
         "phone": 1
       },
       "infinite": true,

@@ -4,21 +4,60 @@
     border-radius: 0;
     max-width: 95% !important;
     transition: box-shadow 0.3s linear;
-
-    @media (max-width: $maxMobile) {
-    }
-    .image {
-        object-fit: cover !important;
-        @media (max-width: $maxMobile) {
-            max-width: 100% !important;
-            max-height: 300px !important;
-            object-fit: contain !important;
-        }
-    }
 }
 .element {
     position: relative;
     padding: 0;
+
+    .imageContainer {
+        width: 100%;
+        height: 100%;
+        .image {
+            height: 100% !important;
+            max-width: unset !important;
+            object-fit: cover !important;
+            object-position: center;
+        }
+    }
+
+    .SKUSelectorContainer {
+        opacity: 0;
+        transition: opacity 0.3s linear 0.2s;
+        :global(.vtex-store-components-3-x-skuSelectorContainer) {
+            :global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+                margin: 0;
+                :global(.vtex-store-components-3-x-skuSelectorNameContainer) {
+                    margin: 0;
+                    :global(.vtex-store-components-3-x-skuSelectorTextContainer) {
+                        display: none;
+                    }
+                    :global(.vtex-store-components-3-x-skuSelectorOptionsList) {
+                        justify-content: center;
+                        .skuSelectorItem {
+                            height: auto;
+                            padding: 0;
+                            .skuSelectorInternalBox {
+                                padding: 5px 10px;
+                                .valueWrapper {
+                                    padding: 0;
+                                    font-size: 14px;
+                                }
+                            }
+                            &.skuSelectorItem--selected {
+                                .skuSelectorInternalBox {
+                                    border-color: $light !important;
+                                    background-color: $dark !important;
+                                    .valueWrapper {
+                                        background-color: $dark !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     :global(.vtex-product-price-1-x-savings) {
         top: 0;
@@ -34,42 +73,26 @@
         }
     }
 
-    :global(.vtex-stack-layout-0-x-stackContainer) {
-        :global(.vtex-stack-layout-0-x-stackItem) {
-            &:last-child {
-                position: static;
-            }
-        }
-    }
-
     :global(.vtex-button) {
         border: 0;
         height: 40px;
-        margin: 15px 0 0;
+        margin: 5px 0 0;
         padding: 0;
-        width: calc(100% - 30px);
+        width: 100%;
+        opacity: 0;
         border-radius: 0;
         overflow: hidden;
         min-height: unset;
+        transition: opacity 0.3s linear;
         :global(.vtex-button__label) {
             padding: 0;
             border-radius: 0;
             :global(.vtex-add-to-cart-button-0-x-buttonText) {
-                font-size: 0;
+                font-size: $size1;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 8px 13px;
-                &::before {
-                    content: "comprar";
-                    font-size: $size1;
-                }
-                &::after {
-                    content: "\f10d";
-                    font-size: $size4;
-                    font-family: $flaticon;
-                    margin-left: 10px;
-                }
             }
         }
     }
@@ -114,6 +137,13 @@
             font-size: 11px;
         }
     }
+
+    &:hover {
+        .SKUSelectorContainer,
+        :global(.vtex-button) {
+            opacity: 1;
+        }
+    }
 }
 
 .productPriceClass {
@@ -128,7 +158,7 @@
             display: none;
         }
     }
-    .sellingPriceContainer  {
+    .sellingPriceContainer {
         .sellingPriceLabel {
             font-size: 0;
             &::before {

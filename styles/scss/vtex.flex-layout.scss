@@ -33,7 +33,7 @@
         top: 50%;
         left: 50%;
         position: absolute;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 }
 .flexRow--main-header-mobile {
@@ -554,5 +554,64 @@
                 margin-right: 5px;
             }
         }
+    }
+}
+.flexRow--cards-home-1 {
+    overflow: hidden;
+    .flexRowContent {
+        width: calc(100% + 30px);
+        padding: 0 30px;
+        position: relative;
+        margin-top: -30px;
+        margin-right: -30px;
+
+        flex-wrap: wrap;
+        .stretchChildrenWidth {
+            width: calc(33.333333333% - 30px) !important;
+            margin-top: 30px;
+            margin-right: 30px;
+        }
+    }
+}
+
+.flexRow--newsletter {
+    padding: 80px 0;
+    margin-top: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://redfeather.vtexassets.com/arquivos/newsletter-bg.png");
+}
+.flexRow--video-home-1 {
+    margin-bottom: 30px;
+}
+.flexRow--video-home-1, .flexRow--banners-home-1 {
+    padding: 0 30px;
+    :global(.vtex-store-components-3-x-imageElement) {
+        width: 100%;
+        line-height: 0;
+    }
+}
+.flexRow--banners-home-1 {
+    .flexRowContent {
+        .stretchChildrenWidth {
+            &:first-child {
+                @media (min-width: $maxMobile) {
+                    margin-right: 3%;
+                }
+            }
+            &:first-child, &:last-child {
+                @media (min-width: $maxMobile) {
+                    width: 48.5% !important   
+                }
+            }
+        }
+    }
+}
+.flexCol--product-summary-button {
+    height: auto;
+    .flexColChild--product-summary-button {
+        width: 100%;
+        height: auto !important;
     }
 }

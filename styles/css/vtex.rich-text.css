@@ -262,15 +262,16 @@
         height: 17px; }
 
 .container--title-newsletter {
+  padding: 0 80px;
   margin-top: 50px; }
   .container--title-newsletter .wrapper {
     width: 100%; }
     .container--title-newsletter .wrapper .heading-level-3 {
-      color: #000;
+      color: #fff;
       margin: 0 0 20px;
       display: block;
-      font-size: 40px;
-      text-align: center;
+      font-size: 32px;
+      text-align: left;
       margin-left: auto;
       margin-right: auto;
       text-transform: uppercase; }
@@ -278,10 +279,10 @@
         .container--title-newsletter .wrapper .heading-level-3 {
           font-size: 24px; } }
     .container--title-newsletter .wrapper .paragraph {
-      color: #000;
+      color: #fff;
       display: block;
       font-size: 18px;
-      text-align: center;
+      text-align: left;
       margin-left: auto;
       margin-right: auto;
       font-weight: 300; }
@@ -553,10 +554,10 @@
   justify-content: center; }
   .container--header-sup .wrapper .paragraph {
     margin: 0;
-    padding: 7px 0; }
+    padding: 12px 0; }
     .container--header-sup .wrapper .paragraph .link {
       color: #fff;
-      font-size: 13px;
+      font-size: 14px;
       text-decoration: none;
       display: flex;
       align-items: center;
