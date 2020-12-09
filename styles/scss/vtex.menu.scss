@@ -5,8 +5,23 @@
         padding: 0 20px;
     }
     .menuContainer {
+        display: flex;
+        justify-content: center;
         .menuItem {
-            margin-right: 15px;
+            margin-right: 20px;
+            .styledLinkContent--menu-header-produtos{
+                display: flex;
+                justify-content: center;
+                &::after {
+                    content: "";
+                    width: 7px;
+                    display: block;
+                    background: url($arrowRed);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin-left: 5px;
+                }
+            }
 
             &:last-child {
                 margin-right: 0;
@@ -18,6 +33,7 @@
                     color: $dark;
                     font-size: $size0;
                     text-transform: uppercase;
+                    font-weight: $regular;
                     @media (max-width: $minDesktop) {
                         font-size: $size0;
                         font-weight: $regular;

@@ -2,6 +2,7 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#main-carousel",
+      "flex-layout.row#header-sup",
       "slider-layout#por-categoria",
       "rich-text#collection-title-1",
       "flex-layout.row#shelf-1",
@@ -179,6 +180,20 @@
       "text": "[Whatsapp](https://www.google.com) [Lojas](https://www.google.com) [Contato](https://www.google.com)"
     }
   },
+
+  "flex-layout.row#header-sup": {
+    "props": {
+      "blockClass": "header-sup"
+    },
+    "children": ["rich-text#header-sup"]
+  },
+  "rich-text#header-sup": {
+    "props": {
+      "text": "[**PRIMEIRA TROCA GRÁTIS CONSULTE O REGULAMENTO**](/politica-de-troca-e-devolucao)",
+      "blockClass": "header-sup"
+    }
+  },
+
   "list-context.image-list#main-carousel-category": {
     "children": [
       "slider-layout#main-carousel"

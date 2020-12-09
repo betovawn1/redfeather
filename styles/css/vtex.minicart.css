@@ -17,7 +17,8 @@
   display: none; }
 
 .minicartQuantityBadge {
-  border-radius: 50%; }
+  border-radius: 50%;
+  background-color: #e72213; }
 
 @media (min-width: 767px) {
   .opened {

@@ -30,6 +30,7 @@
 }
 .minicartQuantityBadge {
     border-radius: 50%;
+    background-color: $red;
 }
 .opened {
     @media (min-width: $maxMobile) {

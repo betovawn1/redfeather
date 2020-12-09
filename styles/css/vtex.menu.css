@@ -3,24 +3,39 @@
   .menuContainerNav--top-menu {
     padding: 0 20px; } }
 
-.menuContainerNav--top-menu .menuContainer .menuItem {
-  margin-right: 15px; }
-  .menuContainerNav--top-menu .menuContainer .menuItem:last-child {
-    margin-right: 0; }
-  .menuContainerNav--top-menu .menuContainer .menuItem .styledLinkContainer {
-    margin: 0;
-    padding: 0; }
-    .menuContainerNav--top-menu .menuContainer .menuItem .styledLinkContainer .styledLinkContent {
-      color: #000;
-      font-size: 12px;
-      text-transform: uppercase; }
-      @media (max-width: 1025px) {
-        .menuContainerNav--top-menu .menuContainer .menuItem .styledLinkContainer .styledLinkContent {
-          font-size: 12px;
-          font-weight: 600;
-          margin-bottom: 15px; } }
-  .menuContainerNav--top-menu .menuContainer .menuItem:hover .styledLinkContainer .styledLinkContent {
-    font-weight: 600; }
+.menuContainerNav--top-menu .menuContainer {
+  display: flex;
+  justify-content: center; }
+  .menuContainerNav--top-menu .menuContainer .menuItem {
+    margin-right: 20px; }
+    .menuContainerNav--top-menu .menuContainer .menuItem .styledLinkContent--menu-header-produtos {
+      display: flex;
+      justify-content: center; }
+      .menuContainerNav--top-menu .menuContainer .menuItem .styledLinkContent--menu-header-produtos::after {
+        content: "";
+        width: 7px;
+        display: block;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAWElEQVQYV2N8riLi8P//fwGpu283MKCBZ8rCAYyMjB8YwYz/DOsZGBkSJe++XQBT91xZOIHhP8P8/4wMgYwgQZgATCE6H6wIRSEDA8i0BGST4YqwmQgzAACafizRsPBvHgAAAABJRU5ErkJggg==");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 5px; }
+    .menuContainerNav--top-menu .menuContainer .menuItem:last-child {
+      margin-right: 0; }
+    .menuContainerNav--top-menu .menuContainer .menuItem .styledLinkContainer {
+      margin: 0;
+      padding: 0; }
+      .menuContainerNav--top-menu .menuContainer .menuItem .styledLinkContainer .styledLinkContent {
+        color: #000;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600; }
+        @media (max-width: 1025px) {
+          .menuContainerNav--top-menu .menuContainer .menuItem .styledLinkContainer .styledLinkContent {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px; } }
+    .menuContainerNav--top-menu .menuContainer .menuItem:hover .styledLinkContainer .styledLinkContent {
+      font-weight: 600; }
 
 @media (max-width: 1025px) {
   .submenuContainer--submenu-header {

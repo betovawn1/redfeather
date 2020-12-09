@@ -13,21 +13,8 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#header-sup",
       "flex-layout.row#desktop"
     ]
-  },
-  "flex-layout.row#header-sup": {
-    "props": {
-      "blockClass": "header-sup"
-    },
-    "children": ["rich-text#header-sup"]
-  },
-  "rich-text#header-sup": {
-    "props": {
-      "text": "[(11) 3926-1098](https://api.whatsapp.com/send?phone=551139261098)",
-      "blockClass": "header-sup"
-    }
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -36,9 +23,23 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#menu-desktop",
+      "flex-layout.row#header-sup-whatsapp",
       "flex-layout.col#search-bar-desktop",
       "flex-layout.col#utils-desktop"
     ]
+  },
+  "flex-layout.row#header-sup-whatsapp": {
+    "props": {
+      "blockClass": "header-sup-whatsapp",
+      "width": "15%"
+    },
+    "children": ["rich-text#header-sup-whatsapp"]
+  },
+  "rich-text#header-sup-whatsapp": {
+    "props": {
+      "text": "[(11) 3926-1098](https://api.whatsapp.com/send?phone=551139261098)",
+      "blockClass": "header-sup-whatsapp"
+    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {
@@ -51,10 +52,10 @@
   },
   "flex-layout.col#menu-desktop": {
     "props": {
-      "width": "55%"
+      "width": "49%"
     },
     "children": [
-      "vtex.menu@2.x:menu#menu-header"
+      "vtex.menu@2.x:menu#menu-header-1"
     ]
   },
   "flex-layout.col#search-bar-desktop": {
@@ -64,6 +65,11 @@
     "children": [
       "search-bar"
     ]
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "Encontre um produto"
+    }
   },
   "flex-layout.col#utils-desktop": {
     "props": {
@@ -123,197 +129,433 @@
     }
   },
   //MENU HEADER -- INIT
-  "flex-layout.row#menu-header": {
-    "children": [
-      "vtex.menu@2.x:menu#menu-header"
-    ]
-  },
-  "vtex.menu@2.x:menu#menu-header-mobile": {
+  //Mobile - INIT
+  "vtex.menu@2.x:menu#menu-header-mobile-1": {
     "props": {
       "blockClass": [
         "top-menu",
         "top-menu-mobile"
-      ],
-      "items": [
-        {
-          "id": "menu-item",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
-          }
-        },
-        {
-          "id": "menu-item",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
-          }
-        },
-        {
-          "id": "menu-item",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
-          }
-        },
-        {
-          "id": "menu-item",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
-          }
-        }
       ]
-    }
+    },
+      "children": [
+        "menu-item#marca-mobile",
+        "menu-item#produtos-mobile",
+        "menu-item#perguntas-mobile",
+        "menu-item#contato-mobile"
+    ]
   },
-  "vtex.menu@2.x:menu#menu-header": {
+  "menu-item#marca-mobile": {
     "props": {
-      "blockClass": "top-menu",
+      "id": "menu-item-marca-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-marca-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "a-marca",
+        "text": "a marca"
+      }
+    }
+  },
+  "menu-item#produtos-mobile": {
+    "props": {
+      "id": "menu-item-produtos-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-produtos-mobile",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "produtos",
+        "text": "produtos"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#produtos-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#produtos-mobile-accordion": {
+    "props": {
+      "width": "100%",
+      "blockClass": "submenu-header"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#coluna-produtos-mobile-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#coluna-produtos-mobile-accordion": {
+    "props": {
+      "orientation": "vertical",
       "items": [
         {
-          "id": "menu-item",
+          "id": "menu-item-camisetas",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
             "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
+            "href": "/Camisetas",
+            "tagTitle": "camisetas",
+            "text": "camisetas"
           }
         },
         {
-          "id": "menu-item",
+          "id": "menu-item-camisas",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
             "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
+            "href": "/Camisas",
+            "tagTitle": "camisas",
+            "text": "camisas"
           }
         },
         {
-          "id": "menu-item",
+          "id": "menu-item-shorts",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
             "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
+            "href": "/Shorts",
+            "tagTitle": "shorts",
+            "text": "shorts"
           }
         },
         {
-          "id": "menu-item",
+          "id": "menu-item-bermudas",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
             "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
+            "href": "/Bermudas",
+            "tagTitle": "bermudas",
+            "text": "bermudas"
           }
         },
         {
-          "id": "menu-item",
+          "id": "menu-item-tricot",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
             "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
+            "href": "/Tricot",
+            "tagTitle": "tricot",
+            "text": "tricot"
           }
         },
         {
-          "id": "menu-item",
+          "id": "menu-item-casacos",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
             "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
+            "href": "/Casacos",
+            "tagTitle": "casacos",
+            "text": "casacos"
           }
         },
         {
-          "id": "menu-item",
+          "id": "menu-item-calca",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
             "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
+            "href": "/Calca",
+            "tagTitle": "calca",
+            "text": "CALÇA"
           }
         },
         {
-          "id": "menu-item",
+          "id": "menu-item-infantil",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
             "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
+            "href": "/Infantil",
+            "tagTitle": "infantil",
+            "text": "infantil"
           }
         },
         {
-          "id": "menu-item",
+          "id": "menu-item-atacadista",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
             "noFollow": false,
-            "href": "#",
-            "tagTitle": "Bonés",
-            "text": "Bonés"
+            "href": "https://www.redfeatheratacado.com/Customer/loginB2B",
+            "tagTitle": "atacadista",
+            "text": "atacadista"
           }
         }
       ]
     }
   },
+  "menu-item#perguntas-mobile": {
+    "props": {
+      "id": "menu-item-perguntas-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-perguntas-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "perguntas-frequentes",
+        "text": "perguntas frequentes"
+      }
+    }
+  },
+  "menu-item#contato-mobile": {
+    "props": {
+      "id": "menu-item-contato-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-contato-mobile",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "contato",
+        "text": "contato"
+      }
+    }
+  },
+  //Mobile - END
+  //Desktop - INIT
+  "vtex.menu@2.x:menu#menu-header-1": {
+    "props": {
+      "blockClass": "top-menu"
+    },
+    "children": [
+      "menu-item#marca",
+      "menu-item#produtos",
+      "menu-item#perguntas",
+      "menu-item#contato"
+    ]
+  },
+  "menu-item#marca": {
+    "props": {
+      "id": "menu-item-marca",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-marca",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "a-marca",
+        "text": "a marca"
+      }
+    }
+  },
+  "menu-item#produtos": {
+    "props": {
+      "id": "menu-item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-produtos",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "produtos",
+        "text": "produtos"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#produtos"
+    ]
+  },
+  "menu-item#perguntas": {
+    "props": {
+      "id": "menu-item-perguntas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-perguntas",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "perguntas-frequentes",
+        "text": "perguntas frequentes"
+      }
+    }
+  },
+  "menu-item#contato": {
+    "props": {
+      "id": "menu-item-contato",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-contato",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nos",
+        "noFollow": false,
+        "tagTitle": "contato",
+        "text": "contato"
+      }
+    }
+  },
+  "vtex.menu@2.x:submenu#produtos": {
+    "props": {
+      "width": "100%",
+      "blockClass": "submenu-header"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#coluna-produtos"
+    ]
+  },
+  "vtex.menu@2.x:menu#coluna-produtos": {
+    "props": {
+      "orientation": "horizontal",
+      "items": [
+        {
+          "id": "menu-item-camisetas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Camisetas",
+            "tagTitle": "camisetas",
+            "text": "camisetas"
+          }
+        },
+        {
+          "id": "menu-item-camisas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Camisas",
+            "tagTitle": "camisas",
+            "text": "camisas"
+          }
+        },
+        {
+          "id": "menu-item-shorts",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Shorts",
+            "tagTitle": "shorts",
+            "text": "shorts"
+          }
+        },
+        {
+          "id": "menu-item-bermudas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Bermudas",
+            "tagTitle": "bermudas",
+            "text": "bermudas"
+          }
+        },
+        {
+          "id": "menu-item-tricot",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Tricot",
+            "tagTitle": "tricot",
+            "text": "tricot"
+          }
+        },
+        {
+          "id": "menu-item-casacos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Casacos",
+            "tagTitle": "casacos",
+            "text": "casacos"
+          }
+        },
+        {
+          "id": "menu-item-calca",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Calca",
+            "tagTitle": "calca",
+            "text": "CALÇA"
+          }
+        },
+        {
+          "id": "menu-item-infantil",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "/Infantil",
+            "tagTitle": "infantil",
+            "text": "infantil"
+          }
+        },
+        {
+          "id": "menu-item-atacadista",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "href": "https://www.redfeatheratacado.com/Customer/loginB2B",
+            "tagTitle": "atacadista",
+            "text": "atacadista"
+          }
+        }
+      ]
+    }
+  },
+  //Desktop - END
   //MENU HEADER -- END
   "flex-layout.col#spacer": {
     "props": {
@@ -383,7 +625,7 @@
       "orientation": "horizontal"
     },
     "children": [
-      "vtex.menu@2.x:menu#menu-header-mobile"
+      "vtex.menu@2.x:menu#menu-header-mobile-1"
     ]
   },
   //MINICART - init

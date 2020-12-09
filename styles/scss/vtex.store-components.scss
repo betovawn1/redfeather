@@ -13,34 +13,82 @@
 	max-width: unset !important;
 }
 
+:global(.vtex-rich-text-0-x-container--header-sup-whatsapp){
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-left: 1px solid $lighterGrey;
+
+	height: 38px;
+
+	margin-left: 10px;
+
+	&::before {
+		content: "";
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		color: $dark;
+		display: block;
+		font-size: $size4;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url($whatsappIcon);
+	}
+
+	:global(.vtex-rich-text-0-x-wrapper--header-sup-whatsapp){
+		
+		:global(.vtex-rich-text-0-x-paragraph--header-sup-whatsapp) {
+			:global(.vtex-rich-text-0-x-link--header-sup-whatsapp){
+				text-decoration: none;
+				color: $dark;
+				font-size: 16px;
+				font-weight: $regular;
+			}
+		}
+	}
+}
 .searchBarContainer {
+	display: flex;
+	justify-content: center;
+
 	padding: 0;
 	max-width: unset;
 	@media (min-width: $maxMobile) and (max-width: $maxTablet) {
 		margin-top: 30px;
 	}
 	.searchBarInnerContainer {
+		width: 227px;
 		.autoCompleteOuterContainer {
+			width: 100%;
 			:global(.vtex-input-prefix__group) {
+				border: 0;
+				border-left: 1px solid $lightGrey;
+				border-right: 1px solid $lightGrey;
+
 				@media (max-width: $minTablet) {
 					margin-top: 15px;
 				}
 				padding: 0 15px;
-				border-radius: 38px;
-				background-color: $lightGrey;
+				border-radius: 0px;
+				background-color: $light;
 
 				:global(.vtex-styleguide-9-x-input) {
 					padding: 0;
-					background-color: $lightGrey;
+					background-color: $light;
 					&::placeholder {
-						color: $grey;
+						color: $dark;
 					}
 					color: $dark;
 					font-size: $size2;
+					font-weight: $regular;
 				}
 				:global(.vtex-input__suffix) {
 					padding: 0;
-					background-color: $lightGrey;
+					background-color: $light;
 				}
 				.suffixWrapper {
 					.searchBarIcon {
@@ -50,10 +98,11 @@
 							content: "\f1a3";
 							width: 20px;
 							height: 20px;
-							color: $grey;
+							color: $dark;
 							display: block;
 							font-size: $size4;
 							font-family: $flaticon;
+							font-weight: $regular;
 						}
 						.searchIcon {
 							display: none;
@@ -64,6 +113,28 @@
 		}
 	}
 }
+
+:global(.vtex-flex-layout-0-x-flexCol--utils-desktop) {
+	display: flex;
+	justify-content: center;
+	
+	:global(.vtex-flex-layout-0-x-flexColChild){
+		:global(.vtex-login-2-x-container) {
+			:global(.vtex-button__label) {
+				:global(.vtex-login-2-x-label) {
+					font-weight: $regular;
+				} 
+			}
+		}
+
+		:global(.vtex-minicart-2-x-minicartWrapperContainer) {
+			:global(.vtex-button__label){
+				font-weight: $regular;
+			}
+		}
+	}
+}
+
 .logoLink--logo-header {
 	.logoContainer {
 		padding: 0;
@@ -131,6 +202,7 @@
 				text-align: center;
 				font-weight: normal;
 				color: $dark;
+
 				&::before {
 					display: block;
 					font-size: $size7;
@@ -212,6 +284,7 @@
 							padding-right: 0;
 							font-size: $size2;
 
+							
 							&::after {
 								width: 17px;
 								height: 12px;
