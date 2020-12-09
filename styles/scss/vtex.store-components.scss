@@ -1,5 +1,6 @@
 @import "variables";
 
+
 .imageElement--banner-home {
 	width: 100%;
 	height: auto;
@@ -7,6 +8,9 @@
 	@media (max-width: $maxMobile) {
 		margin-top: 30px;
 	}
+}
+:global(.vtex-store-components-3-x-imageElementLink) {
+	width: 100%;
 }
 
 .container {
@@ -19,9 +23,7 @@
 	align-items: center;
 
 	border-left: 1px solid $lighterGrey;
-
 	height: 38px;
-
 	margin-left: 10px;
 
 	&::before {
@@ -43,7 +45,7 @@
 			:global(.vtex-rich-text-0-x-link--header-sup-whatsapp) {
 				text-decoration: none;
 				color: $dark;
-				font-size: 16px;
+				font-size: 14px;
 				font-weight: $regular;
 			}
 		}
@@ -54,13 +56,11 @@
 	display: flex;
 	justify-content: center;
 
-	padding: 0;
+	padding: 0 15px;
 	max-width: unset;
 
 	border-left: 1px solid $lightGrey;
 	border-right: 1px solid $lightGrey;
-
-	padding: 0 15px;
 
 	@media (min-width: $maxMobile) and (max-width: $maxTablet) {
 		margin-top: 30px;
@@ -80,6 +80,7 @@
 				background-color: $light;
 
 				:global(.vtex-styleguide-9-x-input) {
+					min-width: 160px;
 					padding: 0;
 					background-color: $light;
 					&::placeholder {
@@ -119,7 +120,12 @@
 
 :global(.vtex-flex-layout-0-x-flexCol--utils-desktop) {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+	margin-left: 20px;
+
+	:global(.vtex-flex-layout-0-x-flexColChild--utils-desktop) {
+		margin: 0 !important;
+	}
 
 	:global(.vtex-flex-layout-0-x-flexColChild) {
 		:global(.vtex-login-2-x-container) {
@@ -191,6 +197,11 @@
 
 .newsletter {
 	padding: 0 80px 55px;
+	@media (max-width: $maxMobile) {
+		padding: 0 30px 55px;
+
+	}
+
 	.container {
 		margin: 0 auto;
 		padding: 0;
@@ -262,9 +273,6 @@
 							font-size: 14px;
 							padding-left: 10px;
 							background-color: transparent;
-							@media (max-width: $maxMobile) {
-								border-bottom: 1px solid $dark;
-							}
 							&::placeholder {
 								color: $light;
 								font-size: 14px;
@@ -272,6 +280,7 @@
 						}
 					}
 				}
+
 				.buttonContainer {
 					padding: 0;
 					:global(.vtex-button) {
@@ -297,6 +306,25 @@
 								margin-left: 10px;
 								font-family: $flaticon;
 							}
+						}
+					}
+				}
+				@media (max-width: $maxMobile) {
+					display: flex;
+					flex-direction: column;
+
+					:global(.vtex-input) {
+						:global(.vtex-input-prefix__group) {
+							:global(.vtex-styleguide-9-x-input) {
+								padding-left: 0px;
+							}
+						}
+					}
+					.buttonContainer {
+						:global(.vtex-button) {
+							margin: 10px auto;
+							display: flex;
+							align-items: center;
 						}
 					}
 				}
@@ -733,13 +761,26 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 		padding: 0 30px;
+
 		.infoCardHeadline,
 		.infoCardSubhead {
 			color: $light;
 			text-align: left;
+			
+			@media (max-width: $maxMobile) {
+				font-size: $size2;
+				width: 80%;
+			}
 		}
 		.infoCardHeadline {
 			font-size: $size5;
+			
+		}
+	}
+	@media (max-width: $maxMobile) {
+		.infoCardTextContainer{
+			top: 50%;
+			justify-content: center;
 		}
 	}
 	&:hover {

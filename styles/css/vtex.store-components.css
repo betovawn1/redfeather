@@ -7,6 +7,9 @@
     .imageElement--banner-home {
       margin-top: 30px; } }
 
+:global(.vtex-store-components-3-x-imageElementLink) {
+  width: 100%; }
+
 .container {
   max-width: unset !important; }
 
@@ -32,18 +35,17 @@
   :global(.vtex-rich-text-0-x-container--header-sup-whatsapp) :global(.vtex-rich-text-0-x-wrapper--header-sup-whatsapp) :global(.vtex-rich-text-0-x-paragraph--header-sup-whatsapp) :global(.vtex-rich-text-0-x-link--header-sup-whatsapp) {
     text-decoration: none;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600; }
 
 .searchBarContainer {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding: 0 15px;
   max-width: unset;
   border-left: 1px solid #dedede;
-  border-right: 1px solid #dedede;
-  padding: 0 15px; }
+  border-right: 1px solid #dedede; }
   @media (min-width: 767px) and (max-width: 1025px) {
     .searchBarContainer {
       margin-top: 30px; } }
@@ -60,6 +62,7 @@
           .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
             margin-top: 15px; } }
         .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+          min-width: 160px;
           padding: 0;
           background-color: #fff;
           color: #000;
@@ -86,7 +89,10 @@
 
 :global(.vtex-flex-layout-0-x-flexCol--utils-desktop) {
   display: flex;
-  justify-content: center; }
+  justify-content: space-around;
+  margin-left: 20px; }
+  :global(.vtex-flex-layout-0-x-flexCol--utils-desktop) :global(.vtex-flex-layout-0-x-flexColChild--utils-desktop) {
+    margin: 0 !important; }
   :global(.vtex-flex-layout-0-x-flexCol--utils-desktop) :global(.vtex-flex-layout-0-x-flexColChild) :global(.vtex-login-2-x-container) :global(.vtex-button__label) :global(.vtex-login-2-x-label) {
     font-weight: 600; }
   :global(.vtex-flex-layout-0-x-flexCol--utils-desktop) :global(.vtex-flex-layout-0-x-flexColChild) :global(.vtex-minicart-2-x-minicartWrapperContainer) :global(.vtex-button__label) {
@@ -134,6 +140,9 @@
 
 .newsletter {
   padding: 0 80px 55px; }
+  @media (max-width: 767px) {
+    .newsletter {
+      padding: 0 30px 55px; } }
   .newsletter .container {
     margin: 0 auto;
     padding: 0; }
@@ -198,9 +207,6 @@
               font-size: 14px;
               padding-left: 10px;
               background-color: transparent; }
-              @media (max-width: 767px) {
-                .newsletter .container .form .inputGroup :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
-                  border-bottom: 1px solid #000; } }
               .newsletter .container .form .inputGroup :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
                 color: #fff;
                 font-size: 14px; }
@@ -227,6 +233,16 @@
                 font-size: 18px;
                 margin-left: 10px;
                 font-family: "Flaticon"; }
+        @media (max-width: 767px) {
+          .newsletter .container .form .inputGroup {
+            display: flex;
+            flex-direction: column; }
+            .newsletter .container .form .inputGroup :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+              padding-left: 0px; }
+            .newsletter .container .form .inputGroup .buttonContainer :global(.vtex-button) {
+              margin: 10px auto;
+              display: flex;
+              align-items: center; } }
 
 .shippingContainer {
   width: 280px;
@@ -593,8 +609,17 @@
     .infoCardContainer--card-home .infoCardTextContainer .infoCardSubhead {
       color: #fff;
       text-align: left; }
+      @media (max-width: 767px) {
+        .infoCardContainer--card-home .infoCardTextContainer .infoCardHeadline,
+        .infoCardContainer--card-home .infoCardTextContainer .infoCardSubhead {
+          font-size: 14px;
+          width: 80%; } }
     .infoCardContainer--card-home .infoCardTextContainer .infoCardHeadline {
       font-size: 24px; }
+  @media (max-width: 767px) {
+    .infoCardContainer--card-home .infoCardTextContainer {
+      top: 50%;
+      justify-content: center; } }
   .infoCardContainer--card-home:hover .infoCardTextContainer {
     top: 50%;
     justify-content: center; }

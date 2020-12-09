@@ -141,31 +141,38 @@
 .menuContainerNav--top-menu-mobile {
   width: 100%;
   padding: 0; }
-  .menuContainerNav--top-menu-mobile .menuContainer .menuItem {
-    margin: 0;
-    padding: 9px 15px 9px; }
-    .menuContainerNav--top-menu-mobile .menuContainer .menuItem .menuItemInnerDiv {
-      height: 20px; }
-    .menuContainerNav--top-menu-mobile .menuContainer .menuItem .styledLinkContainer {
+  .menuContainerNav--top-menu-mobile .menuContainer {
+    margin: 0 !important; }
+    .menuContainerNav--top-menu-mobile .menuContainer .menuItem {
       margin: 0;
-      padding: 0;
-      height: 20px;
-      line-height: 20px; }
-      .menuContainerNav--top-menu-mobile .menuContainer .menuItem .styledLinkContainer .styledLinkContent {
+      padding: 3px 15px 9px; }
+      .menuContainerNav--top-menu-mobile .menuContainer .menuItem .menuItemInnerDiv {
+        height: 20px; }
+      .menuContainerNav--top-menu-mobile .menuContainer .menuItem .styledLinkContainer {
         margin: 0;
-        display: flex;
-        align-items: center; }
-        .menuContainerNav--top-menu-mobile .menuContainer .menuItem .styledLinkContainer .styledLinkContent .accordionIcon {
-          color: #000;
-          font-size: 20px; }
-  .menuContainerNav--top-menu-mobile .submenuAccordion .menuContainerNav .menuContainer {
-    margin-top: 10px; }
-    .menuContainerNav--top-menu-mobile .submenuAccordion .menuContainerNav .menuContainer:last-child {
-      margin-bottom: 10px; }
-    .menuContainerNav--top-menu-mobile .submenuAccordion .menuContainerNav .menuContainer .menuItem .styledLinkContainer {
-      margin: 0 0 10px !important; }
-    .menuContainerNav--top-menu-mobile .submenuAccordion .menuContainerNav .menuContainer .menuItem:last-child .styledLinkContainer {
-      margin: 0 !important; }
+        padding: 0;
+        height: 20px;
+        line-height: 20px; }
+        .menuContainerNav--top-menu-mobile .menuContainer .menuItem .styledLinkContainer .styledLinkContent {
+          margin: 0;
+          display: flex;
+          align-items: center; }
+          .menuContainerNav--top-menu-mobile .menuContainer .menuItem .styledLinkContainer .styledLinkContent .accordionIcon {
+            color: #000;
+            font-size: 20px; }
+  .menuContainerNav--top-menu-mobile .submenuAccordion .menuContainerNav {
+    margin: 10px 0px 0px -12px !important; }
+    .menuContainerNav--top-menu-mobile .submenuAccordion .menuContainerNav .menuContainer {
+      margin-top: 10px; }
+      .menuContainerNav--top-menu-mobile .submenuAccordion .menuContainerNav .menuContainer:last-child {
+        margin-bottom: 10px; }
+      .menuContainerNav--top-menu-mobile .submenuAccordion .menuContainerNav .menuContainer .menuItem .styledLinkContainer {
+        margin: 0 0 10px !important; }
+        @media (max-width: 767px) {
+          .menuContainerNav--top-menu-mobile .submenuAccordion .menuContainerNav .menuContainer .menuItem .styledLinkContainer {
+            margin: 0 0 1px !important; } }
+      .menuContainerNav--top-menu-mobile .submenuAccordion .menuContainerNav .menuContainer .menuItem:last-child .styledLinkContainer {
+        margin: 0 !important; }
 
 .menuItem--atividade .submenuAccordion {
   height: 400px;
