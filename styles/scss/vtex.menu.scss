@@ -7,11 +7,14 @@
     .menuContainer {
         display: flex;
         justify-content: center;
+
         .menuItem {
             margin-right: 20px;
+            position: relative;
             .styledLinkContent--menu-header-produtos{
                 display: flex;
                 justify-content: center;
+
                 &::after {
                     content: "";
                     width: 7px;
@@ -63,10 +66,12 @@
 }
 .submenuWrapper--submenu-header {
     border: 0;
-    margin: 0 -30px;
+    margin: -20px -10px;
     padding: 30px 0 0;
-    width: calc(100% + 60px);
+    width: 300px;
+    position: absolute;
     background-color: transparent;
+
     @media (max-width: $minDesktop) {
         margin: 0;
         padding: 0;
