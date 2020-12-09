@@ -433,7 +433,7 @@
   },
   "vtex.menu@2.x:menu#coluna-produtos": {
     "props": {
-      "orientation": "horizontal",
+      "orientation": "vertical",
       "items": [
         {
           "id": "menu-item-camisetas",

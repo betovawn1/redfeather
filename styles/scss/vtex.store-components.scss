@@ -52,27 +52,32 @@
 	}
 }
 .searchBarContainer {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 
 	padding: 0;
 	max-width: unset;
+
+	border-left: 1px solid $lightGrey;
+	border-right: 1px solid $lightGrey;
+
+	padding: 0 15px;
+
 	@media (min-width: $maxMobile) and (max-width: $maxTablet) {
 		margin-top: 30px;
 	}
 	.searchBarInnerContainer {
-		width: 227px;
+		width: 100%;
+		
 		.autoCompleteOuterContainer {
 			width: 100%;
 			:global(.vtex-input-prefix__group) {
 				border: 0;
-				border-left: 1px solid $lightGrey;
-				border-right: 1px solid $lightGrey;
-
+				width: 100%;
 				@media (max-width: $minTablet) {
 					margin-top: 15px;
 				}
-				padding: 0 15px;
 				border-radius: 0px;
 				background-color: $light;
 
