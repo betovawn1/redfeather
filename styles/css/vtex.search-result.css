@@ -1,4 +1,5 @@
 @import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .gallery {
   padding-left: 0; }
   @media (min-width: 767px) {
@@ -49,22 +50,29 @@
     display: none; }
 
 .filtersWrapper--selecteds {
-  padding: 0 30px; }
+  left: 145px;
+  width: calc(100% - 145px);
+  padding: 0 25px;
+  position: absolute;
+  overflow-x: auto; }
   .filtersWrapper--selecteds .filter__container {
     display: none; }
     .filtersWrapper--selecteds .filter__container.filter__container--selectedFilters {
       display: block; }
+      .filtersWrapper--selecteds .filter__container.filter__container--selectedFilters .filterSelected--selecteds {
+        display: none; }
       .filtersWrapper--selecteds .filter__container.filter__container--selectedFilters .filterTitle {
         display: none; }
       .filtersWrapper--selecteds .filter__container.filter__container--selectedFilters .filterTemplateOverflow {
         display: flex;
         align-items: center;
+        padding-top: 1rem;
         justify-content: flex-start; }
         .filtersWrapper--selecteds .filter__container.filter__container--selectedFilters .filterTemplateOverflow .filterItem {
           width: auto;
           border: 1px solid #dedede;
           margin: 0 15px 0 0;
-          padding: 10px 25px;
+          padding: 10px 15px;
           background-color: #f3f3f3; }
           .filtersWrapper--selecteds .filter__container.filter__container--selectedFilters .filterTemplateOverflow .filterItem :global(.vtex-checkbox__line-container) {
             display: flex;

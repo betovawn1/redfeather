@@ -66,22 +66,30 @@
     }
 }
 .filtersWrapper--selecteds {
-    padding: 0 30px;
+    left: 145px;
+    width: calc(100% - 145px);
+    padding: 0 25px;
+    position: absolute;
+    overflow-x: auto;
     .filter__container {
         display: none;
         &.filter__container--selectedFilters {
             display: block;
+            .filterSelected--selecteds {
+                display: none;
+            }
             .filterTitle { display: none }
 
             .filterTemplateOverflow {
                 display: flex;
                 align-items: center;
+                padding-top: 1rem;
                 justify-content: flex-start;
                 .filterItem {
                     width: auto;
                     border: 1px solid $lightGrey;
                     margin: 0 15px 0 0;
-                    padding: 10px 25px;
+                    padding: 10px 15px;
                     background-color: $lighterGrey;
                     :global(.vtex-checkbox__line-container) {
                         display: flex;

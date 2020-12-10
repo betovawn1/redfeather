@@ -83,7 +83,6 @@
       "search-title.v2",
       "flex-layout.row#filter",
       "flex-layout.row#filterSelected",
-      "filter-trigger",
       "flex-layout.row#result"
     ],
     "props": {
@@ -189,7 +188,7 @@
   },
   "flex-layout.col#filter-mobile": {
     "children": [
-      "drawer#filters"
+      "filter-navigator.v3"
     ],
     "props": {
       "blockClass": "filterCol"
@@ -218,7 +217,7 @@
       "flex-layout.row#fetchmore"
     ],
     "props": {
-      "width": "80%",
+      "width": "grow",
       "preventVerticalStretch": true
     }
   },
@@ -245,7 +244,9 @@
   },
   "flex-layout.row#fetchprevious": {
     "props": {
-      "marginBottom": 3
+      "marginTop": 8,
+      "marginBottom": 3,
+      "blockClass": "search-fetch-previous"
     },
     "children": [
       "search-fetch-previous"
@@ -372,7 +373,7 @@
       "maxItemsDepartment": 9,
       "maxItemsCategory": 9,
       "maxItemsPerRow": {
-        "desktop": 3,
+        "desktop": 4,
         "tablet": 2,
         "phone": 2
       }

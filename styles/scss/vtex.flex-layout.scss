@@ -659,3 +659,8 @@
         height: auto !important;
     }
 }
+.flexRowContent--search-fetch-previous {
+    @media (max-width: $maxMobile) {
+        margin-top: 0;
+    }
+}

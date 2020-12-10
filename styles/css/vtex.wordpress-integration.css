@@ -1,4 +1,5 @@
 @import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .latestPostsBlockContainer {
   padding-bottom: 5px; }
   .latestPostsBlockContainer :global(.vtex-card) {

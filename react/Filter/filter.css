@@ -3,7 +3,11 @@
     display: none;
 }
 .priceRange .filtersWrapper :global(.vtex-search-result-3-x-filter__container--priceRange) {
+    width: 100%;
     display: block;
+}
+.priceRange .filtersWrapper :global(.vtex-search-result-3-x-filter__container--priceRange) .filterTemplateOverflow {
+    padding: 0 10px;
 }
 :global(.vtex-search-result-3-x-filter__container--priceRange) {
     border: 0;
@@ -34,6 +38,7 @@
     position: relative;
     margin-top: 10px;
     margin-right: 10px;
+    pointer-events: none;
 }
 .filterItemColorSelected::after,
 .filterItemColorSelected::before {
@@ -69,6 +74,7 @@
     font-size: 14px;
     margin-top: 10px;
     margin-right: 10px;
+    pointer-events: none;
     text-decoration: none;
     background-color: #000;
 }
@@ -82,10 +88,29 @@
 }
 .filters {
 }
-.filtersContainer {
+.filtersWrapper {
     display: flex;
-    max-width: 300px;
+    position: relative;
+    align-items: flex-start;
+    padding-top: 65px;
     flex-direction: column;
+}
+.priceRange .filtersWrapper {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+.filtersContainer {
+    top: 40px;
+    display: flex;
+    overflow: hidden;
+    position: sticky;
+    max-width: 0;
+    transition: max-width .1s linear;
+    flex-direction: column;
+}
+.filtersContainer.open {
+    width: 350px;
+    max-width: 350px;
 }
 .filterCheckBox {
     width: 12px;
@@ -121,4 +146,14 @@
 }
 .filters h3 {
     font-size: 16px;
+}
+.button {
+    top: 16px;
+    width: 80px;
+    cursor: pointer;
+    border: 1px solid #dedede;
+    padding: 10px 25px;
+    display: block;
+    position: absolute;
+    background-color: #f3f3f3;
 }
