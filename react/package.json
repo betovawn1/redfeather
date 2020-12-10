@@ -5,6 +5,8 @@
   "author": "Sergio Luiz",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "react-redux": "^7.1.0-rc.1",
+    "redux": "^4.0.5"
   }
 }

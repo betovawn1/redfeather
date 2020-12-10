@@ -4,5 +4,11 @@
     },
     "measurement-chart": {
         "component": "MeasurementChart"
+    },
+    "filter-selected": {
+        "component": "FilterSelected"
+    },
+    "filter-trigger": {
+        "component": "FilterTrigger"
     }
 }

@@ -65,6 +65,55 @@
         display: none;
     }
 }
+.filtersWrapper--selecteds {
+    padding: 0 30px;
+    .filter__container {
+        display: none;
+        &.filter__container--selectedFilters {
+            display: block;
+            .filterTitle { display: none }
+
+            .filterTemplateOverflow {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                .filterItem {
+                    width: auto;
+                    border: 1px solid $lightGrey;
+                    margin: 0 15px 0 0;
+                    padding: 10px 25px;
+                    background-color: $lighterGrey;
+                    :global(.vtex-checkbox__line-container) {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row-reverse;
+                        :global(.vtex-checkbox__container) {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            margin-left: 5px;
+                            margin-right: 0;
+                            justify-content: center;
+                            &::before {
+                                width: 8px;
+                                height: 8px;
+                                content: "";
+                                display: block;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-image: url("data:image/svg+xml,%3Csvg height='329pt' viewBox='0 0 329.26933 329' width='329pt' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0'/%3E%3C/svg%3E");
+                            }
+                            :global(.vtex-checkbox__inner-container), :global(.vtex-checkbox__box-wrapper) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .orderByButton {
     padding: 13px;
     margin-left: auto;

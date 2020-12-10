@@ -82,6 +82,8 @@
       "list-context.image-list#main-carousel-category",
       "search-title.v2",
       "flex-layout.row#filter",
+      "flex-layout.row#filterSelected",
+      "filter-trigger",
       "flex-layout.row#result"
     ],
     "props": {
@@ -91,6 +93,14 @@
         "mode1": "small",
         "mode2": "normal"
       }
+    }
+  },
+  "flex-layout.row#filterSelected": {
+    "children": ["filter-navigator.v3#filter-selected"]
+  },
+  "filter-navigator.v3#filter-selected": {
+    "props": {
+      "blockClass": "selecteds"
     }
   },
   "flex-layout.row#category-text-seo": {
@@ -179,7 +189,7 @@
   },
   "flex-layout.col#filter-mobile": {
     "children": [
-      "filter-navigator.v3"
+      "drawer#filters"
     ],
     "props": {
       "blockClass": "filterCol"
@@ -189,9 +199,7 @@
     "props": {
       "blockClass": "filters"
     },
-    "children": [
-      "filter-navigator.v3"
-    ]
+    "children": ["filter-navigator.v3#filter-selected", "custom-filter"]
   },
   "flex-layout.col#filter": {
     "children": [
