@@ -305,7 +305,17 @@
 .container--title-newsletter {
     padding: 0 80px;
     margin-top: 50px;
+    
+    @media (max-width: $maxMobile) {
+        padding: 0px 0px !important;
+    }
     .wrapper {
+        @media (max-width: $maxMobile) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
         width: 100%;
         .heading-level-3 {
             color: $light;
@@ -331,10 +341,17 @@
             @media (max-width: $maxMobile) {
                 padding: 0 15px;
                 font-size: $size4;
+                text-align: center;
             }
         }
     }
 }
+:global(.vtex-styleguide-9-x-input) {
+    border-bottom: 1px solid $light ;
+    border-style: none !important;
+
+}
+
 .container--faq {
     .heading-level-1 {
         color: black;
@@ -594,28 +611,29 @@
     }
 }
 .container--header-sup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    width: 100%;
     .wrapper {
+        width: 100%;
         .paragraph {
+            width: 100%;
             margin: 0;
             padding: 12px 0;
             .link {
-                color: $light;
-                font-size: $size2;
-                text-decoration: none;
-
+                width: 100%;
                 display: flex;
-                align-items: center;
                 justify-content: center;
+                align-items: center;
+                color: $light;
+                font-size: $size0;
+                text-decoration: none;
 
                 letter-spacing: 1px;
                 font-size: 12px;
+
                 .strong--header-sup {
+                    text-align: center;
                     @media (max-width: $maxMobile) {
-                        width: 60%;
+                        width: 75%;
                     }
                 }
                 &::before {
@@ -627,7 +645,7 @@
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
-                    background-image: url($cartIcon);
+                    background-image: url("https://redfeather.vtexassets.com/arquivos/cardIcon.png");
                 }
             }
         }

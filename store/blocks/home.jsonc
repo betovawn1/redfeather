@@ -124,14 +124,32 @@
       "blockClass": "video-home-1"
     },
     "children": [
-      "image#video-home-1"
+      "list-context.image-list#video-home"
     ]
   },
-  "image#video-home-1": {
+
+  "list-context.image-list#video-home": {
+    "children": ["slider-layout#video-home-images"],
     "props": {
-      "src": "https://redfeather.vtexassets.com/arquivos/video-home.png",
-      "title": "Redfeather Campanha 2021",
-      "link": "https://www.youtube.com.br/"
+      "height": 650,
+      "images": [
+        {
+          "image": "https://redfeather.vtexassets.com/arquivos/video-home.png",
+          "mobileImage": "https://redfeather.vtexassets.com/arquivos/video-home.png",
+          "description": "Redfeather Campanha 2021",
+          "link": "https://www.youtube.com.br/"
+        }
+      ]
+    }
+  },
+  "slider-layout#video-home-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
     }
   },
   "flex-layout.row#banners-home-1": {

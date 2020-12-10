@@ -264,8 +264,16 @@
 .container--title-newsletter {
   padding: 0 80px;
   margin-top: 50px; }
+  @media (max-width: 767px) {
+    .container--title-newsletter {
+      padding: 0px 0px !important; } }
   .container--title-newsletter .wrapper {
     width: 100%; }
+    @media (max-width: 767px) {
+      .container--title-newsletter .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
     .container--title-newsletter .wrapper .heading-level-3 {
       color: #fff;
       margin: 0 0 20px;
@@ -289,7 +297,12 @@
       @media (max-width: 767px) {
         .container--title-newsletter .wrapper .paragraph {
           padding: 0 15px;
-          font-size: 18px; } }
+          font-size: 18px;
+          text-align: center; } }
+
+:global(.vtex-styleguide-9-x-input) {
+  border-bottom: 1px solid #fff;
+  border-style: none !important; }
 
 .container--faq .heading-level-1 {
   color: black;
@@ -549,34 +562,38 @@
     font-weight: 600; }
 
 .container--header-sup {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .container--header-sup .wrapper .paragraph {
-    margin: 0;
-    padding: 12px 0; }
-    .container--header-sup .wrapper .paragraph .link {
-      color: #fff;
-      font-size: 14px;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      letter-spacing: 1px;
-      font-size: 12px; }
-      @media (max-width: 767px) {
+  width: 100%; }
+  .container--header-sup .wrapper {
+    width: 100%; }
+    .container--header-sup .wrapper .paragraph {
+      width: 100%;
+      margin: 0;
+      padding: 12px 0; }
+      .container--header-sup .wrapper .paragraph .link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 12px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 12px; }
         .container--header-sup .wrapper .paragraph .link .strong--header-sup {
-          width: 60%; } }
-      .container--header-sup .wrapper .paragraph .link::before {
-        content: "";
-        width: 24px;
-        height: 24px;
-        display: block;
-        margin-right: 20px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAD8ElEQVRIS6WWf2gbZRjH3yf4C12HoE5s7mILhwjOWmza+xFDf2hBNlpHkjuLOnHihlm1ySWpOBBFR/+R612CW8UJa1FW23vTWipjiM6GtevlXINU3FAYpVzfVBT3hyLiz75yZRld1SWx75/3fJ/n87zP87wPB2iLJ5FIPKAoSpTn+eZisXhJVdVDGONCKSz8n/gcx90YjUZlRVGeQwhdMgxjSNf1z0KhUP3ExMSU3+8XCoXCL27sqgChUOjuVCr1vCiKj1qW9ZGqqsds2yYbk8QYH3Ic59tkMjlSKcATi8U6U6nUCwihm03TPDY6OjpZKBT++LfbNzU13TU1NTXKsmz7NQEtLS239ff3PxOJRJ7K5/Pzuq4fxRhfKFNStyJ0ZWXlZCKRSGCMv/lHiVRV9SuKclAQhJ26rg+bpnnCtu2frhXYTSaTyUQFQdjd3t4e7OrqekySpGZRFF++CoAxfkkQhIc1TRvIZDJn6urqborFYvvj8XgnAHRvhgQCAZ+maUlBEIKGYRydnp4eb2xs5GZnZ88vLCwsAMCDVwANDQ23LC4uzgJAE8dxN/T29h6Ix+PPGobxniiKLRjjt3Rdny9BHMdJAcAu0zTTc3NzZ3t6evYpivKkZVkfSpL0hmVZGsY4dwUgy/Idpml+AACP6LreKsvy636/f3dNTc2fAwMDrwUCgVsZhjlYArS1tW3L5XI/8zy/PZ/PnzYMY1jTtJHV1dX18QyHw/el0+nDV5WIUpoTBOFx27a/o5QuGIZxXFXVAxjjE0NDQ2+7Aat5N5TSc1BbW3u7bdvDDMPsQAh53ClACP2FELoeIXQdQsjNyP3m2sodDyHke57n9wWDwXpN014Fx3HGJycnj8fj8Y/LeVdi1zStM5lMHkEI/RAOh58ASulF0zQ/rcS5Uo2iKB0AcM/6Q6OUfnF5p1TqX1ZnmuY7AOAvAc4BQHNZryoElNI8AAglwHmXWIV/WamiKPsB4P4S4KtsNju4trZW1Wb9L4rH46GRSEQFgIYtlaivr29nIBDosCzrS5/PVw8Av2cymYnl5eVfN5eo6h4YhrHHzZIQMiEIgkEI+YQQMscwTCfLsh2U0rMbe1A1gFJ6RpKkPYlEIuT1ereJorjX3WGWZenZbPaUpmmHtwo4LUnS0+68i6LI8Ty/y51Ey7LeHRsbez+dTr+5EVBw6WVHY4NAluWH3C1q2/ZJnudfIYTMEkIuer3eHT6fr5tS+jkAtKw32XGcEYzxqWQyOV4NhOf5O0VR9BeLxQssy9Y5jvNbNpudHxwcdH8GulmW3bsO4Dhu+8zMzBGGYe69vNSq4WzWAiHk69bW1heXlpZ+dI1/AxnZw13/TgL6AAAAAElFTkSuQmCC"); }
+          text-align: center; }
+          @media (max-width: 767px) {
+            .container--header-sup .wrapper .paragraph .link .strong--header-sup {
+              width: 75%; } }
+        .container--header-sup .wrapper .paragraph .link::before {
+          content: "";
+          width: 24px;
+          height: 24px;
+          display: block;
+          margin-right: 20px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("https://redfeather.vtexassets.com/arquivos/cardIcon.png"); }
 
 .container--tabela-de-medida .paragraph {
   color: #000;

@@ -105,6 +105,8 @@
         height: auto;
         display: block;
         font-size: $size2;
+        font-weight: $regular;
+        color: $dark;
         @media (max-width: $maxMobile) {
             margin-bottom: 12px;
             font-size: $size3;

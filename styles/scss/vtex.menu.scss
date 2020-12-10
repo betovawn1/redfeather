@@ -139,6 +139,7 @@
         display: block;
         flex-wrap: wrap;
         position: relative;
+
     }
 }
 .menuContainerNav--menu-footer {
@@ -175,9 +176,10 @@
     width: 100%;
     padding: 0;
     .menuContainer {
+        margin: 0 !important;
         .menuItem {
             margin: 0;
-            padding: 9px 15px 9px;
+            padding: 3px 15px 9px;
             // border-bottom: 1px solid $lightGrey;
             // &:first-child {
             //     border-top: 1px solid $lightGrey;
@@ -204,6 +206,7 @@
     }
     .submenuAccordion {
         .menuContainerNav {
+            margin: 10px 0px 0px -12px !important;
             .menuContainer {
                 margin-top: 10px;
                 &:last-child {
@@ -212,6 +215,10 @@
                 .menuItem {
                     .styledLinkContainer {
                         margin: 0 0 10px !important;
+                        @media (max-width: $maxMobile) {
+                            margin: 0 0 1px !important;
+                            
+                        }
                     }
                     &:last-child {
                         .styledLinkContainer {
@@ -223,6 +230,7 @@
         }
     }
 }
+
 .menuItem--atividade {
     .submenuAccordion {
         height: 400px;
