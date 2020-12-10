@@ -75,6 +75,15 @@
 }
 .flexRow--menu-footer {
     border-top: 1px solid $lightGrey;
+
+    
+    :global(.vtex-menu-2-x-menuContainer--menu-footer) {
+        font-family: $montserrat;
+    }
+    :global(.vtex-rich-text-0-x-container--menu-footer) {
+        font-family: $montserrat;
+    }
+    
     .flexRowContent--menu-footer {
         padding: 30px 30px 0;
         @media (max-width: $maxTablet) {
@@ -122,6 +131,10 @@
 .flexRow--credits {
     padding: 15px 30px;
     border-top: 1px solid $lightGrey;
+
+    :global(.vtex-rich-text-0-x-paragraph--footer) {
+        font-family: $montserrat;
+    }
     @media (max-width: $maxMobile) {
         padding: 20px 15px;
     }
@@ -528,6 +541,7 @@
     justify-content: space-between;
     :global(.vtex-product-price-1-x-installments){
         color: $grey;
+        font-family: $montserrat;
     }
     .flexRowContent--list-and-selling-price-summary {
         margin: 10px 0;
