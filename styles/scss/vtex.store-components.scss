@@ -18,6 +18,7 @@
 }
 
 :global(.vtex-rich-text-0-x-container--header-sup-whatsapp) {
+	font-family: $montserrat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -30,7 +31,7 @@
 		content: "";
 		width: 20px;
 		height: 20px;
-		margin-right: 10px;
+		margin-right: 8px;
 		color: $dark;
 		display: block;
 		font-size: $size4;
@@ -52,6 +53,8 @@
 	}
 }
 .searchBarContainer {
+	font-family: $montserrat;
+
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -85,6 +88,7 @@
 					background-color: $light;
 					&::placeholder {
 						color: $dark;
+						font-family: $montserrat !important;
 					}
 					color: $dark;
 					font-size: $size2;
@@ -195,12 +199,25 @@
 	}
 }
 
+:global(.vtex-rich-text-0-x-wrapper--title-newsletter){
+	font-family: $montserrat;
+}
+:global(.vtex-rich-text-0-x-headingLevel3--title-newsletter) {
+	font-family: $montserrat;
+	font-weight: $regular;
+	letter-spacing: 6px;
+}
+:global(.vtex-rich-text-0-x-paragraph--title-newsletter) {
+	font-weight: $extraLight;
+}
+
 .newsletter {
 	padding: 0 80px 55px;
 	@media (max-width: $maxMobile) {
 		padding: 0 30px 55px;
 
 	}
+
 
 	.container {
 		margin: 0 auto;
@@ -274,6 +291,7 @@
 							padding-left: 10px;
 							background-color: transparent;
 							&::placeholder {
+								font-family: $montserrat;
 								color: $light;
 								font-size: 14px;
 							}
@@ -293,10 +311,10 @@
 						border-bottom: 1px solid $light;
 						background-color: transparent;
 						:global(.vtex-button__label) {
+							font-family: $montserrat;
 							padding-left: 0;
 							padding-right: 0;
 							font-size: $size2;
-
 							&::after {
 								width: 17px;
 								height: 12px;
@@ -745,7 +763,7 @@
 	overflow: hidden;
 	position: relative;
 	.infoCardTextContainer {
-		top: 135%;
+		top: 130%;
 		left: 50%;
 		width: 100%;
 		height: 100%;
@@ -761,20 +779,36 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 		padding: 0 30px;
+		@media (max-width: $maxMobile) {
+			margin-left: -10px;
+		}
 
 		.infoCardHeadline,
 		.infoCardSubhead {
+			font-family: $montserrat;
+			font-weight: $regular;
+			line-height: normal;
+
 			color: $light;
 			text-align: left;
-			
-			@media (max-width: $maxMobile) {
-				font-size: $size2;
-				width: 80%;
-			}
 		}
 		.infoCardHeadline {
-			font-size: $size5;
-			
+			font-size: $size6;
+			letter-spacing: 6px;
+		}
+		.infoCardSubhead {
+			font-size: $size4;
+			letter-spacing: 3.6px;
+		}
+
+		@media (max-width: $maxMobile) {
+			.infoCardHeadline {
+				font-size: $size4;
+			}
+			.infoCardSubhead {
+				font-size: $size0;
+				width: 100%;
+			}
 		}
 	}
 	@media (max-width: $maxMobile) {

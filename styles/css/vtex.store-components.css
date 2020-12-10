@@ -15,6 +15,7 @@
   max-width: unset !important; }
 
 :global(.vtex-rich-text-0-x-container--header-sup-whatsapp) {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +26,7 @@
     content: "";
     width: 20px;
     height: 20px;
-    margin-right: 10px;
+    margin-right: 8px;
     color: #000;
     display: block;
     font-size: 18px;
@@ -40,6 +41,7 @@
     font-weight: 600; }
 
 .searchBarContainer {
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -70,7 +72,8 @@
           font-size: 14px;
           font-weight: 600; }
           .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
-            color: #000; }
+            color: #000;
+            font-family: "Montserrat", sans-serif !important; }
         .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-input__suffix) {
           padding: 0;
           background-color: #fff; }
@@ -138,6 +141,17 @@
       border-color: #dedede; }
       .resultsList .resultsItem:hover .resultsItemImage {
         border-color: #dedede; }
+
+:global(.vtex-rich-text-0-x-wrapper--title-newsletter) {
+  font-family: "Montserrat", sans-serif; }
+
+:global(.vtex-rich-text-0-x-headingLevel3--title-newsletter) {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 6px; }
+
+:global(.vtex-rich-text-0-x-paragraph--title-newsletter) {
+  font-weight: 300; }
 
 .newsletter {
   padding: 0 80px 55px; }
@@ -209,6 +223,7 @@
               padding-left: 10px;
               background-color: transparent; }
               .newsletter .container .form .inputGroup :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+                font-family: "Montserrat", sans-serif;
                 color: #fff;
                 font-size: 14px; }
         .newsletter .container .form .inputGroup .buttonContainer {
@@ -223,6 +238,7 @@
             border-bottom: 1px solid #fff;
             background-color: transparent; }
             .newsletter .container .form .inputGroup .buttonContainer :global(.vtex-button) :global(.vtex-button__label) {
+              font-family: "Montserrat", sans-serif;
               padding-left: 0;
               padding-right: 0;
               font-size: 14px; }
@@ -592,7 +608,7 @@
   overflow: hidden;
   position: relative; }
   .infoCardContainer--card-home .infoCardTextContainer {
-    top: 135%;
+    top: 130%;
     left: 50%;
     width: 100%;
     height: 100%;
@@ -606,17 +622,28 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0 30px; }
+    @media (max-width: 767px) {
+      .infoCardContainer--card-home .infoCardTextContainer {
+        margin-left: -10px; } }
     .infoCardContainer--card-home .infoCardTextContainer .infoCardHeadline,
     .infoCardContainer--card-home .infoCardTextContainer .infoCardSubhead {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      line-height: normal;
       color: #fff;
       text-align: left; }
-      @media (max-width: 767px) {
-        .infoCardContainer--card-home .infoCardTextContainer .infoCardHeadline,
-        .infoCardContainer--card-home .infoCardTextContainer .infoCardSubhead {
-          font-size: 14px;
-          width: 80%; } }
     .infoCardContainer--card-home .infoCardTextContainer .infoCardHeadline {
-      font-size: 24px; }
+      font-size: 32px;
+      letter-spacing: 6px; }
+    .infoCardContainer--card-home .infoCardTextContainer .infoCardSubhead {
+      font-size: 18px;
+      letter-spacing: 3.6px; }
+    @media (max-width: 767px) {
+      .infoCardContainer--card-home .infoCardTextContainer .infoCardHeadline {
+        font-size: 18px; }
+      .infoCardContainer--card-home .infoCardTextContainer .infoCardSubhead {
+        font-size: 12px;
+        width: 100%; } }
   @media (max-width: 767px) {
     .infoCardContainer--card-home .infoCardTextContainer {
       top: 50%;
