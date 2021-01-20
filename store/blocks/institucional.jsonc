@@ -5,9 +5,19 @@
         ]
     },
     "flex-layout.row#institucional-1": {
+        "props": {
+            "blockClass": "institucional-1"
+        },
         "children": [
-            "rich-text#institucional-content"
+            "rich-text#institucional-content",
+            "image#institucional-aside"
         ]
+    },
+    "image#institucional-aside": {
+        "props": {
+            "src": "https://redfeather.vtexassets.com/arquivos/m3.png",
+            "blockClass": "institucional-aside"
+        }
     },
     "rich-text#institucional-content": {
         "props": {

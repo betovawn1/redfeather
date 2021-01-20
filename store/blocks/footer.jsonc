@@ -43,7 +43,7 @@
   },
   "rich-text#footer-2-row": {
     "props": {
-      "text": "![](https://uvline.vtexassets.com/arquivos/payment-methods.png)",
+      "text": "![](https://redfeather.vtexassets.com/arquivos/payment-methods1.png?v=1)",
       "blockClass": "seals"
     }
   },
@@ -65,7 +65,7 @@
   },
   "rich-text#dev-seals": {
     "props": {
-      "text": "![](https://uvline.vtexassets.com/arquivos/vtex-logo.png) ![](https://uvline.vtexassets.com/arquivos/wedigi-logo.png)",
+      "text": "[![](https://redfeather.vtexassets.com/arquivos/vtex-logo.png)](https://www.vtex.com.br) [![](https://redfeather.vtexassets.com/arquivos/wedigi-logo.png?v=1)](https://www.wedigi.com.br)",
       "blockClass": "dev-seals"
     }
   },

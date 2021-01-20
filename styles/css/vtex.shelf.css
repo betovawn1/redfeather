@@ -1,44 +1,14 @@
-@charset "UTF-8";
 @import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-.relatedProducts .title {
-  color: #000;
-  margin: 0;
-  padding: 0 0 15px;
-  font-size: 0;
-  text-transform: uppercase;
-  justify-content: flex-start; }
-  .relatedProducts .title::before {
-    content: "Veja também em outras cores:";
-    font-size: 12px; }
-
-.relatedProducts :global(.vtex-slider-0-x-sliderFrame) {
-  transform: unset !important;
-  transition: unset !important;
-  margin-bottom: 25px;
-  justify-content: flex-start; }
-  .relatedProducts :global(.vtex-slider-0-x-sliderFrame) :global(.vtex-shelf-1-x-arrow) {
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/feather/feather-icons.css");
+.relatedProducts {
+  margin: 0 25px 30px; }
+  .relatedProducts .title {
+    color: #000;
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center; }
+  .relatedProducts :global(.vtex-slider-0-x-dotsContainer) {
     display: none !important; }
-  .relatedProducts :global(.vtex-slider-0-x-sliderFrame) :global(.vtex-shelf-1-x-slide) {
-    max-width: 60px;
-    min-width: 60px; }
-    .relatedProducts :global(.vtex-slider-0-x-sliderFrame) :global(.vtex-shelf-1-x-slide) :global(.vtex-product-summary-2-x-container) {
-      max-width: 45px !important; }
-
-.relatedProducts :global(.vtex-product-summary-2-x-element) {
-  padding-bottom: 0; }
-  .relatedProducts :global(.vtex-product-summary-2-x-element) :global(.vtex-product-summary-2-x-imageContainer) {
-    border-radius: 50%;
-    overflow: hidden;
-    width: 45px;
-    height: 45px;
-    min-height: 45px; }
-    .relatedProducts :global(.vtex-product-summary-2-x-element) :global(.vtex-product-summary-2-x-imageContainer) :global(.vtex-product-summary-2-x-imageNormal) {
-      object-fit: cover;
-      object-position: center; }
-
-.relatedProducts :global(.vtex-slider-0-x-dotsContainer),
-.relatedProducts :global(.vtex-product-summary-2-x-information),
-.relatedProducts :global(.vtex-product-summary-2-x-buyButtonContainer),
-.relatedProducts :global(.vtex-store-components-3-x-discountInsideContainer) {
-  display: none !important; }

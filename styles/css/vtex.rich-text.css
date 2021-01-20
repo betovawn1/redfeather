@@ -1,5 +1,6 @@
 @import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/feather/feather-icons.css");
 .paragraph--title-submenu-header {
   margin: 0;
   padding: 0;
@@ -79,7 +80,8 @@
 .paragraph--info-sac-footer {
   margin: 0;
   color: #000;
-  font-size: 13px; }
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif; }
   .paragraph--info-sac-footer .strong,
   .paragraph--info-sac-footer .link {
     color: #000;
@@ -143,9 +145,10 @@
 .paragraph--footer {
   margin: 0;
   color: #000;
-  font-size: 13px; }
+  font-size: 12px; }
   @media (max-width: 767px) {
     .paragraph--footer {
+      font-size: 12px;
       text-align: center; } }
 
 .paragraph--dev-seals {
@@ -155,8 +158,10 @@
   @media (max-width: 767px) {
     .paragraph--dev-seals {
       justify-content: center; } }
-  .paragraph--dev-seals .image:first-child {
-    margin-right: 15px; }
+  .paragraph--dev-seals .image {
+    max-width: 70px; }
+    .paragraph--dev-seals .image:first-child {
+      margin-right: 15px; }
 
 @media (max-width: 767px) {
   .container--dev-seals .wrapper {
@@ -508,16 +513,54 @@
   .container--institucional-content-1 .link {
     color: #000; }
   .container--institucional-content-1 .paragraph {
-    text-align: left; }
+    text-align: left;
+    font-family: "Montserrat", sans-serif; }
+    @media (max-width: 767px) {
+      .container--institucional-content-1 .paragraph {
+        margin: 20px 0 0; }
+        .container--institucional-content-1 .paragraph:last-child {
+          margin: 20px 0; } }
   .container--institucional-content-1 .heading-level-1 {
     color: #000;
-    font-size: 24px; }
+    margin: 25px 0;
+    font-size: 24px;
+    min-width: 300px; }
+    @media (max-width: 767px) {
+      .container--institucional-content-1 .heading-level-1 {
+        margin: 20px 0 0; } }
   .container--institucional-content-1 .heading-level-2,
   .container--institucional-content-1 .heading-level-3,
   .container--institucional-content-1 .heading-level-4,
   .container--institucional-content-1 .heading-level-5 {
     color: #000;
     font-size: 18px; }
+
+.container--quem-somos-1 {
+  padding: 0 30px; }
+  @media (max-width: 767px) {
+    .container--quem-somos-1 {
+      padding: 0 15px; } }
+  .container--quem-somos-1 .wrapper {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 767px) {
+      .container--quem-somos-1 .wrapper {
+        align-items: flex-start;
+        flex-direction: column; } }
+  .container--quem-somos-1 .heading-level-1 {
+    color: #000;
+    margin: 60px 0;
+    font-size: 40px;
+    min-width: 300px; }
+    @media (max-width: 767px) {
+      .container--quem-somos-1 .heading-level-1 {
+        margin: 20px 0 0; } }
+  .container--quem-somos-1 .paragraph {
+    text-align: left;
+    font-family: "Montserrat", sans-serif; }
+    @media (max-width: 767px) {
+      .container--quem-somos-1 .paragraph {
+        margin: 20px 0 0; } }
 
 .container--franqueados-question .paragraph {
   font-size: 14px; }
@@ -581,10 +624,11 @@
         letter-spacing: 1px;
         font-size: 12px; }
         .container--header-sup .wrapper .paragraph .link .strong--header-sup {
-          text-align: center; }
+          text-align: left; }
           @media (max-width: 767px) {
             .container--header-sup .wrapper .paragraph .link .strong--header-sup {
-              width: 75%; } }
+              width: 75%;
+              font-size: 11px; } }
         .container--header-sup .wrapper .paragraph .link::before {
           content: "";
           width: 24px;

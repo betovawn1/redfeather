@@ -86,6 +86,7 @@
     margin: 0;
     color: $dark;
     font-size: $size1;
+    font-family: $montserrat;
     .strong,
     .link {
         color: $dark;
@@ -160,8 +161,9 @@
 .paragraph--footer {
     margin: 0;
     color: $dark;
-    font-size: $size1;
+    font-size: $size0;
     @media (max-width: $maxMobile) {
+        font-size: $size0;
         text-align: center;
     }
 }
@@ -173,6 +175,7 @@
         justify-content: center;
     }
     .image {
+        max-width: 70px;
         &:first-child {
             margin-right: 15px;
         }
@@ -564,10 +567,22 @@
     }
     .paragraph {
         text-align: left;
+        font-family: $montserrat;
+        @media (max-width: $maxMobile) {
+            margin: 20px 0 0;
+            &:last-child {
+                margin: 20px 0;
+            }
+        }
     }
     .heading-level-1 {
         color: $dark;
+        margin: 25px 0;
         font-size: $size5;
+        min-width: 300px;
+        @media (max-width: $maxMobile) {
+            margin: 20px 0 0;
+        }
     }
     .heading-level-2,
     .heading-level-3,
@@ -575,6 +590,36 @@
     .heading-level-5 {
         color: $dark;
         font-size: $size4;
+    }
+}
+.container--quem-somos-1 {
+    padding: 0 30px;
+    @media (max-width: $maxMobile) {
+        padding: 0 15px;
+    }
+    .wrapper {
+        display: flex;
+        align-items: center;
+        @media (max-width: $maxMobile) {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+    .heading-level-1 {
+        color: $dark;
+        margin: 60px 0;
+        font-size: $size7;
+        min-width: 300px;
+        @media (max-width: $maxMobile) {
+            margin: 20px 0 0;
+        }
+    }
+    .paragraph {
+        text-align: left;
+        font-family: $montserrat;
+        @media (max-width: $maxMobile) {
+            margin: 20px 0 0;
+        }
     }
 }
 .container--franqueados-question {
@@ -631,9 +676,10 @@
                 font-size: 12px;
 
                 .strong--header-sup {
-                    text-align: center;
+                    text-align: left;
                     @media (max-width: $maxMobile) {
                         width: 75%;
+                        font-size: 11px;
                     }
                 }
                 &::before {

@@ -27,6 +27,10 @@
         position: relative;
         :global(.vtex-button) {
             border: 0;
+            :global(.vtex-button__label) {
+                padding-left: 0;
+                padding-right: 3rem;
+            }
         }
 
         &.listItemActive {

@@ -1,5 +1,6 @@
 @import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/feather/feather-icons.css");
 .gallery {
   padding-left: 0; }
   @media (min-width: 767px) {
@@ -11,6 +12,9 @@
   .gallery .galleryItem :global(.vtex-product-summary-2-x-container) :global(.vtex-product-summary-2-x-image) {
     height: auto !important;
     max-height: unset !important; }
+
+.accordionFilterContainer--marca {
+  display: none; }
 
 .filters--layout {
   width: 100%; }
@@ -53,6 +57,7 @@
   left: 145px;
   width: calc(100% - 145px);
   padding: 0 25px;
+  z-index: 1;
   position: absolute;
   overflow-x: auto; }
   .filtersWrapper--selecteds .filter__container {

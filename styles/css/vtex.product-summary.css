@@ -1,5 +1,6 @@
 @import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/feather/feather-icons.css");
 .container {
   border-radius: 0;
   max-width: 95% !important;
@@ -108,6 +109,8 @@
   .element:hover .SKUSelectorContainer,
   .element:hover :global(.vtex-button) {
     opacity: 1; }
+  .element :global(.vtex-product-price-1-x-installments) {
+    font-size: 13px; }
 
 .productPriceClass {
   width: 100%;
@@ -125,3 +128,50 @@
       font-size: 14px; }
   .productPriceClass .installmentContainer {
     width: 100%; }
+
+.skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--p {
+    order: 1; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--m {
+    order: 2; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--g {
+    order: 3; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--gg {
+    order: 4; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--xgg {
+    order: 5; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--1 {
+    order: 1; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--2 {
+    order: 2; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--3 {
+    order: 3; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--4 {
+    order: 4; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--5 {
+    order: 5; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--6 {
+    order: 6; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--8 {
+    order: 8; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--10 {
+    order: 10; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--38 {
+    order: 1; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--38b {
+    order: 2; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--40 {
+    order: 3; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--42 {
+    order: 4; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--44 {
+    order: 5; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--46 {
+    order: 6; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--48 {
+    order: 7; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--48b {
+    order: 8; }

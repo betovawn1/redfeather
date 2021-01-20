@@ -25,7 +25,9 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
-      "flex-layout.col#product-summary-description"
+      "product-summary-name",
+      "flex-layout.row#list-and-selling-price-summary",
+      "product-installments"
     ]
   },
   "flex-layout.col#product-summary-description": {
@@ -72,10 +74,8 @@
   "product-summary-image#shelf": {
     "props": {
       "showNavigationArrows": "never",
-      "aspectRatio": "1:1",
-      "showBadge": false,
-      "height": "350px",
-      "width": "350px"
+      "aspectRatio": "auto",
+      "showBadge": false
     }
   },
   "stack-layout#prodsum": {

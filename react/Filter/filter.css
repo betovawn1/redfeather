@@ -1,4 +1,6 @@
 @import url(https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/feather/feather-icons.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .priceRange .filtersWrapper .filter__container {
     display: none;
 }
@@ -20,24 +22,30 @@
     color: #000;
     display: block;
     font-size: 14px;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
 }
 .filterItemColor {
     display: block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #000;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(0,0,0,.4);
     margin-top: 10px;
     margin-right: 10px;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .filterItemColorSelected {
     display: block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #000;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(0,0,0,.4);
     position: relative;
     margin-top: 10px;
     margin-right: 10px;
+    border-radius: 50%;
     pointer-events: none;
 }
 .filterItemColorSelected::after,
@@ -48,7 +56,7 @@
     height: 1px;
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: rgba(0,0,0,.4);
 }
 .filterItemColorSelected::after {
     transform: translate(-50%, -50%) rotate(45deg);
@@ -86,7 +94,8 @@
     margin-top: -10px;
     align-items: center;
 }
-.filters {
+.filters > div {
+    padding-bottom: 20px;
 }
 .filtersWrapper {
     display: flex;
@@ -100,13 +109,17 @@
     padding-bottom: 50px;
 }
 .filtersContainer {
-    top: 40px;
     display: flex;
-    overflow: hidden;
-    position: sticky;
     max-width: 0;
+    overflow-x: hidden;
     transition: max-width .1s linear;
     flex-direction: column;
+}
+@medzia (min-height: 728px) {
+    .filtersContainer {
+        top: 40px;
+        position: sticky;
+    }
 }
 .filtersContainer.open {
     width: 350px;

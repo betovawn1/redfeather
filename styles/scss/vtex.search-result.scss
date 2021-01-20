@@ -18,6 +18,9 @@
         }
     }
 }
+.accordionFilterContainer--marca {
+    display: none;
+}
 .filters--layout {
     width: 100%;
 }
@@ -69,6 +72,7 @@
     left: 145px;
     width: calc(100% - 145px);
     padding: 0 25px;
+    z-index: 1;
     position: absolute;
     overflow-x: auto;
     .filter__container {

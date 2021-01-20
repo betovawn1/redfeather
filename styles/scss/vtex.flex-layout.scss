@@ -17,7 +17,7 @@
     }
 }
 .flexRow--header-main-row-desktop {
-    padding: 25px 30px;
+    padding: 20px 30px;
     @media (min-width: $minDesktop) {
         border-bottom: 1px solid $lighterGrey;
     }
@@ -78,9 +78,6 @@
 
     
     :global(.vtex-menu-2-x-menuContainer--menu-footer) {
-        font-family: $montserrat;
-    }
-    :global(.vtex-rich-text-0-x-container--menu-footer) {
         font-family: $montserrat;
     }
     
@@ -166,13 +163,16 @@
         .stretchChildrenWidth {
             &:first-child {
                 width: 40% !important;
+                @media (max-width: $maxMobile) {
+                    width: 35% !important;
+                }
             }
             &:last-child {
                 width: 60% !important;
                 align-items: flex-end;
                 @media (max-width: $maxMobile) {
                     margin-top: 15px;
-                    width: 55% !important;
+                    width: 65% !important;
                 }
             }
             :global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
@@ -184,7 +184,7 @@
                 outline: 0;
                 height: 55px;
                 @media (max-width: $maxMobile) {
-                    height: 40px !important;
+                    height: 50px !important;
                 }
                 border-radius: 0;
                 border-width: 1px;
@@ -192,38 +192,42 @@
                 background-color: $lighterGrey;
             }
             :global(.vtex-numeric-stepper__input) {
-                color: $grey;
+                color: $dark;
                 border-left: 0;
                 border-right: 0;
                 font-size: $size3;
+                font-family: $montserrat;
                 @media (max-width: $maxMobile) {
-                    font-size: 20px;
+                    width: 20px;
+                    font-size: 15px;
                 }
             }
             :global(.vtex-numeric-stepper__minus-button) {
                 width: 55px !important;
-                @media (max-width: $maxMobile) {
-                    width: 40px !important;
-                }
                 border-right: 0;
-                background-size: 14px;
+                background-size: 12px;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-image: url($iconArrowDown);
+                @media (max-width: $maxMobile) {
+                    width: 40px !important;
+                    background-size: 10px;
+                }
                 :global(.vtex-numeric-stepper__minus-button__text) {
                     font-size: 0;
                 }
             }
             :global(.vtex-numeric-stepper__plus-button) {
                 width: 55px !important;
+                border-left: 0;
+                background-size: 12px;
+                background-image: url($iconArrowUp);
+                background-repeat: no-repeat;
+                background-position: center;
                 @media (max-width: $maxMobile) {
                     width: 40px !important;
+                    background-size: 10px;
                 }
-                border-left: 0;
-                background-size: 14px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-image: url($iconArrowUp);
                 :global(.vtex-numeric-stepper__plus-button__text) {
                     font-size: 0;
                 }
@@ -232,24 +236,12 @@
                 height: 55px;
                 border-radius: 0;
                 :global(.vtex-add-to-cart-button-0-x-buttonText) {
-                    font-size: 0 !important;
+                    font-size: $size3;
                     display: flex;
                     align-items: center;
-                    &::before {
-                        content: "comprar";
-                        font-size: $size2;
-                        text-transform: uppercase;
-                    }
-                    &::after {
-                        content: "\f10d";
-                        font-size: $size5;
-                        margin-left: 20px;
-                        font-family: $flaticon;
-                        text-transform: uppercase;
-                    }
                 }
                 @media (max-width: $maxMobile) {
-                    height: 40px !important;
+                    height: 50px !important;
                     :global(.vtex-add-to-cart-button-0-x-buttonText) {
                         font-size: $size1;
                     }
@@ -316,14 +308,16 @@
         }
     }
 }
+:global(.vtex-product-identifier-0-x-product-identifier) {
+    color: $midGrey;
+    font-size: $size1;
+    font-family: $montserrat;
+}
 .flexCol--pdp-right-col {
-    :global(.vtex-product-identifier-0-x-product-identifier) {
-        color: $midGrey;
-        font-size: $size1;
-    }
     :global(.vtex-store-components-3-x-productBrand) {
         color: $dark;
-        font-size: $size4;
+        margin: 5px 0 0 0;
+        font-size: 30px;
     }
 }
 .flexRow--filter {
@@ -528,7 +522,8 @@
     align-items: flex-end;
     .stretchChildrenWidth {
         &:first-child {
-            margin-right: 5px;
+            margin-right: 0;
+            padding-right: 0;
         }
     }
 }
@@ -622,11 +617,34 @@
         padding: 0px 0px !important;
     }
     padding: 80px 0;
+    position: relative;
     margin-top: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("https://redfeather.vtexassets.com/arquivos/newsletter-bg.png");
+    .stretchChildrenWidth {
+        &:first-child {
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100%;
+            z-index: 0;
+            position: absolute;
+            :global(.vtex-store-components-3-x-imageElement) {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                @media (max-width: $maxMobile) {
+                    object-position: right;
+                }
+            }
+        }
+        &:last-child {
+            width: 100% !important;
+            z-index: 1;
+            position: relative;
+            @media (max-width: $maxMobile) {
+                background-color: rgba(0,0,0,.3);
+            }
+        }
+    }
 
 }
 .flexRow--video-home-1 {
@@ -676,5 +694,21 @@
 .flexRowContent--search-fetch-previous {
     @media (max-width: $maxMobile) {
         margin-top: 0;
+    }
+}
+.flexRowContent--institucional-1 {
+    .stretchChildrenWidth {
+        &:first-child {
+            @media (min-width: $maxMobile) {
+                width: 80% !important;
+            }
+        }
+        &:last-child {
+            width: calc(20% + 25px) !important;
+            margin-right: -25px;
+            @media (max-width: $maxMobile) {
+                display: none;
+            }
+        }
     }
 }

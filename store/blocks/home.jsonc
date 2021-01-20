@@ -17,7 +17,15 @@
     "props": {
       "blockClass": "newsletter"
     },
-    "children": ["flex-layout.col#newsletter"]
+    "children": [
+      "image#bg-newsletter",
+      "flex-layout.col#newsletter"
+    ]
+  },
+  "image#bg-newsletter": {
+    "props": {
+      "src": "https://redfeather.vtexassets.com/arquivos/newsletter-bg.jpg"
+    }
   },
   "flex-layout.col#newsletter": {
     "children": ["rich-text#title-newsletter", "newsletter"]
@@ -33,13 +41,49 @@
       "blockClass": "cards-home-1"
     },
     "children": [
-      "info-card#card-home-1",
-      "info-card#card-home-2",
-      "info-card#card-home-3",
-      "info-card#card-home-4",
-      "info-card#card-home-5",
-      "info-card#card-home-6"
+      "link#card-home-1",
+      "link#card-home-2",
+      "link#card-home-3",
+      "link#card-home-4",
+      "link#card-home-5",
+      "link#card-home-6"
     ]
+  },
+  "link#card-home-1": {
+    "props": {
+      "href": "/camisas"
+    },
+    "children": ["info-card#card-home-1"]
+  },
+  "link#card-home-2": {
+    "props": {
+      "href": "/camisetas"
+    },
+    "children": ["info-card#card-home-2"]
+  },
+  "link#card-home-3": {
+    "props": {
+      "href": "/shorts"
+    },
+    "children": ["info-card#card-home-3"]
+  },
+  "link#card-home-4": {
+    "props": {
+      "href": "/bermudas"
+    },
+    "children": ["info-card#card-home-4"]
+  },
+  "link#card-home-5": {
+    "props": {
+      "href": "/calcas"
+    },
+    "children": ["info-card#card-home-5"]
+  },
+  "link#card-home-6": {
+    "props": {
+      "href": "/infantil"
+    },
+    "children": ["info-card#card-home-6"]
   },
   "info-card#card-home-1": {
     "props": {
@@ -135,7 +179,7 @@
       "images": [
         {
           "image": "https://redfeather.vtexassets.com/arquivos/video-home.png",
-          "mobileImage": "https://redfeather.vtexassets.com/arquivos/video-home.png",
+          "mobileImage": "https://redfeather.vtexassets.com/arquivos/video_mobile.jpg?v=1",
           "description": "Redfeather Campanha 2021",
           "link": "https://www.youtube.com.br/"
         }

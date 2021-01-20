@@ -1,5 +1,6 @@
 @import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/feather/feather-icons.css");
 .listContainer {
   position: relative;
   justify-content: flex-start; }
@@ -24,6 +25,9 @@
     position: relative; }
     .listContainer .listItem :global(.vtex-button) {
       border: 0; }
+      .listContainer .listItem :global(.vtex-button) :global(.vtex-button__label) {
+        padding-left: 0;
+        padding-right: 3rem; }
     .listContainer .listItem.listItemActive {
       border-bottom: 1px solid #000; }
       .listContainer .listItem.listItemActive :global(.vtex-button) {

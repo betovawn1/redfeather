@@ -9,7 +9,8 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "flex-layout.row#description",
+      "shelf.relatedProducts#view",
+      "shelf.relatedProducts#buy",
       // "rich-text#collection-title-3",
       // "flex-layout.row#relatedProducts",
       "product-questions-and-answers"
@@ -53,9 +54,30 @@
       // "share#default"
     ]
   },
-  "flex-layout.row#relatedProducts": {
-    "children": [
-      "shelf.relatedProducts"
+  "shelf.relatedProducts#view": {
+    "props": {
+      "recommendation": "view",
+      "productList": {
+        "maxItems": 12,
+        "itemsPerPage": 4,
+        "titleText": "QUEM VIU, COMPROU TAMBÉM"
+      }
+    },
+    "blocks": [
+      "product-summary.shelf"
+    ]
+  },
+  "shelf.relatedProducts#buy": {
+    "props": {
+      "recommendation": "buy",
+      "productList": {
+        "maxItems": 12,
+        "itemsPerPage": 4,
+        "titleText": "SUGESTÕES"
+      }
+    },
+    "blocks": [
+      "product-summary.shelf"
     ]
   },
   "link#not-in-brazil": {
@@ -72,11 +94,11 @@
       "blockClass": "relatedProducts"
     }
   },
-  "flex-layout.row#relatedProducts": {
-    "children": [
-      "list-context.product-list#relatedProducts"
-    ]
-  },
+  // "flex-layout.row#relatedProducts": {
+  //   "children": [
+  //     "list-context.product-list#relatedProducts"
+  //   ]
+  // },
   "list-context.product-list#relatedProducts": {
     "blocks": [
       "product-summary.shelf"
@@ -283,8 +305,9 @@
       // "product-separator",
       "sku-selector",
       "flex-layout.row#selling-price",
-      "flex-layout.row#buy-button",
       "modal-trigger#tabela-de-medida",
+      "product-description",
+      "flex-layout.row#buy-button",
       // "shelf.relatedProducts",
       // "product-assembly-options",
       // "product-gifts",

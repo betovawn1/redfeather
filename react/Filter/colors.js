@@ -40,6 +40,29 @@ const colors = {
     },
     "vermelho": {
         value: "#FF4500"
+    },
+    "roxo": {
+        value: "#604F88"
+    },
+    "café": {
+        value: "#261714"
+    },
+    "caqui": {
+        value: "#BA8A64"
+    },
+    "bordô": {
+        value: "#330C11"
+    },
+    "palha": {
+        value: "#D5C09C"
+    },
+    "estampado": {
+        image: true,
+        value: "http://redfeather.vtexassets.com/arquivos/estampada.png"
+    },
+    "multicolor": {
+        image: true,
+        value: "http://redfeather.vtexassets.com/arquivos/multicolor.png"
     }
 }
 

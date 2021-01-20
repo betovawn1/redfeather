@@ -12,6 +12,8 @@ function SearchPageColorSelector() {
         setOpen(!open)
     })
 
+    console.log(filters)
+
     return (
         <div className={style.filtersWrapper}>
             <span className={style.button} onClick={handleClick}>Filtrar por</span>
@@ -20,7 +22,7 @@ function SearchPageColorSelector() {
                     {
                         filters.length > 0 ?
                             filters.map(filter => {
-                                if (filter.type == "PriceRanges" || filter.title == "Indicações (teste campo )") return null
+                                if (filter.type == "PriceRanges" || filter.title == "Indicações (teste campo )" || filter.title == "Marca") return null
                                 if (filter.title == "Cor") {
                                     return (
                                         <div className={style.filterContainer}>
@@ -32,6 +34,7 @@ function SearchPageColorSelector() {
                                                             Object.keys(colors).map(i => {
                                                                 if (i == facet.name.toLowerCase()) {
                                                                     if (facet.selected) return <a style={{ backgroundColor: colors[i].value }} title={facet.name} className={style.filterItemColorSelected} href={`/${facet.href}`}></a>
+                                                                    if (colors[i].image) return <a style={{ backgroundImage: `url(${colors[i].value}` }} title={facet.name} className={style.filterItemColor} href={`/${facet.href}`}></a>
                                                                     return (
                                                                         <a style={{ backgroundColor: colors[i].value }} title={facet.name} className={style.filterItemColor} href={`/${facet.href}`}></a>
                                                                     )

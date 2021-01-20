@@ -1,5 +1,6 @@
 @import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/feather/feather-icons.css");
 @media (max-width: 1025px) {
   .menuContainerNav--top-menu {
     padding: 0 20px; } }
@@ -49,12 +50,15 @@
     padding-left: 15px; } }
 
 .submenuWrapper--submenu-header {
+  width: 300px;
   border: 0;
   margin: -20px -10px;
-  padding: 30px 0 0;
-  width: 300px;
+  padding: 53px 0 0;
+  overflow: hidden;
   position: absolute;
-  background-color: transparent; }
+  background-color: transparent;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
   @media (max-width: 1025px) {
     .submenuWrapper--submenu-header {
       margin: 0;
@@ -62,7 +66,7 @@
       width: 100%; } }
   .submenuWrapper--submenu-header .submenu--submenu-header {
     display: flex;
-    padding: 30px 30px 0;
+    padding: 20px 20px 0;
     align-items: flex-start;
     background-color: rgba(245, 245, 245, 0.95);
     justify-content: flex-start; }
@@ -72,7 +76,7 @@
         flex-wrap: wrap; } }
     .submenuWrapper--submenu-header .submenu--submenu-header .menuContainerNav {
       width: 25%;
-      margin-bottom: 25px; }
+      margin-bottom: 5px; }
       @media (max-width: 1025px) {
         .submenuWrapper--submenu-header .submenu--submenu-header .menuContainerNav {
           width: 100%; } }
@@ -82,10 +86,7 @@
         .submenuWrapper--submenu-header .submenu--submenu-header :global(.vtex-store-components-3-x-imageElement) {
           display: none; } }
   .submenuWrapper--submenu-header .menuItem {
-    margin-bottom: 12px; }
-    @media (max-width: 1025px) {
-      .submenuWrapper--submenu-header .menuItem {
-        margin-bottom: 15px; } }
+    margin-bottom: 15px; }
     .submenuWrapper--submenu-header .menuItem .styledLinkContainer {
       margin: 0;
       padding: 0; }
@@ -122,6 +123,7 @@
   .menuContainerNav--menu-footer .styledLinkContainer .styledLinkContent {
     color: #000;
     font-size: 12px;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase; }
 
 @media (min-width: 767px) {

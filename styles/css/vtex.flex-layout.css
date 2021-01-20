@@ -1,5 +1,6 @@
 @import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/basic/flaticon.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://s3-sa-east-1.amazonaws.com/we.digi.tech/fonts/feather/feather-icons.css");
 .flexRowContent--header-main-row-desktop {
   display: flex;
   position: relative;
@@ -14,7 +15,7 @@
     margin-left: 20px; }
 
 .flexRow--header-main-row-desktop {
-  padding: 25px 30px; }
+  padding: 20px 30px; }
   @media (min-width: 1025px) {
     .flexRow--header-main-row-desktop {
       border-bottom: 1px solid #f3f3f3; } }
@@ -61,8 +62,6 @@
 .flexRow--menu-footer {
   border-top: 1px solid #dedede; }
   .flexRow--menu-footer :global(.vtex-menu-2-x-menuContainer--menu-footer) {
-    font-family: "Montserrat", sans-serif; }
-  .flexRow--menu-footer :global(.vtex-rich-text-0-x-container--menu-footer) {
     font-family: "Montserrat", sans-serif; }
   .flexRow--menu-footer .flexRowContent--menu-footer {
     padding: 30px 30px 0; }
@@ -134,13 +133,16 @@
       justify-content: space-between; } }
   .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth:first-child {
     width: 40% !important; }
+    @media (max-width: 767px) {
+      .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth:first-child {
+        width: 35% !important; } }
   .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth:last-child {
     width: 60% !important;
     align-items: flex-end; }
     @media (max-width: 767px) {
       .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth:last-child {
         margin-top: 15px;
-        width: 55% !important; } }
+        width: 65% !important; } }
   .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
     margin: 0; }
   .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__input),
@@ -156,59 +158,53 @@
       .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__input),
       .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__plus-button),
       .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__minus-button) {
-        height: 40px !important; } }
+        height: 50px !important; } }
   .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__input) {
-    color: #707070;
+    color: #000;
     border-left: 0;
     border-right: 0;
-    font-size: 16px; }
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif; }
     @media (max-width: 767px) {
       .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__input) {
-        font-size: 20px; } }
+        width: 20px;
+        font-size: 15px; } }
   .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__minus-button) {
     width: 55px !important;
     border-right: 0;
-    background-size: 14px;
+    background-size: 12px;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Layer_1' x='0px' y='0px' viewBox='0 0 512.011 512.011' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E"); }
     @media (max-width: 767px) {
       .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__minus-button) {
-        width: 40px !important; } }
+        width: 40px !important;
+        background-size: 10px; } }
     .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__minus-button) :global(.vtex-numeric-stepper__minus-button__text) {
       font-size: 0; }
   .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__plus-button) {
     width: 55px !important;
     border-left: 0;
-    background-size: 14px;
-    background-position: center;
+    background-size: 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Layer_1' x='0px' y='0px' viewBox='0 0 512.01 512.01' style='enable-background:new 0 0 512.01 512.01;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M505.755,358.256L271.088,123.589c-8.341-8.341-21.824-8.341-30.165,0L6.256,358.256c-8.341,8.341-8.341,21.824,0,30.165 s21.824,8.341,30.165,0l219.584-219.584l219.584,219.584c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251 C514.096,380.08,514.096,366.597,505.755,358.256z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Layer_1' x='0px' y='0px' viewBox='0 0 512.01 512.01' style='enable-background:new 0 0 512.01 512.01;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M505.755,358.256L271.088,123.589c-8.341-8.341-21.824-8.341-30.165,0L6.256,358.256c-8.341,8.341-8.341,21.824,0,30.165 s21.824,8.341,30.165,0l219.584-219.584l219.584,219.584c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251 C514.096,380.08,514.096,366.597,505.755,358.256z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E"); }
+    background-position: center; }
     @media (max-width: 767px) {
       .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__plus-button) {
-        width: 40px !important; } }
+        width: 40px !important;
+        background-size: 10px; } }
     .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-numeric-stepper__plus-button) :global(.vtex-numeric-stepper__plus-button__text) {
       font-size: 0; }
   .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-button) {
     height: 55px;
     border-radius: 0; }
     .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonText) {
-      font-size: 0 !important;
+      font-size: 16px;
       display: flex;
       align-items: center; }
-      .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
-        content: "comprar";
-        font-size: 14px;
-        text-transform: uppercase; }
-      .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonText)::after {
-        content: "\f10d";
-        font-size: 24px;
-        margin-left: 20px;
-        font-family: "Flaticon";
-        text-transform: uppercase; }
     @media (max-width: 767px) {
       .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-button) {
-        height: 40px !important; }
+        height: 50px !important; }
         .flexRow--buy-button .flexRowContent--buy-button .stretchChildrenWidth :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonText) {
           font-size: 13px; } }
 
@@ -263,13 +259,15 @@
       .flexRow--pdp-description .flexRowContent--pdp-description :global(.vtex-store-components-3-x-productDescriptionContainer) :global(.vtex-store-components-3-x-container) {
         padding: 0; }
 
-.flexCol--pdp-right-col :global(.vtex-product-identifier-0-x-product-identifier) {
+:global(.vtex-product-identifier-0-x-product-identifier) {
   color: #9c9c9c;
-  font-size: 13px; }
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif; }
 
 .flexCol--pdp-right-col :global(.vtex-store-components-3-x-productBrand) {
   color: #000;
-  font-size: 18px; }
+  margin: 5px 0 0 0;
+  font-size: 30px; }
 
 .flexRow--filter {
   padding: 0 30px 0; }
@@ -437,7 +435,8 @@
   display: flex;
   align-items: flex-end; }
   .flexRowContent--list-and-selling-price .stretchChildrenWidth:first-child {
-    margin-right: 5px; }
+    margin-right: 0;
+    padding-right: 0; }
 
 .flexRow--header-sup {
   background-color: #000; }
@@ -504,14 +503,32 @@
 
 .flexRow--newsletter {
   padding: 80px 0;
-  margin-top: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("https://redfeather.vtexassets.com/arquivos/newsletter-bg.png"); }
+  position: relative;
+  margin-top: 50px; }
   @media (max-width: 767px) {
     .flexRow--newsletter {
       padding: 0px 0px !important; } }
+  .flexRow--newsletter .stretchChildrenWidth:first-child {
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+    z-index: 0;
+    position: absolute; }
+    .flexRow--newsletter .stretchChildrenWidth:first-child :global(.vtex-store-components-3-x-imageElement) {
+      width: 100%;
+      object-fit: cover;
+      object-position: center; }
+      @media (max-width: 767px) {
+        .flexRow--newsletter .stretchChildrenWidth:first-child :global(.vtex-store-components-3-x-imageElement) {
+          object-position: right; } }
+  .flexRow--newsletter .stretchChildrenWidth:last-child {
+    width: 100% !important;
+    z-index: 1;
+    position: relative; }
+    @media (max-width: 767px) {
+      .flexRow--newsletter .stretchChildrenWidth:last-child {
+        background-color: rgba(0, 0, 0, 0.3); } }
 
 .flexRow--video-home-1 {
   margin-bottom: 30px; }
@@ -548,3 +565,14 @@
 @media (max-width: 767px) {
   .flexRowContent--search-fetch-previous {
     margin-top: 0; } }
+
+@media (min-width: 767px) {
+  .flexRowContent--institucional-1 .stretchChildrenWidth:first-child {
+    width: 80% !important; } }
+
+.flexRowContent--institucional-1 .stretchChildrenWidth:last-child {
+  width: calc(20% + 25px) !important;
+  margin-right: -25px; }
+  @media (max-width: 767px) {
+    .flexRowContent--institucional-1 .stretchChildrenWidth:last-child {
+      display: none; } }

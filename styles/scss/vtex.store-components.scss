@@ -23,7 +23,7 @@
 	justify-content: center;
 	align-items: center;
 
-	border-left: 1px solid $lighterGrey;
+	border-left: 1px solid $lightGrey;
 	height: 38px;
 	margin-left: 10px;
 
@@ -83,7 +83,7 @@
 				background-color: $light;
 
 				:global(.vtex-styleguide-9-x-input) {
-					min-width: 160px;
+					min-width: 180px;
 					padding: 0;
 					background-color: $light;
 					&::placeholder {
@@ -91,7 +91,7 @@
 						font-family: $montserrat !important;
 					}
 					color: $dark;
-					font-size: $size2;
+					font-size: 13px;
 					font-weight: $regular;
 				}
 				:global(.vtex-input__suffix) {
@@ -273,8 +273,14 @@
 				position: relative;
 				padding-top: 0;
 				justify-content: flex-start;
+				@media (max-width: $maxMobile) {
+					align-items: center;
+				}
 				:global(.vtex-input) {
 					max-width: 400px;
+					// @media (max-width: $maxMobile) {
+					// 	max-width: 80%;
+					// }
 					:global(.vtex-input-prefix__group) {
 						margin: 0;
 						width: 100%;
@@ -290,6 +296,9 @@
 							font-size: 14px;
 							padding-left: 10px;
 							background-color: transparent;
+							@media (max-width: $maxMobile) {
+								padding: 0 0 0 5px;
+							}
 							&::placeholder {
 								font-family: $montserrat;
 								color: $light;
@@ -301,6 +310,9 @@
 
 				.buttonContainer {
 					padding: 0;
+					// @media (max-width: $maxMobile) {
+					// 	max-width: 20%;
+					// }
 					:global(.vtex-button) {
 						border: 0;
 						margin: 0;
@@ -310,11 +322,18 @@
 						text-transform: uppercase;
 						border-bottom: 1px solid $light;
 						background-color: transparent;
+						@media (max-width: $maxMobile) {
+							width: 100%;
+							padding: 0 5px 0 0;
+						}
 						:global(.vtex-button__label) {
 							font-family: $montserrat;
 							padding-left: 0;
 							padding-right: 0;
 							font-size: $size2;
+							@media (max-width: $maxMobile) {
+								font-size: $size1;
+							}
 							&::after {
 								width: 17px;
 								height: 12px;
@@ -323,21 +342,14 @@
 								font-size: $size4;
 								margin-left: 10px;
 								font-family: $flaticon;
+								@media (max-width: $maxMobile) {
+									display: none;
+								}
 							}
 						}
 					}
 				}
 				@media (max-width: $maxMobile) {
-					display: flex;
-					flex-direction: column;
-
-					:global(.vtex-input) {
-						:global(.vtex-input-prefix__group) {
-							:global(.vtex-styleguide-9-x-input) {
-								padding-left: 0px;
-							}
-						}
-					}
 					.buttonContainer {
 						:global(.vtex-button) {
 							margin: 10px auto;
@@ -456,7 +468,7 @@
 }
 .skuSelectorItem {
 	.skuSelectorInternalBox {
-		border-color: $dark;
+		border-color: rgba(0,0,0,.4);
 		background-color: $light;
 		.valueWrapper {
 			color: $dark;
@@ -464,14 +476,20 @@
 		}
 	}
 }
+.skuSelectorNameContainer {
+	margin: 0;
+	.skuSelectorOptionsList {
+		margin: 0;
+	}
+}
 .skuSelectorItem--selected {
 	.skuSelectorInternalBox {
 		padding: 10px;
-		border-color: $grey !important;
-		background-color: $grey !important;
+		border-color: $dark !important;
+		background-color: $dark !important;
 		.valueWrapper {
 			color: $light !important;
-			background-color: $grey !important;
+			background-color: $dark !important;
 			padding: 2px;
 		}
 	}
@@ -479,6 +497,7 @@
 .skuSelectorName {
 	color: $dark;
 	font-size: $size0;
+	font-family: $montserrat;
 	text-transform: uppercase;
 }
 .skuSelectorItem {
@@ -493,6 +512,15 @@
 		}
 	}
 }
+.productDescriptionContainer {
+	.productDescriptionTitle {
+		display: none;
+	}
+	.content {
+		padding-top: 0 !important;
+		padding-bottom: 30px;
+	}
+}
 :global(.vtex-product-quantity-1-x-quantitySelectorTitle) {
 	display: none;
 }
@@ -502,10 +530,23 @@
 		margin-right: 8px;
 	}
 	display: block;
-	font-size: $size4;
+	font-size: $size5;
+	margin-bottom: 5px;
+	@media (max-width: $maxMobile) {
+		font-size: 22px;
+	}
 }
 :global(.vtex-product-price-1-x-installments) {
+	color: $grey;
 	font-size: $size2;
+	font-family: $montserrat;
+	text-transform: lowercase;
+	:global(.vtex-product-price-1-x-currencyCode) {
+		text-transform: uppercase;
+	}
+	@media (max-width: $maxMobile){
+		font-size: $size1;
+	}
 }
 :global(.vtex-store-components-3-x-skuSelectorSelectorImageValue) {
 	font-size: $size1;
@@ -568,7 +609,8 @@
 }
 .productDescriptionText {
 	.content {
-		font-size: $size2;
+		font-size: 13px;
+		font-family: $montserrat;
 		padding-top: 30px;
 		font-weight: $extraLight;
 		@media (max-width: $maxMobile) {
@@ -726,6 +768,42 @@
 		display: none;
 	}
 }
+.infoCardContainer--info-card-quem-somos {
+	padding: 0;
+	.infoCardTextContainer {
+		padding: 0 25px;
+		@media (max-width: $maxMobile) {
+			padding: 0 15px;
+		}
+		.container {
+			.wrapper {
+				.paragraph {
+					font-family: $montserrat;
+					.strong {
+						color: $dark;
+						font-size: $size4;
+						font-weight: $regular;
+						font-family: "Caviar Dreams", sans-serif;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+	.infoCardImageContainer {
+		height: 100%;
+		display: block;
+		line-height: 0;
+		.infoCardImage {
+			width: 100%;
+			height: 100%;
+			display: block;
+			max-width: unset;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+}
 .imageElement--carousel-home-2 {
 	width: 80% !important;
 	margin: 0 auto;
@@ -781,6 +859,7 @@
 		padding: 0 30px;
 		@media (max-width: $maxMobile) {
 			margin-left: -10px;
+			background-color: rgba(0, 0, 0, 0.7);
 		}
 
 		.infoCardHeadline,
@@ -798,7 +877,7 @@
 		}
 		.infoCardSubhead {
 			font-size: $size4;
-			letter-spacing: 3.6px;
+			letter-spacing: 1.5px;
 		}
 
 		@media (max-width: $maxMobile) {
@@ -806,7 +885,7 @@
 				font-size: $size4;
 			}
 			.infoCardSubhead {
-				font-size: $size0;
+				font-size: $size2;
 				width: 100%;
 			}
 		}
@@ -834,4 +913,11 @@
 			object-position: center;
 		}
 	}
+}
+.imageElement--institucional-aside {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	object-position: center;
 }

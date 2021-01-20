@@ -1,52 +1,46 @@
 @import "variables";
 
 .relatedProducts {
+    margin: 0 25px 30px;
     .title {
         color: $dark;
-        margin: 0;
-        padding: 0 0 15px;
-        font-size: 0;
+        margin: 0 0 20px;
+        font-size: 24px;
+        font-weight: 300;
         text-transform: uppercase;
-        justify-content: flex-start;
-        &::before {
-            content: "Veja também em outras cores:";
-            font-size: $size0;
-        }
+        text-align: center;
     }
     :global(.vtex-slider-0-x-sliderFrame) {
-        transform: unset !important;
-        transition: unset !important;
-        margin-bottom: 25px;
-        justify-content: flex-start;
-        :global(.vtex-shelf-1-x-arrow) {
-            display: none !important;
-        }
-        :global(.vtex-shelf-1-x-slide) {
-            max-width: 60px;
-            min-width: 60px;
-            :global(.vtex-product-summary-2-x-container) {
-                max-width: 45px !important;
-            }
-        }
+        // transform: unset !important;
+        // transition: unset !important;
+        // margin-bottom: 25px;
+        // justify-content: flex-start;
+        // :global(.vtex-shelf-1-x-arrow) {
+        //     display: none !important;
+        // }
+        // :global(.vtex-shelf-1-x-slide) {
+        //     max-width: 60px;
+        //     min-width: 60px;
+        //     :global(.vtex-product-summary-2-x-container) {
+        //         max-width: 45px !important;
+        //     }
+        // }
     }
     :global(.vtex-product-summary-2-x-element) {
-        padding-bottom: 0;
-        :global(.vtex-product-summary-2-x-imageContainer) {
-            border-radius: 50%;
-            overflow: hidden;
-            width: 45px;
-            height: 45px;
-            min-height: 45px;
-            :global(.vtex-product-summary-2-x-imageNormal) {
-                object-fit: cover;
-                object-position: center;
-            }
-        }
+        // padding-bottom: 0;
+        // :global(.vtex-product-summary-2-x-imageContainer) {
+        //     border-radius: 50%;
+        //     overflow: hidden;
+        //     width: 45px;
+        //     height: 45px;
+        //     min-height: 45px;
+        //     :global(.vtex-product-summary-2-x-imageNormal) {
+        //         object-fit: cover;
+        //         object-position: center;
+        //     }
+        // }
     }
-    :global(.vtex-slider-0-x-dotsContainer),
-    :global(.vtex-product-summary-2-x-information),
-    :global(.vtex-product-summary-2-x-buyButtonContainer),
-    :global(.vtex-store-components-3-x-discountInsideContainer) {
+    :global(.vtex-slider-0-x-dotsContainer) {
         display: none !important;
     }
 }
