@@ -1,7 +1,7 @@
 {
   "vendor": "redfeather",
   "name": "redfeather-theme",
-  "version": "0.0.11",
+  "version": "0.0.15",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -64,7 +64,8 @@
     "vtex.product-summary-context": "0.x",
     "vtex.store-form": "0.x",
     "vtex.store-graphql": "2.x",
-    "vtex.search-page-context": "0.x"
+    "vtex.search-page-context": "0.x",
+    "vtex.condition-layout": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

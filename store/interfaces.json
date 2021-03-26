@@ -10,5 +10,8 @@
     },
     "filter-trigger": {
         "component": "FilterTrigger"
+    },
+    "teste": {
+        "component": "Teste"
     }
 }

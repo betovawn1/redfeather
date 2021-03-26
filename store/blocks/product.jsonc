@@ -298,6 +298,7 @@
       "blockClass": "pdp-right-col"
     },
     "children": [
+      "teste",
       "product-identifier.product",
       "flex-layout.row#product-name",
       // "product-rating-summary",

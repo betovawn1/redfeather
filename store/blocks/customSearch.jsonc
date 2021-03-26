@@ -15,9 +15,50 @@
             }
         },
         "blocks": [
-            "search-result-layout.desktop",
-            "search-result-layout.mobile",
+            "search-result-layout.desktop#customQuery",
+            "search-result-layout.mobile#customQuery",
             "search-not-found-layout"
         ]
+    },
+    "search-result-layout.desktop#customQuery": {
+        "children": [
+            "list-context.image-list#main-carousel-category",
+            "rich-text#search-title",
+            "flex-layout.row#filter",
+            "flex-layout.row#filterSelected",
+            "flex-layout.row#result"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": false,
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+    "search-result-layout.mobile#customQuery": {
+        "children": [
+            "list-context.image-list#main-carousel-category",
+            "breadcrumb.search",
+            "rich-text#search-title",
+            "flex-layout.row#filter-mobile",
+            "flex-layout.row#result-mobile"
+            // "rich-text#collection-title-1",
+            // "flex-layout.row#shelf-3"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+    "rich-text#search-title": {
+        "props": {
+            "text": "Title Example",
+            "blockClass": "search-title"
+        }
     }
 }

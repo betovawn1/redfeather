@@ -143,6 +143,8 @@
     order: 4; }
   .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--xgg {
     order: 5; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--4g {
+    order: 6; }
   .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--1 {
     order: 1; }
   .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--2 {

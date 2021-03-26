@@ -358,7 +358,7 @@
     width: 100%;
     display: block;
     position: absolute;
-    background-color: #000;
+    background-color: #cecece;
     transform: rotate(45deg); }
 
 .skuSelectorItem .skuSelectorInternalBox {

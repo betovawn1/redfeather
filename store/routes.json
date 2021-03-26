@@ -1,5 +1,8 @@
 {
     "store.custom#contact-us": {
         "path": "/contato"
+    },
+    "store.custom#custom-query": {
+        "path": "/custom-query-example"
     }
 }
