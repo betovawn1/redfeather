@@ -139,6 +139,7 @@
     },
       "children": [
         "menu-item#marca-mobile",
+        "menu-item#news",
         "menu-item#produtos-mobile",
         "menu-item#perguntas-mobile",
         "menu-item#contato-mobile"
@@ -323,7 +324,7 @@
         "href": "/nos",
         "noFollow": false,
         "tagTitle": "perguntas-frequentes",
-        "text": "perguntas frequentes"
+        "text": "Faq"
       }
     }
   },
@@ -351,6 +352,7 @@
     },
     "children": [
       "menu-item#marca",
+      "menu-item#news",
       "menu-item#produtos",
       "menu-item#perguntas",
       "menu-item#contato"
@@ -369,6 +371,22 @@
         "noFollow": false,
         "tagTitle": "a-marca",
         "text": "a marca"
+      }
+    }
+  },
+  "menu-item#news": {
+    "props": {
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-header-news",
+      "itemProps": {
+        "type": "internal",
+        "href": "/news",
+        "noFollow": false,
+        "tagTitle": "news",
+        "text": "News"
       }
     }
   },
@@ -402,7 +420,7 @@
         "href": "/nos",
         "noFollow": false,
         "tagTitle": "perguntas-frequentes",
-        "text": "perguntas frequentes"
+        "text": "Faq"
       }
     }
   },
