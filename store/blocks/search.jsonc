@@ -8,7 +8,7 @@
         "skusFilter": "ALL",
         "maxItemsPerPage": 24,
         "simulationBehavior": "default",
-        "_unstableProductOriginVtex": true
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -28,7 +28,7 @@
         "maxItemsPerPage": 24,
         "skusFilter": "ALL",
         "simulationBehavior": "default",
-        "_unstableProductOriginVtex": true
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -42,7 +42,7 @@
         "maxItemsPerPage": 24,
         "simulationBehavior": "default",
         "orderByField": "OrderByReleaseDateDESC",
-        "_unstableProductOriginVtex": true
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -56,7 +56,7 @@
         "maxItemsPerPage": 24,
         "simulationBehavior": "default",
         "orderByField": "OrderByReleaseDateDESC",
-        "_unstableProductOriginVtex": true
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -70,7 +70,7 @@
         "maxItemsPerPage": 24,
         "simulationBehavior": "default",
         "orderByField": "OrderByReleaseDateDESC",
-        "_unstableProductOriginVtex": true
+        "__unstableProductOriginVtex": true
       }
     }
   },
