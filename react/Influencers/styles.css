@@ -1,0 +1,177 @@
+.payTableContainer {
+    padding: 0 30px 30px;
+}
+
+.monthSelector {
+    margin: 0;
+    display: flex;
+    padding: 30px 0;
+    list-style: none;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.monthSelector li {
+    color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    padding: 12px 20px;
+    transition: all 0.2s linear;
+    font-size: 0.875rem;
+    line-height: 1;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: #000;
+}
+
+@media (max-width: 767px) {
+    .monthSelector {
+        flex-flow: row-reverse wrap-reverse;
+        margin-top: -10px;
+    }
+    .monthSelector li {
+        margin-top: 10px;
+    }
+    .payTableContainer {
+        padding: 0 15px 30px;
+    }
+}
+.monthSelector li:hover {
+    transform: translateY(-5px);
+}
+.monthSelector li.selected {
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+}
+
+.ordersWrapper {
+    border: 1px solid #dedede;
+    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.ordersWrapper::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+    border-radius: 5px;
+}
+.ordersWrapper::-webkit-scrollbar-track {
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.ordersWrapper::-webkit-scrollbar-thumb {
+    background: #d1d1d1;
+}
+.ordersWrapper::-webkit-scrollbar-thumb:hover {
+    background: #f5f5f5;
+}
+.orders {
+    width: 100%;
+    padding: 30px;
+    overflow: hidden;
+    min-width: 1950px;
+    border-radius: 10px;
+}
+.orders thead {
+    padding: 15px 0;
+}
+.orders tbody tr {
+    padding: 0 0 15px;
+}
+.orders thead tr th {
+    font-weight: bold;
+}
+.orders thead tr th,
+.orders tbody tr td {
+    padding: 8px 0;
+    text-align: center;
+}
+.orders tbody tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+.orders,
+.orders th,
+.orders td {
+    border: 1px solid #f3f3f3;
+    border-collapse: collapse;
+}
+
+.notAuth {
+    padding: 30px;
+    text-align: center;
+}
+
+.profile {
+    margin: 30px 0 0;
+    display: block;
+    font-size: 1.75rem;
+}
+
+.commissioning {
+    color: #000;
+    background-color: #dedede;
+}
+
+.total {
+    margin: 1.5rem 0 1rem;
+    font-size: 1.5rem;
+    text-align: right;
+}
+.totalComissioning {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.loading {
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(-45deg, #fff, #f3f3f3, #fff, #f3f3f3);
+    border-radius: 10px;
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.wrapper {
+    height: auto;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing {
+    width: 17.5ch;
+    animation: typing 2s steps(17), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

@@ -13,5 +13,8 @@
     },
     "teste": {
         "component": "Teste"
+    },
+    "paytable-influencers": {
+        "component": "Influencers"
     }
 }

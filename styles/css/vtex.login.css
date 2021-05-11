@@ -9,10 +9,10 @@
   border: 0; }
   .container :global(.vtex-button) :global(.vtex-button__label) {
     padding: 0 !important; }
-    .container :global(.vtex-button) :global(.vtex-button__label) .label {
+    .container :global(.vtex-button) :global(.vtex-button__label) .label, .container :global(.vtex-button) :global(.vtex-button__label) .profile {
       padding: 0;
       font-size: 0; }
-      .container :global(.vtex-button) :global(.vtex-button__label) .label::before {
+      .container :global(.vtex-button) :global(.vtex-button__label) .label::before, .container :global(.vtex-button) :global(.vtex-button__label) .profile::before {
         width: 17px;
         color: #000;
         display: block;

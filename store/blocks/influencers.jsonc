@@ -1,0 +1,15 @@
+{
+    "store.custom#influencers": {
+        "blocks": [
+            "flex-layout.row#influencers"
+        ]
+    },
+    "flex-layout.row#influencers": {
+        "props": {
+            "blockClass": "influencers"
+        },
+        "children": [
+            "paytable-influencers"
+        ]
+    }
+}
