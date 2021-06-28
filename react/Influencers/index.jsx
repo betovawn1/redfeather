@@ -4,9 +4,9 @@ import React, {
     useCallback,
     useLayoutEffect
 } from 'react'
-import { 
+import {
     Query,
-    useLazyQuery, 
+    useLazyQuery,
 } from 'react-apollo'
 import styles from './styles.css'
 import defaults from './defaults'
@@ -38,21 +38,21 @@ function getDays(minusMonth) {
 }
 
 function formatDateApi(date) {
-    let day  = date.getDate().toString(),
-    dayF = (day.length == 1) ? '0' + day : day,
-    month  = (date.getMonth() + 1).toString(),
-    monthF = (month.length == 1) ? '0' + month : month,
-    yearF = date.getFullYear()
+    let day = date.getDate().toString(),
+        dayF = (day.length == 1) ? '0' + day : day,
+        month = (date.getMonth() + 1).toString(),
+        monthF = (month.length == 1) ? '0' + month : month,
+        yearF = date.getFullYear()
     return yearF + "-" + monthF + "-" + dayF
 }
 
 function formatDate(unformattedDate) {
     unformattedDate = new Date(unformattedDate)
-    let day  = unformattedDate.getDate().toString(),
-    dayF = (day.length == 1) ? '0' + day : day,
-    month  = (unformattedDate.getMonth() + 1).toString(),
-    monthF = (month.length == 1) ? '0' + month : month,
-    yearF = unformattedDate.getFullYear()
+    let day = unformattedDate.getDate().toString(),
+        dayF = (day.length == 1) ? '0' + day : day,
+        month = (unformattedDate.getMonth() + 1).toString(),
+        monthF = (month.length == 1) ? '0' + month : month,
+        yearF = unformattedDate.getFullYear()
     return dayF + "/" + monthF + "/" + yearF
 }
 
@@ -61,22 +61,22 @@ function formatFloat(price) {
 }
 
 function Paytable() {
-    const [ date ] = useState(new Date())
-    const [ orders, setOrders ] = useState(null)
-    const [ loading, setLoading ] = useState(false)
-    const [ affiliate, setAffiliate ] = useState(null)
-    const [ affiliates, setAffiliates ] = useState(null)
-    const [ orderItems, setOrderItems ] = useState(null)
-    const [ selectedMonth, setSelectedMonth ] = useState(0)
-    const [ fetchSession, { data: session, loading: sessionLoading } ] = useLazyQuery(getSession)
+    const [date] = useState(new Date())
+    const [orders, setOrders] = useState(null)
+    const [loading, setLoading] = useState(false)
+    const [affiliate, setAffiliate] = useState(null)
+    const [affiliates, setAffiliates] = useState(null)
+    const [orderItems, setOrderItems] = useState(null)
+    const [selectedMonth, setSelectedMonth] = useState(0)
+    const [fetchSession, { data: session, loading: sessionLoading }] = useLazyQuery(getSession)
 
     useLayoutEffect(() => {
         fetchSession()
     }, [])
-    
+
     const fetchOrders = async (month) => {
         setLoading(true)
-        
+
         let end = false
         let page = 1
         let allOrders = []
@@ -86,7 +86,7 @@ function Paytable() {
             allOrders = allOrders.concat(data.list)
 
             console.log(allOrders)
-            
+
             if (allOrders.length == data.paging.total) {
                 end = true
             } else {
@@ -95,8 +95,9 @@ function Paytable() {
         }
         setOrders(allOrders)
     }
-    
+
     useEffect(() => {
+        console.log("session", session)
         if (session && session.profile != null) {
             getAffiliate(session.profile.email).then(res => {
                 res.json().then(res => {
@@ -120,6 +121,8 @@ function Paytable() {
                     }
                 })
             })
+        } else if (session && session.profile == null) {
+            window.location = window.location.origin + "/login?returnUrl=afiliados"
         }
     }, [sessionLoading, session])
 
@@ -129,55 +132,97 @@ function Paytable() {
                 let end = false
                 let index = 0
                 let items = {}
+
+                const affiliatesUTM = affiliates.map(item => {
+                    return item.utm
+                })
+
                 while (!end) {
                     let data = null
                     if (orders[index] != undefined) {
                         data = await (await getOrder(orders[index].orderId)).json()
                     }
 
-                    console.log('data', data.marketingData)
-                    
                     if (data != null && data.marketingData != null) {
                         if (data.marketingData.utmSource != null && affiliate.person == "admin") {
+                            if (affiliatesUTM.includes(data.marketingData.utmSource)) {
+                                if (items[data.marketingData.utmSource] == undefined) {
+                                    items[data.marketingData.utmSource] = []
+                                }
+                                data.selectedUTM = 'utmSource'
+                                items[data.marketingData.utmSource].push(data)
+                            }
+                        }
+                        if (data.marketingData.utmCampaign != null && affiliate.person == "admin") {
+                            if (affiliatesUTM.includes(data.marketingData.utmCampaign)) {
+                                if (items[data.marketingData.utmCampaign] == undefined) {
+                                    items[data.marketingData.utmCampaign] = []
+                                }
+                                data.selectedUTM = 'utmCampaign'
+                                items[data.marketingData.utmCampaign].push(data)
+                            }
+                        }
+                        if (data.marketingData.utmMedium != null && affiliate.person == "admin") {
+                            if (affiliatesUTM.includes(data.marketingData.utmMedium)) {
+                                if (items[data.marketingData.utmMedium] == undefined) {
+                                    items[data.marketingData.utmMedium] = []
+                                }
+                                data.selectedUTM = 'utmMedium'
+                                items[data.marketingData.utmMedium].push(data)
+                            }
+                        }
+                        if (data.marketingData.utmPartner != null && affiliate.person == "admin") {
+                            if (affiliatesUTM.includes(data.marketingData.utmPartner)) {
+                                if (items[data.marketingData.utmPartner] == undefined) {
+                                    items[data.marketingData.utmPartner] = []
+                                }
+                                data.selectedUTM = 'utmPartner'
+                                items[data.marketingData.utmPartner].push(data)
+                            }
+                        }
+                        if (data.marketingData.coupon != null && affiliate.person == "admin") {
+                            if (affiliatesUTM.includes(data.marketingData.coupon)) {
+                                if (items[data.marketingData.coupon] == undefined) {
+                                    items[data.marketingData.coupon] = []
+                                }
+                                data.selectedUTM = 'coupon'
+                                items[data.marketingData.coupon].push(data)
+                            }
+                        }
+                        if (data.marketingData.utmSource != null && data.marketingData.utmSource == affiliate.utm && affiliate.person !== "admin") {
                             if (items[data.marketingData.utmSource] == undefined) {
                                 items[data.marketingData.utmSource] = []
                             }
+                            data.selectedUTM = 'utmSource'
                             items[data.marketingData.utmSource].push(data)
-                        } else if (data.marketingData.utmCampaign != null && affiliate.person == "admin") {
+                        }
+                        if (data.marketingData.utmCampaign != null && data.marketingData.utmCampaign == affiliate.utm && affiliate.person !== "admin") {
                             if (items[data.marketingData.utmCampaign] == undefined) {
                                 items[data.marketingData.utmCampaign] = []
                             }
+                            data.selectedUTM = 'utmCampaign'
                             items[data.marketingData.utmCampaign].push(data)
-                        } else if (data.marketingData.utmMedium != null && affiliate.person == "admin") {
+                        }
+                        if (data.marketingData.utmMedium != null && data.marketingData.utmMedium == affiliate.utm && affiliate.person !== "admin") {
                             if (items[data.marketingData.utmMedium] == undefined) {
                                 items[data.marketingData.utmMedium] = []
                             }
+                            data.selectedUTM = 'utmMedium'
                             items[data.marketingData.utmMedium].push(data)
-                        } else if (data.marketingData.utmPartner != null && affiliate.person == "admin") {
+                        }
+                        if (data.marketingData.utmPartner != null && data.marketingData.utmPartner == affiliate.utm && affiliate.person !== "admin") {
                             if (items[data.marketingData.utmPartner] == undefined) {
                                 items[data.marketingData.utmPartner] = []
                             }
+                            data.selectedUTM = 'utmPartner'
                             items[data.marketingData.utmPartner].push(data)
-                        } else if (data.marketingData.utmSource != null && data.marketingData.utmSource == affiliate.utm) {
-                            if (items[data.marketingData.utmSource] == undefined) {
-                                items[data.marketingData.utmSource] = []
+                        }
+                        if (data.marketingData.coupon != null && data.marketingData.coupon == affiliate.utm && affiliate.person !== "admin") {
+                            if (items[data.marketingData.coupon] == undefined) {
+                                items[data.marketingData.coupon] = []
                             }
-                            items[data.marketingData.utmSource].push(data)
-                        } else if (data.marketingData.utmCampaign != null && data.marketingData.utmCampaign == affiliate.utm) {
-                            if (items[data.marketingData.utmCampaign] == undefined) {
-                                items[data.marketingData.utmCampaign] = []
-                            }
-                            items[data.marketingData.utmCampaign].push(data)
-                        } else if (data.marketingData.utmMedium != null && data.marketingData.utmMedium == affiliate.utm) {
-                            if (items[data.marketingData.utmMedium] == undefined) {
-                                items[data.marketingData.utmMedium] = []
-                            }
-                            items[data.marketingData.utmMedium].push(data)
-                        } else if (data.marketingData.utmPartner != null && data.marketingData.utmPartner == affiliate.utm) {
-                            if (items[data.marketingData.utmPartner] == undefined) {
-                                items[data.marketingData.utmPartner] = []
-                            }
-                            items[data.marketingData.utmPartner].push(data)
+                            data.selectedUTM = 'coupon'
+                            items[data.marketingData.coupon].push(data)
                         }
                     }
 
@@ -187,10 +232,10 @@ function Paytable() {
                         index = ++index
                     }
                 }
-                
-                Object.keys(items).map(key => {
-                    let utm = items[key][0].marketingData.utmSource
 
+                Object.keys(items).map(key => {
+                    let selectedUTM = items[key][0].selectedUTM
+                    let utm = items[key][0].marketingData[selectedUTM]
                     let total = 0
                     let subTotal = 0
                     let shipping = 0
@@ -203,44 +248,36 @@ function Paytable() {
                                 total = total + each.value
                                 subTotal += each.value
                             }
-                            
+
                             if (each.id == "Discounts") {
                                 if (each.value < 0) {
                                     totalDiscount = totalDiscount + each.value
                                     subTotalDiscount = each.value
-                                } 
+                                }
                             }
-                            
+
                             if (each.id == "Shipping") {
-                                if (each.value < 0) {
+                                console.log('EACH', each)
+                                if (each.value > 0) {
                                     shipping = each.value
                                     subTotalDiscount = each.value
-                                } 
+                                }
                             }
                         })
-                        
-                        console.log("AFFILIATES", affiliates)
 
                         const filtered = affiliates.filter(item => {
-                            console.log("ITEM", item)
                             if (item.utm == utm) return true
                         })
 
-                        console.log("FILTERED", filtered)
-
                         if (filtered.length > 0) {
-                            console.log("bbb", filtered[0].email)
-                            console.log("bbb", filtered[0].percent)
-
                             item.customTotals = {
-                                total,
+                                total: total + shipping,
                                 shipping,
                                 subTotal: (subTotal - subTotalDiscount),
                                 commissioning: (formatFloat(subTotal) * (parseInt(filtered[0].percent) / 100)),
                                 totalDiscount
                             }
                         } else {
-    
                             item.customTotals = {
                                 total,
                                 shipping,
@@ -278,7 +315,7 @@ function Paytable() {
     console.log('orderItems', orderItems)
 
     if (affiliate != null) {
-        return ( 
+        return (
             <div className={`flex flex-column ${styles.payTableContainer}`}>
                 <div className={styles.payTableHeader}>
                     {
@@ -298,7 +335,7 @@ function Paytable() {
                                     </div>
                                 </div>
                             </div>
-                        :
+                            :
                             <>
                                 <ul className={styles.monthSelector}>
                                     {
@@ -313,70 +350,86 @@ function Paytable() {
                                 </ul>
                                 {
                                     orderItems != null ?
-                                    <>
-                                        {
-                                            Object.keys(orderItems).length == 0 ?
-                                                <p>Não há pedidos para o mês selecionado</p>
-                                            :
-                                                <>
-                                                    {
-                                                        Object.keys(orderItems).map(key => {
-                                                            return (
-                                                                <>
-                                                                    <h3>UTM: {key}</h3>
-                                                                    <div className={styles.ordersWrapper}>
-                                                                        <table className={styles.orders}>
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>Data de Criação</th>
-                                                                                    <th>Id do Pedido</th>
-                                                                                    <th>Quantidade</th>
-                                                                                    <th>utmCampaign</th>
-                                                                                    <th>utmMedium</th>
-                                                                                    <th>utmPartner</th>
-                                                                                    <th>utmSource</th>
-                                                                                    <th>Cidade</th>
-                                                                                    <th>UF</th>
-                                                                                    <th>Total</th>
-                                                                                    <th>Desconto</th>
-                                                                                    <th>Frete</th>
-                                                                                    <th className={styles.commissioning}>Comissão</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                {
-                                                                                    orderItems[key].map(order => {
-                                                                                        return (
-                                                                                            <tr>
-                                                                                                <td>{formatDate(order.creationDate)}</td>
-                                                                                                <td>{order.orderId}</td>
-                                                                                                <td>{order.items.length}</td>
-                                                                                                <td>{order.marketingData.utmCampaing}</td>
-                                                                                                <td>{order.marketingData.utmMedium}</td>
-                                                                                                <td>{order.marketingData.utmPartner}</td>
-                                                                                                <td>{order.marketingData.utmSource}</td>
-                                                                                                <td>{order.shippingData.address.city}</td>
-                                                                                                <td>{order.shippingData.address.state}</td>
-                                                                                                <td>{formatReal(order.customTotals.total)}</td>
-                                                                                                <td>{formatReal(order.customTotals.totalDiscount)}</td>
-                                                                                                <td>{formatReal(order.customTotals.shipping)}</td>
-                                                                                                <td className={styles.commissioning}>{`${order.customTotals.commissioning == 0 ? 0 : formatReal(order.customTotals.commissioning.toFixed(2).toString().replace('.', ''))}`}</td>
-                                                                                            </tr>
-                                                                                        )
-                                                                                    })
-                                                                                }
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                    <Total orderItems={orderItems[key]} />
-                                                                </>
-                                                            )
-                                                        })
-                                                    }
-                                                </>
-                                        }
-                                    </>
-                                    : null
+                                        <>
+                                            {
+                                                Object.keys(orderItems).length == 0 ?
+                                                    <p>Não há pedidos para o mês selecionado</p>
+                                                    :
+                                                    <>
+                                                        {
+                                                            Object.keys(orderItems).map(key => {
+                                                                return (
+                                                                    <>
+                                                                        <h3>UTM: {key}</h3>
+                                                                        <div className={styles.ordersWrapper}>
+                                                                            <table className={styles.orders}>
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Data de Criação</th>
+                                                                                        <th>Id do Pedido</th>
+                                                                                        <th>Quantidade</th>
+                                                                                        <th>Cidade</th>
+                                                                                        <th>UF</th>
+                                                                                        <th>Total</th>
+                                                                                        <th>Desconto</th>
+                                                                                        <th>Frete</th>
+                                                                                        <th className={styles.commissioning}>Comissão</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    {
+                                                                                        orderItems[key].map(order => {
+                                                                                            return (
+                                                                                                <>
+                                                                                                    <tr>
+                                                                                                        <td>{formatDate(order.creationDate)}</td>
+                                                                                                        <td>{order.orderId}</td>
+                                                                                                        <td>{order.items.length}</td>
+                                                                                                        <td>{order.shippingData.address.city}</td>
+                                                                                                        <td>{order.shippingData.address.state}</td>
+                                                                                                        <td>{formatReal(order.customTotals.total)}</td>
+                                                                                                        <td>{formatReal(order.customTotals.totalDiscount)}</td>
+                                                                                                        <td>{formatReal(order.customTotals.shipping)}</td>
+                                                                                                        <td className={styles.commissioning}>{`${order.customTotals.commissioning == 0 ? 0 : formatReal(order.customTotals.commissioning.toFixed(2).toString().replace('.', ''))}`}</td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td className={styles.utms} colSpan='9'>
+                                                                                                            <table style={{
+                                                                                                                width: "100%"
+                                                                                                            }}>
+                                                                                                                <tr>
+                                                                                                                    <th>utmCampaign</th>
+                                                                                                                    <th>utmMedium</th>
+                                                                                                                    <th>utmPartner</th>
+                                                                                                                    <th>utmSource</th>
+                                                                                                                    <th>Cupom</th>
+                                                                                                                </tr>
+                                                                                                                <tr>
+                                                                                                                    <td>{order.marketingData.utmCampaign}</td>
+                                                                                                                    <td>{order.marketingData.utmMedium}</td>
+                                                                                                                    <td>{order.marketingData.utmPartner}</td>
+                                                                                                                    <td>{order.marketingData.utmSource}</td>
+                                                                                                                    <td>{order.marketingData.coupon}</td>
+                                                                                                                </tr>
+                                                                                                            </table>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </>
+                                                                                            )
+                                                                                        })
+                                                                                    }
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <Total orderItems={orderItems[key]} />
+                                                                    </>
+                                                                )
+                                                            })
+                                                        }
+                                                    </>
+                                            }
+                                        </>
+                                        : null
                                 }
                             </>
                     }

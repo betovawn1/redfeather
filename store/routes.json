@@ -4,5 +4,8 @@
     },
     "store.custom#custom-query": {
         "path": "/custom-query-example"
+    },
+    "store.custom#influencers": {
+        "path": "/afiliados"
     }
 }

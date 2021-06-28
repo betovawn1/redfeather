@@ -1,7 +1,13 @@
 export default async function getAllOrders() {
     const url = `/api/oms/pvt/orders?per_page=30&orderBy=creationDate,desc&f_status=invoiced`
     const settings = {
-        method: 'GET'
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'X-VTEX-API-AppKey': 'vtexappkey-redfeather-EZALQZ',
+            'X-VTEX-API-AppToken': 'QXYWTVHLOAHUKIEYLOVEMQOPKGHUPGZBLJDXENEAVNSVEGHLDURGVDUAIIMMOMVHAGIBFHUXJVIYYTLEYVQVPSFIODOVBRLIRKUXXGGWZUWZVWBPWIOSVASIAANCSYVS'
+        }
     }
 
     let end = false

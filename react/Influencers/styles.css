@@ -1,6 +1,9 @@
 .payTableContainer {
     padding: 0 30px 30px;
 }
+.orders .utms {
+    padding: 0;
+}
 
 .monthSelector {
     margin: 0;
@@ -73,7 +76,7 @@
     width: 100%;
     padding: 30px;
     overflow: hidden;
-    min-width: 1950px;
+    /* min-width: 1950px; */
     border-radius: 10px;
 }
 .orders thead {
