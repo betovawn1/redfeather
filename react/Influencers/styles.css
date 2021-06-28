@@ -178,3 +178,25 @@
         border-color: transparent;
     }
 }
+
+.utmUrl {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    flex-flow: row wrap;
+    list-style: none;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: flex-start;
+}
+.utmUrl li {
+    margin: 0 15px 15px 0;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #f3f3f3;
+}
+@media (max-width: 767px) {
+    .utmUrl li {
+        font-size: .825rem;
+    }
+}

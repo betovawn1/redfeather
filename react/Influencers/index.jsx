@@ -361,6 +361,12 @@ function Paytable() {
                                                                 return (
                                                                     <>
                                                                         <h3>UTM: {key}</h3>
+                                                                        <ul className={styles.utmUrl}>
+                                                                            <li>{`https://www.redfeather.com.br/?utm_source=whatsapp&utm_campaign=${key}`}</li>
+                                                                            <li>{`https://www.redfeather.com.br/?utm_source=facebook&utm_campaign=${key}`}</li>
+                                                                            <li>{`https://www.redfeather.com.br/?utm_source=email&utm_campaign=${key}`}</li>
+                                                                            <li>{`https://www.redfeather.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=${key}`}</li>
+                                                                        </ul>
                                                                         <div className={styles.ordersWrapper}>
                                                                             <table className={styles.orders}>
                                                                                 <thead>
