@@ -1,0 +1,946 @@
+{
+    "package": {
+        "items": [
+            {
+                "itemIndex": 0,
+                "quantity": 2,
+                "price": 1387,
+                "description": null,
+                "unitMultiplier": 0
+            }
+        ],
+        "courier": "Retirada",
+        "invoiceNumber": "NFe-3734",
+        "invoiceValue": 2774,
+        "invoiceUrl": "http://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=completa&tipoConteudo=XbSeqxE8pl8=&nfe=25200770097530001742550010000051151000037811",
+        "issuanceDate": "2020-07-13T09:09:23",
+        "trackingNumber": null,
+        "invoiceKey": "25200770097530001742550010000051151000037811",
+        "trackingUrl": null,
+        "embeddedInvoice": "",
+        "type": "Output",
+        "courierStatus": null,
+        "cfop": null,
+        "restitutions": {},
+        "volumes": null
+    },
+    "subjectItemAttachment": {
+        "item": "Pantelmin 500mg caix...",
+        "totalItems": 2,
+        "extraItems": 1
+    },
+    "cancellationReason": null,
+    "items": [
+        {
+            "additionalInfo": {
+                "categoriesIds": "/1419/",
+                "productClusterId": "",
+                "commercialConditionId": "1",
+                "dimension": {
+                    "cubicweight": 0,
+                    "height": 1.9,
+                    "length": 11.1,
+                    "weight": 0.012,
+                    "width": 4.69
+                },
+                "brandName": "PANTELMIN",
+                "brandId": "705881",
+                "offeringInfo": null,
+                "offeringType": null,
+                "offeringTypeId": null
+            },
+            "sellerSku": "1589",
+            "priceTable": null,
+            "priceValidUntil": "2022-04-29T21:03:30Z",
+            "callCenterOperator": null,
+            "commission": 0,
+            "freightCommission": 0,
+            "taxCode": "30049063",
+            "catalogProvider": "vrn:vtex.catalog-api-proxy:-:redebella:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/1589",
+            "costPrice": null,
+            "uniqueId": "8C7A4BA3E120417A8679AD0C3670B7CD",
+            "id": "1589",
+            "productId": "1589",
+            "productRefId": "001589",
+            "refId": "001589",
+            "ean": "7896212429028",
+            "name": "Pantelmin 500mg caixa com 1 comprimido",
+            "skuName": "Pantelmin 500mg caixa com 1 comprimido",
+            "modalType": null,
+            "parentItemIndex": null,
+            "parentAssemblyBinding": null,
+            "assemblies": [],
+            "tax": 0,
+            "priceDefinitions": null,
+            "price": 1387,
+            "listPrice": 1387,
+            "manualPrice": null,
+            "manualPriceAppliedBy": null,
+            "sellingPrice": 1387,
+            "skuSpecifications": null,
+            "orderRewardStatus": null,
+            "rewardValue": 0,
+            "isGift": false,
+            "preSaleDate": null,
+            "productCategoryIds": "/1419/",
+            "productCategories": {
+                "1419": "ANTI-HELMINTICOS -E-"
+            },
+            "quantity": 2,
+            "seller": "1",
+            "sellerChain": [
+                "1"
+            ],
+            "imageUrl": "http://redebella.vteximg.com.br/arquivos/ids/155751-55-55/PANTELMIN-500MG-1COMP--DESCONTINUADO-.jpg?v=637553007342400000",
+            "detailUrl": "/pantelmin-500mg-caixa-com-1-comprimido-001589/p",
+            "components": [],
+            "bundleItems": [],
+            "attachments": [],
+            "attachmentOfferings": [],
+            "offerings": [],
+            "priceTags": [],
+            "availability": "available",
+            "measurementUnit": "un",
+            "unitMultiplier": 1,
+            "manufacturerCode": "80226"
+        }
+    ],
+    "sellers": [
+        {
+            "subSellerId": "1",
+            "fulfillmentEndpoint": "http://fulfillment.vtexcommerce.com.br/api/fulfillment?sc=1&an=redebella",
+            "id": "1",
+            "name": "NELFARMA COMERCIO DE PRODUTOS QUIMICOS LTDA",
+            "logo": ""
+        }
+    ],
+    "giftRegistryData": null,
+    "receiptData": null,
+    "contextData": null,
+    "marketPlaceOrderId": "",
+    "marketPlaceOrderGroup": null,
+    "marketplaceServicesEndpoint": null,
+    "orderFormId": "2951c97b66e4455b80553060f47ab078",
+    "sequence": "500021",
+    "affiliateId": "",
+    "status": "",
+    "callCenterOperator": "",
+    "userProfileId": "a9d367ca-f1d2-4e66-bc57-a003319cc1ad",
+    "hostName": "redebella",
+    "creationVersion": null,
+    "creationEnvironment": null,
+    "lastChangeVersion": null,
+    "workflowInstanceId": null,
+    "marketplacePaymentValue": null,
+    "orderId": "1128530297274-01",
+    "orderGroup": "1128530297274",
+    "state": "payment-approved",
+    "isCheckedIn": false,
+    "sellerOrderId": "00-1128530297274-01",
+    "storeId": null,
+    "checkedInPickupPointId": null,
+    "value": 2774,
+    "totals": [
+        {
+            "id": "Items",
+            "name": "Total dos Itens",
+            "value": 2774
+        },
+        {
+            "id": "Discounts",
+            "name": "Total dos Descontos",
+            "value": 0
+        },
+        {
+            "id": "Shipping",
+            "name": "Total do Frete",
+            "value": 0
+        },
+        {
+            "id": "Tax",
+            "name": "Total da Taxa",
+            "value": 0
+        }
+    ],
+    "clientProfileData": {
+        "email": "ulysses.rosa@linkapi.com.br-210000274961b.ct.vtex.com.br",
+        "firstName": "Ulysses",
+        "lastName": "Rosa",
+        "document": "40064263053",
+        "documentType": "cpf",
+        "phone": "+5511984834088",
+        "corporateName": null,
+        "tradeName": null,
+        "corporateDocument": null,
+        "stateInscription": null,
+        "corporatePhone": null,
+        "isCorporate": false,
+        "profileCompleteOnLoading": true,
+        "profileErrorOnLoading": false,
+        "customerClass": null
+    },
+    "ratesAndBenefitsData": {
+        "rateAndBenefitsIdentifiers": [],
+        "teaser": []
+    },
+    "shippingData": {
+        "address": {
+            "addressType": "pickup",
+            "receiverName": "Ulysses Rosa",
+            "addressId": "5962de57-8df3-4072-92b3-d2717d45ad29",
+            "isDisposable": true,
+            "postalCode": "58400-575",
+            "city": "Campina Grande",
+            "state": "PB",
+            "country": "BRA",
+            "street": "Rua Dom Pedro II",
+            "number": "513",
+            "neighborhood": "Prata",
+            "complement": "",
+            "reference": null,
+            "geoCoordinates": [
+                -35.89203,
+                -7.220016
+            ]
+        },
+        "logisticsInfo": [
+            {
+                "itemIndex": 0,
+                "selectedSla": "retire na loja (5962de57-8df3-4072-92b3-d2717d45ad29)",
+                "selectedDeliveryChannel": "pickup-in-point",
+                "addressId": "5962de57-8df3-4072-92b3-d2717d45ad29",
+                "slas": [
+                    {
+                        "id": "retire na loja (5962de57-8df3-4072-92b3-d2717d45ad29)",
+                        "deliveryChannel": "pickup-in-point",
+                        "name": "retire na loja (5962de57-8df3-4072-92b3-d2717d45ad29)",
+                        "deliveryIds": [
+                            {
+                                "courierId": "13d4c74",
+                                "warehouseId": "1af756d",
+                                "dockId": "1b10919",
+                                "courierName": "Pick point (tabela brasil zerada)",
+                                "quantity": 2,
+                                "kitItemDetails": [],
+                                "totalListPrice": 0
+                            }
+                        ],
+                        "shippingEstimate": "0bd",
+                        "shippingEstimateDate": "2021-04-29T21:09:08.5644127Z",
+                        "lockTTL": "12d",
+                        "availableDeliveryWindows": [],
+                        "deliveryWindow": null,
+                        "price": 0,
+                        "listPrice": 0,
+                        "tax": 0,
+                        "pickupStoreInfo": {
+                            "isPickupStore": true,
+                            "friendlyName": "R 51",
+                            "address": {
+                                "addressType": "pickup",
+                                "receiverName": null,
+                                "addressId": "5962de57-8df3-4072-92b3-d2717d45ad29",
+                                "isDisposable": true,
+                                "postalCode": "58400-575",
+                                "city": "Campina Grande",
+                                "state": "PB",
+                                "country": "BRA",
+                                "street": "Rua Dom Pedro II",
+                                "number": "513",
+                                "neighborhood": "Prata",
+                                "complement": "",
+                                "reference": null,
+                                "geoCoordinates": [
+                                    -35.89203,
+                                    -7.220016
+                                ]
+                            },
+                            "additionalInfo": "Fone: 3322.5461 / 3322.5299 / 3322.8289",
+                            "dockId": "1b10919"
+                        },
+                        "pickupPointId": "1_5962de57-8df3-4072-92b3-d2717d45ad29",
+                        "pickupDistance": 0,
+                        "polygonName": null,
+                        "transitTime": "0bd"
+                    }
+                ],
+                "shipsTo": [
+                    "BRA"
+                ],
+                "itemId": "1589",
+                "deliveryChannels": [
+                    {
+                        "id": "pickup-in-point",
+                        "stockBalance": 0
+                    }
+                ]
+            }
+        ],
+        "selectedAddresses": [
+            {
+                "addressType": "pickup",
+                "receiverName": "Ulysses Rosa",
+                "addressId": "5962de57-8df3-4072-92b3-d2717d45ad29",
+                "isDisposable": true,
+                "postalCode": "58400-575",
+                "city": "Campina Grande",
+                "state": "PB",
+                "country": "BRA",
+                "street": "Rua Dom Pedro II",
+                "number": "513",
+                "neighborhood": "Prata",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [
+                    -35.89203,
+                    -7.220016
+                ]
+            }
+        ],
+        "availableAddresses": [
+            {
+                "addressType": "pickup",
+                "receiverName": "Ulysses Rosa",
+                "addressId": "5962de57-8df3-4072-92b3-d2717d45ad29",
+                "isDisposable": true,
+                "postalCode": "58400-575",
+                "city": "Campina Grande",
+                "state": "PB",
+                "country": "BRA",
+                "street": "Rua Dom Pedro II",
+                "number": "513",
+                "neighborhood": "Prata",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [
+                    -35.89203,
+                    -7.220016
+                ]
+            }
+        ],
+        "pickupPoints": [
+            {
+                "friendlyName": "R 51",
+                "address": {
+                    "addressType": "pickup",
+                    "receiverName": null,
+                    "addressId": "5962de57-8df3-4072-92b3-d2717d45ad29",
+                    "isDisposable": true,
+                    "postalCode": "58400-575",
+                    "city": "Campina Grande",
+                    "state": "PB",
+                    "country": "BRA",
+                    "street": "Rua Dom Pedro II",
+                    "number": "513",
+                    "neighborhood": "Prata",
+                    "complement": "",
+                    "reference": null,
+                    "geoCoordinates": [
+                        -35.89203,
+                        -7.220016
+                    ]
+                },
+                "additionalInfo": "Fone: 3322.5461 / 3322.5299 / 3322.8289",
+                "id": "1_5962de57-8df3-4072-92b3-d2717d45ad29",
+                "businessHours": [
+                    {
+                        "DayOfWeek": 1,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 2,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 3,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 4,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 5,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 6,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "12:00:00"
+                    }
+                ]
+            },
+            {
+                "friendlyName": "R 30",
+                "address": {
+                    "addressType": "pickup",
+                    "receiverName": null,
+                    "addressId": "a6333375-3c61-4ac0-bac9-bd29a3279b76",
+                    "isDisposable": true,
+                    "postalCode": "58429-145",
+                    "city": "Campina Grande",
+                    "state": "PB",
+                    "country": "BRA",
+                    "street": "Rua Rodrigues Alves",
+                    "number": "417",
+                    "neighborhood": "Universitário",
+                    "complement": "",
+                    "reference": null,
+                    "geoCoordinates": [
+                        -35.89401,
+                        -7.221085
+                    ]
+                },
+                "additionalInfo": "Fone:(083) 3322-7063",
+                "id": "1_a6333375-3c61-4ac0-bac9-bd29a3279b76",
+                "businessHours": [
+                    {
+                        "DayOfWeek": 1,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 2,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 3,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 4,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 5,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 6,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "12:00:00"
+                    }
+                ]
+            },
+            {
+                "friendlyName": "R 24",
+                "address": {
+                    "addressType": "pickup",
+                    "receiverName": null,
+                    "addressId": "41a3cb43-6548-4138-a15c-dea1a44d46ff",
+                    "isDisposable": true,
+                    "postalCode": "58800-110",
+                    "city": "Sousa",
+                    "state": "PB",
+                    "country": "BRA",
+                    "street": "Rua Getúlio Vargas",
+                    "number": "06",
+                    "neighborhood": "Centro",
+                    "complement": "",
+                    "reference": null,
+                    "geoCoordinates": [
+                        -35.88942,
+                        -7.218322
+                    ]
+                },
+                "additionalInfo": "Fone: (083): 3521-1533",
+                "id": "1_41a3cb43-6548-4138-a15c-dea1a44d46ff",
+                "businessHours": [
+                    {
+                        "DayOfWeek": 1,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 2,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 3,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 4,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 5,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 6,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "12:00:00"
+                    }
+                ]
+            },
+            {
+                "friendlyName": "R 49",
+                "address": {
+                    "addressType": "pickup",
+                    "receiverName": null,
+                    "addressId": "c3cd6ea9-0e17-4570-a4d3-6525ca2cda08",
+                    "isDisposable": true,
+                    "postalCode": "58400-087",
+                    "city": "Campina Grande",
+                    "state": "PB",
+                    "country": "BRA",
+                    "street": "Rua Marquês do Herval",
+                    "number": "132",
+                    "neighborhood": "Centro",
+                    "complement": "",
+                    "reference": null,
+                    "geoCoordinates": [
+                        -35.885,
+                        -7.218718
+                    ]
+                },
+                "additionalInfo": "Fone: 3322.6800",
+                "id": "1_c3cd6ea9-0e17-4570-a4d3-6525ca2cda08",
+                "businessHours": [
+                    {
+                        "DayOfWeek": 1,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 2,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 3,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 4,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 5,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 6,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "12:00:00"
+                    }
+                ]
+            },
+            {
+                "friendlyName": "R 47",
+                "address": {
+                    "addressType": "pickup",
+                    "receiverName": null,
+                    "addressId": "cf1496bf-b6fd-4cb6-8179-4b6544b28374",
+                    "isDisposable": true,
+                    "postalCode": "58400-143",
+                    "city": "Campina Grande",
+                    "state": "PB",
+                    "country": "BRA",
+                    "street": "Rua Peregrino de Carvalho",
+                    "number": "154",
+                    "neighborhood": "Centro",
+                    "complement": "",
+                    "reference": null,
+                    "geoCoordinates": [
+                        -35.88077,
+                        -7.217529
+                    ]
+                },
+                "additionalInfo": "Fone: 3322.6101",
+                "id": "1_cf1496bf-b6fd-4cb6-8179-4b6544b28374",
+                "businessHours": [
+                    {
+                        "DayOfWeek": 1,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 2,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 3,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 4,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 5,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 6,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "12:00:00"
+                    }
+                ]
+            },
+            {
+                "friendlyName": "R 35",
+                "address": {
+                    "addressType": "pickup",
+                    "receiverName": null,
+                    "addressId": "7fdd72b5-0d5c-4721-b762-c7046cbff893",
+                    "isDisposable": true,
+                    "postalCode": "58414-110",
+                    "city": "Campina Grande",
+                    "state": "PB",
+                    "country": "BRA",
+                    "street": "Rua Pedro Leal",
+                    "number": "420",
+                    "neighborhood": "Tambor",
+                    "complement": "",
+                    "reference": null,
+                    "geoCoordinates": [
+                        -35.88881,
+                        -7.235343
+                    ]
+                },
+                "additionalInfo": "Fone: (083) 3322.3410",
+                "id": "1_7fdd72b5-0d5c-4721-b762-c7046cbff893",
+                "businessHours": [
+                    {
+                        "DayOfWeek": 1,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 2,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 3,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 4,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 5,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 6,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "12:00:00"
+                    }
+                ]
+            },
+            {
+                "friendlyName": "R 55",
+                "address": {
+                    "addressType": "pickup",
+                    "receiverName": null,
+                    "addressId": "309e3402-1a96-4290-9028-358d757cd28e",
+                    "isDisposable": true,
+                    "postalCode": "58407-475",
+                    "city": "Campina Grande",
+                    "state": "PB",
+                    "country": "BRA",
+                    "street": "Avenida Prefeito Severino Bezerra Cabral",
+                    "number": "38",
+                    "neighborhood": "José Pinheiro",
+                    "complement": "",
+                    "reference": null,
+                    "geoCoordinates": [
+                        -35.87639,
+                        -7.225999
+                    ]
+                },
+                "additionalInfo": "Fone: (83) 3099.7761/3099.7786",
+                "id": "1_309e3402-1a96-4290-9028-358d757cd28e",
+                "businessHours": [
+                    {
+                        "DayOfWeek": 1,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 2,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 3,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 4,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 5,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 6,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "12:00:00"
+                    }
+                ]
+            },
+            {
+                "friendlyName": "R 50 - NELFARMA COMÉRCIO DE PRODUTOS QUÍMICOS LTDA.",
+                "address": {
+                    "addressType": "pickup",
+                    "receiverName": null,
+                    "addressId": "d854622f-3f46-4f7b-93f7-345e29b02eb0",
+                    "isDisposable": true,
+                    "postalCode": "58402-068",
+                    "city": "Campina Grande",
+                    "state": "PB",
+                    "country": "BRA",
+                    "street": "Avenida Manoel Tavares",
+                    "number": "400 ",
+                    "neighborhood": "Jardim Tavares",
+                    "complement": "",
+                    "reference": null,
+                    "geoCoordinates": [
+                        -35.87539,
+                        -7.207237
+                    ]
+                },
+                "additionalInfo": "Fone: 3322.7303 / 3322.7352",
+                "id": "1_d854622f-3f46-4f7b-93f7-345e29b02eb0",
+                "businessHours": [
+                    {
+                        "DayOfWeek": 1,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 2,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 3,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 4,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 5,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 6,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "12:00:00"
+                    }
+                ]
+            },
+            {
+                "friendlyName": "R 23",
+                "address": {
+                    "addressType": "pickup",
+                    "receiverName": null,
+                    "addressId": "40bb0f17-e236-489f-a8ef-377597b8cd0e",
+                    "isDisposable": true,
+                    "postalCode": "58135-000",
+                    "city": "Esperança",
+                    "state": "PB",
+                    "country": "BRA",
+                    "street": "Rua Manoel Rodrigues de Oliveira",
+                    "number": "97",
+                    "neighborhood": "",
+                    "complement": "",
+                    "reference": null,
+                    "geoCoordinates": [
+                        -35.85806,
+                        -7.019885
+                    ]
+                },
+                "additionalInfo": "Fone: (083) 3361.2949",
+                "id": "1_40bb0f17-e236-489f-a8ef-377597b8cd0e",
+                "businessHours": [
+                    {
+                        "DayOfWeek": 1,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 2,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 3,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 4,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 5,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "17:00:00"
+                    },
+                    {
+                        "DayOfWeek": 6,
+                        "OpeningTime": "09:00:00",
+                        "ClosingTime": "12:00:00"
+                    }
+                ]
+            }
+        ]
+    },
+    "paymentData": {
+        "giftCards": [],
+        "transactions": [
+            {
+                "isActive": true,
+                "transactionId": "7A5B2D1530AE4C62B060E43E464156D9",
+                "merchantName": "REDEBELLA",
+                "payments": [
+                    {
+                        "id": "1FF78C946D7A411DADBF31EFDF9FCB50",
+                        "paymentSystem": "6",
+                        "paymentSystemName": "Boleto Bancário",
+                        "value": 2774,
+                        "installments": 1,
+                        "connectorResponses": {
+                            "Tid": "120GXM9SQQ9YNQC2",
+                            "ReturnCode": "undefined",
+                            "Message": null,
+                            "authId": "120GXM9SQQ9YNQC2",
+                            "acquirer": "PagHiper"
+                        },
+                        "referenceValue": 2774,
+                        "cardHolder": null,
+                        "cardNumber": null,
+                        "firstDigits": null,
+                        "lastDigits": null,
+                        "cvv2": null,
+                        "expireMonth": null,
+                        "expireYear": null,
+                        "url": "https://www.paghiper.com/checkout/boleto/f9e7af24704d610137d17d73f47b368ab33ba6cb2b34cca0f3adcc9e42388fceb176ffc91a7ebb94851f8955fccba47e773cfc2f6d248c237347f44da8145e4c/120GXM9SQQ9YNQC2/81372286",
+                        "koinUrl": null,
+                        "tid": "120GXM9SQQ9YNQC2",
+                        "redemptionCode": null,
+                        "giftCardId": null,
+                        "giftCardProvider": null,
+                        "giftCardAsDiscount": null,
+                        "group": "bankInvoice",
+                        "dueDate": null,
+                        "accountId": null,
+                        "parentAccountId": null,
+                        "bankIssuedInvoiceIdentificationNumber": null,
+                        "bankIssuedInvoiceIdentificationNumberFormatted": null,
+                        "bankIssuedInvoiceBarCodeNumber": null,
+                        "bankIssuedInvoiceBarCodeType": null,
+                        "billingAddress": null
+                    }
+                ],
+                "sharedTransaction": false
+            }
+        ]
+    },
+    "clientPreferencesData": {
+        "locale": "pt-BR",
+        "optinNewsLetter": false
+    },
+    "commercialConditionData": null,
+    "marketingData": null,
+    "storePreferencesData": {
+        "countryCode": "BRA",
+        "saveUserData": false,
+        "timeZone": "E. South America Standard Time",
+        "currencyCode": "BRL",
+        "currencyLocale": 1046,
+        "currencySymbol": "R$",
+        "currencyFormatInfo": {
+            "currencyDecimalDigits": 2,
+            "currencyDecimalSeparator": ",",
+            "currencyGroupSeparator": ".",
+            "currencyGroupSize": 3,
+            "startsWithCurrencySymbol": true
+        }
+    },
+    "openTextField": null,
+    "invoiceData": null,
+    "itemMetadata": null,
+    "taxData": null,
+    "customData": null,
+    "hooksData": null,
+    "changeData": null,
+    "subscriptionData": null,
+    "salesChannel": "1",
+    "followUpEmail": "e622e185ce46457fa6f7d899ead3a625@ct.vtex.com.br",
+    "creationDate": "2021-04-29T21:04:16.202043Z",
+    "lastChange": "2021-04-29T21:08:19.4313566Z",
+    "timeZoneCreationDate": "2021-04-29T18:04:16.202043",
+    "timeZoneLastChange": "2021-04-29T18:08:19.4313566",
+    "isCompleted": true,
+    "merchantName": null,
+    "userType": "",
+    "roundingError": 0,
+    "allowEdition": false,
+    "allowCancellation": false,
+    "isUserDataVisible": false,
+    "allowChangeSeller": false,
+    "_accountInfo": {
+        "MainAccountName": "redebella",
+        "AccountName": "redebella",
+        "Cnpj": "70097530000185",
+        "Id": "2124510a-f36e-4b82-b6da-7eb79242af93",
+        "IsActive": true,
+        "IsOperating": false,
+        "CreationDate": "2020-09-16T14:29:55",
+        "OperationDate": null,
+        "CompanyName": "NELFARMA COMERCIO DE PRODUTOS QUIMICOS LTDA",
+        "TradingName": "NELFARMA COMERCIO DE PRODUTOS QUIMICOS LTDA",
+        "City": null,
+        "Complement": null,
+        "Country": null,
+        "State": null,
+        "Address": null,
+        "District": null,
+        "Number": null,
+        "PostalCode": null,
+        "Licences": null,
+        "ParentAccountName": null,
+        "InactivationDate": null,
+        "Platform": "vtex"
+    }
+}

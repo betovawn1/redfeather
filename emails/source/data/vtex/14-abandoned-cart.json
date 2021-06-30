@@ -1,0 +1,43 @@
+{
+	"to": [
+		{
+			"name": "luiz.henrique",
+			"email": "luiz.henrique@wedigi.com.br"
+		}
+	],
+	"aditionalData": {
+		"accessKey": "734145",
+		"locale": "pt-BR",
+		"userAgent": "Chrome, Mac OS X",
+		"geolocation": {
+			"country": "Brazil",
+			"region": "SP",
+			"city": "São Paulo",
+			"ip": "191.180.167.212"
+		}
+	},
+	"_accountInfo": {
+		"MainAccountName": "goldko",
+		"AccountName": "goldko",
+		"Cnpj": "06021902000190",
+		"Id": "cab8933d-d947-477c-bed8-5f2784f8bdaf",
+		"IsActive": true,
+		"IsOperating": false,
+		"CreationDate": "2020-10-07T15:09:59",
+		"OperationDate": null,
+		"CompanyName": "GOLD & KO INDUSTRIA, COMERCIO, IMPORTACAO E EXPORTACAO DE ALIMENTOS LTDA.",
+		"TradingName": "GOLD & KO INDUSTRIA, COMERCIO, IMPORTACAO E EXPORTACAO DE ALIMENTOS LTDA.",
+		"City": null,
+		"Complement": null,
+		"Country": null,
+		"State": null,
+		"Address": null,
+		"District": null,
+		"Number": null,
+		"PostalCode": null,
+		"Licences": null,
+		"ParentAccountName": null,
+		"InactivationDate": null,
+		"Platform": "vtex"
+	}
+}

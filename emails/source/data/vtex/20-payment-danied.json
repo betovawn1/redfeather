@@ -1,0 +1,526 @@
+{
+	"package": {
+		"items": [
+			{
+				"itemIndex": 0,
+				"quantity": 1,
+				"price": 8460,
+				"description": null,
+				"unitMultiplier": 0
+			}
+		],
+		"courier": "Próprio",
+		"invoiceNumber": "023180",
+		"invoiceValue": 9355,
+		"invoiceUrl": "http://www.nfe.fazenda.gov.br",
+		"issuanceDate": "2021-03-22T10:52:50+00:00",
+		"trackingNumber": null,
+		"invoiceKey": "35210320422248000158550010000231801523495862",
+		"trackingUrl": null,
+		"embeddedInvoice": "",
+		"type": "Output",
+		"courierStatus": null,
+		"cfop": null,
+		"restitutions": {},
+		"volumes": null
+	},
+	"subjectItemAttachment": {
+		"item": "10 Musas ao leite ze...",
+		"totalItems": 1
+	},
+	"cancellationReason": null,
+	"items": [
+		{
+			"additionalInfo": {
+				"categoriesIds": "/5/",
+				"productClusterId": "",
+				"commercialConditionId": "1",
+				"dimension": {
+					"cubicweight": 1,
+					"height": 16,
+					"length": 38,
+					"weight": 350,
+					"width": 28
+				},
+				"brandName": "Gold Ko",
+				"brandId": "2000001",
+				"offeringInfo": null,
+				"offeringType": null,
+				"offeringTypeId": null
+			},
+			"sellerSku": "63",
+			"priceTable": null,
+			"priceValidUntil": "2022-03-20T23:06:03Z",
+			"callCenterOperator": null,
+			"commission": 0,
+			"freightCommission": 0,
+			"taxCode": "",
+			"catalogProvider": "vrn:vtex.catalog-api-proxy:-:goldko:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/63",
+			"costPrice": null,
+			"uniqueId": "1033F0394CD94A188C94390B647D0839",
+			"id": "63",
+			"productId": "62",
+			"productRefId": "",
+			"refId": "33",
+			"ean": null,
+			"name": "10 Musas ao leite zero adição de açúcares",
+			"skuName": "10 Musas ao leite zero adição de açúcares",
+			"modalType": null,
+			"parentItemIndex": null,
+			"parentAssemblyBinding": null,
+			"assemblies": [],
+			"tax": 0,
+			"priceDefinitions": null,
+			"price": 8460,
+			"listPrice": 8900,
+			"manualPrice": null,
+			"manualPriceAppliedBy": null,
+			"sellingPrice": 8460,
+			"skuSpecifications": null,
+			"orderRewardStatus": null,
+			"rewardValue": 0,
+			"isGift": false,
+			"preSaleDate": null,
+			"productCategoryIds": "/5/",
+			"productCategories": {
+				"2": "Chocolate ao Leite",
+				"3": "Chocolates",
+				"5": "Combos",
+				"7": "Marshmallow"
+			},
+			"quantity": 1,
+			"seller": "1",
+			"sellerChain": [
+				"1"
+			],
+			"imageUrl": "http://goldko.vteximg.com.br/arquivos/ids/157381-150-150/10-Musas-ao-leite.jpg?v=637492529111100000",
+			"detailUrl": "/10-musas-ao-leite-zero-adicao-de-acucares/p",
+			"components": [
+				{
+					"uniqueId": "BBEE2A44159040E9A88BD47F1AEF00FF",
+					"id": "7",
+					"productId": null,
+					"productRefId": null,
+					"refId": "1809",
+					"ean": "",
+					"name": "Musa ao leite zero adição de açúcares - 30g",
+					"skuName": null,
+					"modalType": null,
+					"parentItemIndex": null,
+					"parentAssemblyBinding": null,
+					"assemblies": [],
+					"priceValidUntil": null,
+					"tax": 0,
+					"priceDefinitions": null,
+					"price": 846,
+					"listPrice": null,
+					"manualPrice": null,
+					"manualPriceAppliedBy": null,
+					"sellingPrice": 846,
+					"skuSpecifications": null,
+					"orderRewardStatus": null,
+					"rewardValue": 0,
+					"isGift": false,
+					"additionalInfo": {
+						"dimension": {
+							"cubicweight": 35,
+							"height": 5.5,
+							"length": 5.5,
+							"weight": 35,
+							"width": 5.5
+						},
+						"brandName": null,
+						"brandId": null,
+						"offeringInfo": null,
+						"offeringType": null,
+						"offeringTypeId": null
+					},
+					"preSaleDate": null,
+					"productCategoryIds": null,
+					"productCategories": {},
+					"quantity": 10,
+					"seller": null,
+					"sellerChain": [
+						null
+					],
+					"imageUrl": null,
+					"detailUrl": null,
+					"components": [],
+					"bundleItems": [],
+					"attachments": [],
+					"attachmentOfferings": [],
+					"offerings": [],
+					"priceTags": [],
+					"availability": null,
+					"measurementUnit": "un",
+					"unitMultiplier": 1,
+					"manufacturerCode": null
+				}
+			],
+			"bundleItems": [],
+			"attachments": [],
+			"attachmentOfferings": [],
+			"offerings": [],
+			"priceTags": [],
+			"availability": "available",
+			"measurementUnit": "un",
+			"unitMultiplier": 1,
+			"manufacturerCode": ""
+		}
+	],
+	"sellers": [
+		{
+			"subSellerId": "1",
+			"fulfillmentEndpoint": "http://fulfillment.vtexcommerce.com.br/api/fulfillment?sc=1&an=goldko",
+			"id": "1",
+			"name": "GOLD & KO INDUSTRIA, COMERCIO, IMPORTACAO E EXPORTACAO DE ALIMENTOS LTDA.",
+			"logo": ""
+		}
+	],
+	"giftRegistryData": null,
+	"receiptData": null,
+	"contextData": null,
+	"marketPlaceOrderId": "",
+	"marketPlaceOrderGroup": null,
+	"marketplaceServicesEndpoint": null,
+	"orderFormId": "1daccd5463b84fad862caf022b1eecf8",
+	"sequence": "503347",
+	"affiliateId": "",
+	"status": "",
+	"callCenterOperator": "",
+	"userProfileId": "d64841bd-1d69-427d-bfb7-71595f5ad369",
+	"hostName": "goldko",
+	"creationVersion": null,
+	"creationEnvironment": null,
+	"lastChangeVersion": null,
+	"workflowInstanceId": null,
+	"marketplacePaymentValue": null,
+	"orderId": "1118950653026-01",
+	"orderGroup": "1118950653026",
+	"state": "waiting-for-seller-decision",
+	"isCheckedIn": false,
+	"sellerOrderId": "00-1118950653026-01",
+	"storeId": null,
+	"checkedInPickupPointId": null,
+	"value": 9355,
+	"totals": [
+		{
+			"id": "Items",
+			"name": "Total dos Itens",
+			"value": 8460
+		},
+		{
+			"id": "Discounts",
+			"name": "Total dos Descontos",
+			"value": 0
+		},
+		{
+			"id": "Shipping",
+			"name": "Total do Frete",
+			"value": 895
+		},
+		{
+			"id": "Tax",
+			"name": "Total da Taxa",
+			"value": 0
+		}
+	],
+	"clientProfileData": {
+		"email": "306471e25e6e4ece8b7d49c5070b95c3@ct.vtex.com.br",
+		"firstName": "Marcos",
+		"lastName": "Costa",
+		"document": "04896444817",
+		"documentType": "cpf",
+		"phone": "+5511966421282",
+		"corporateName": null,
+		"tradeName": null,
+		"corporateDocument": null,
+		"stateInscription": "",
+		"corporatePhone": null,
+		"isCorporate": false,
+		"profileCompleteOnLoading": false,
+		"profileErrorOnLoading": false,
+		"customerClass": null
+	},
+	"ratesAndBenefitsData": {
+		"rateAndBenefitsIdentifiers": [],
+		"teaser": []
+	},
+	"shippingData": {
+		"address": {
+			"addressType": "residential",
+			"receiverName": "Marcos Costa",
+			"addressId": "4848844114845",
+			"isDisposable": true,
+			"postalCode": "03182-040",
+			"city": "São Paulo",
+			"state": "SP",
+			"country": "BRA",
+			"street": "Rua Marquês de Valença",
+			"number": "212",
+			"neighborhood": "Alto da Mooca",
+			"complement": null,
+			"reference": null,
+			"geoCoordinates": [
+				-46.59272003173828,
+				-23.558486938476562
+			]
+		},
+		"logisticsInfo": [
+			{
+				"itemIndex": 0,
+				"selectedSla": "Transportadora - Total Express",
+				"selectedDeliveryChannel": "delivery",
+				"addressId": "4848844114845",
+				"slas": [
+					{
+						"id": "Transportadora - Total Express",
+						"deliveryChannel": "delivery",
+						"name": "Transportadora - Total Express",
+						"deliveryIds": [
+							{
+								"courierId": "1232a93",
+								"warehouseId": "1_1",
+								"dockId": "1",
+								"courierName": "Total Express selecionada 7",
+								"quantity": 1,
+								"kitItemDetails": [
+									{
+										"itemId": "7",
+										"warehouseId": "1_1"
+									}
+								],
+								"totalListPrice": 0
+							}
+						],
+						"shippingEstimate": "4bd",
+						"shippingEstimateDate": "2021-03-25T23:11:10.1836092Z",
+						"lockTTL": "11d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 895,
+						"listPrice": 895,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						},
+						"pickupPointId": null,
+						"pickupDistance": 0,
+						"polygonName": null,
+						"transitTime": "2bd"
+					}
+				],
+				"shipsTo": [
+					"BRA"
+				],
+				"itemId": "63",
+				"deliveryChannels": [
+					{
+						"id": "delivery",
+						"stockBalance": 0
+					}
+				]
+			}
+		],
+		"selectedAddresses": [
+			{
+				"addressType": "residential",
+				"receiverName": "Marcos Costa",
+				"addressId": "4848844114845",
+				"isDisposable": true,
+				"postalCode": "03182-040",
+				"city": "São Paulo",
+				"state": "SP",
+				"country": "BRA",
+				"street": "Rua Marquês de Valença",
+				"number": "212",
+				"neighborhood": "Alto da Mooca",
+				"complement": null,
+				"reference": null,
+				"geoCoordinates": [
+					-46.59272003173828,
+					-23.558486938476562
+				]
+			}
+		],
+		"availableAddresses": [
+			{
+				"addressType": "residential",
+				"receiverName": "Marcos Costa",
+				"addressId": "4848844114845",
+				"isDisposable": true,
+				"postalCode": "03182-040",
+				"city": "São Paulo",
+				"state": "SP",
+				"country": "BRA",
+				"street": "Rua Marquês de Valença",
+				"number": "212",
+				"neighborhood": "Alto da Mooca",
+				"complement": null,
+				"reference": null,
+				"geoCoordinates": [
+					-46.59272003173828,
+					-23.558486938476562
+				]
+			}
+		],
+		"pickupPoints": []
+	},
+	"paymentData": {
+		"giftCards": [],
+		"transactions": [
+			{
+				"isActive": true,
+				"transactionId": "19ADE4596E5A4D7CAE755D8B87548B16",
+				"merchantName": "GOLDKO",
+				"payments": [
+					{
+						"id": "D5A848CD92D2441589AFC3B474033C0E",
+						"paymentSystem": "4",
+						"paymentSystemName": "Mastercard",
+						"value": 9355,
+						"installments": 1,
+						"connectorResponses": {
+							"Tid": "14132824206",
+							"ReturnCode": null,
+							"Message": null,
+							"authId": "14132824206",
+							"acquirer": "MercadoPagoV1",
+							"message": "pending_capture"
+						},
+						"referenceValue": 9355,
+						"cardHolder": null,
+						"cardNumber": null,
+						"firstDigits": "548985",
+						"lastDigits": "5334",
+						"cvv2": null,
+						"expireMonth": null,
+						"expireYear": null,
+						"url": null,
+						"koinUrl": null,
+						"tid": "14132824206",
+						"redemptionCode": null,
+						"giftCardId": null,
+						"giftCardProvider": null,
+						"giftCardAsDiscount": null,
+						"group": "creditCard",
+						"dueDate": null,
+						"accountId": "A58C0FD8A4B74DB8924AE66ACD5BA583",
+						"parentAccountId": null,
+						"bankIssuedInvoiceIdentificationNumber": null,
+						"bankIssuedInvoiceIdentificationNumberFormatted": null,
+						"bankIssuedInvoiceBarCodeNumber": null,
+						"bankIssuedInvoiceBarCodeType": null,
+						"billingAddress": {
+							"addressType": "residential",
+							"receiverName": "Marcos Costa",
+							"addressId": "4848844114845",
+							"isDisposable": true,
+							"postalCode": "03182-040",
+							"city": "São Paulo",
+							"state": "SP",
+							"country": "BRA",
+							"street": "Rua Marquês de Valença",
+							"number": "212",
+							"neighborhood": "Alto da Mooca",
+							"complement": null,
+							"reference": null,
+							"geoCoordinates": [
+								-46.59272003173828,
+								-23.558486938476562
+							]
+						}
+					}
+				],
+				"sharedTransaction": false
+			}
+		]
+	},
+	"clientPreferencesData": {
+		"locale": "pt-BR",
+		"optinNewsLetter": false
+	},
+	"commercialConditionData": null,
+	"marketingData": {
+		"utmSource": "ig",
+		"utmMedium": "social",
+		"utmCampaign": "c-conversao-sp",
+		"utmipage": "",
+		"utmiPart": "",
+		"utmiCampaign": null,
+		"coupon": null,
+		"marketingTags": [
+			"vtexSocialSelling"
+		]
+	},
+	"storePreferencesData": {
+		"countryCode": "BRA",
+		"saveUserData": false,
+		"timeZone": "E. South America Standard Time",
+		"currencyCode": "BRL",
+		"currencyLocale": 1046,
+		"currencySymbol": "R$",
+		"currencyFormatInfo": {
+			"currencyDecimalDigits": 2,
+			"currencyDecimalSeparator": ",",
+			"currencyGroupSeparator": ".",
+			"currencyGroupSize": 3,
+			"startsWithCurrencySymbol": true
+		}
+	},
+	"openTextField": null,
+	"invoiceData": null,
+	"itemMetadata": null,
+	"taxData": null,
+	"customData": null,
+	"hooksData": null,
+	"changeData": null,
+	"subscriptionData": null,
+	"salesChannel": "1",
+	"followUpEmail": "b70618ddc05a4fb1b34a28ec54549cdb@ct.vtex.com.br",
+	"creationDate": "2021-03-20T23:10:52.7454904Z",
+	"lastChange": "2021-03-20T23:24:51.066171Z",
+	"timeZoneCreationDate": "2021-03-20T20:10:52.7454904",
+	"timeZoneLastChange": "2021-03-20T20:24:51.066171",
+	"isCompleted": true,
+	"merchantName": null,
+	"userType": "",
+	"roundingError": 0,
+	"allowEdition": false,
+	"allowCancellation": false,
+	"isUserDataVisible": false,
+	"allowChangeSeller": false,
+	"cancellationData": {
+		"requestedByUser": true,
+		"reason": "Meu endereço no cadastro informei errado",
+		"cancellationDate": "2021-03-20T23:24:51.066171Z"
+	},
+	"_accountInfo": {
+		"MainAccountName": "goldko",
+		"AccountName": "goldko",
+		"Cnpj": "06021902000190",
+		"Id": "cab8933d-d947-477c-bed8-5f2784f8bdaf",
+		"IsActive": true,
+		"IsOperating": true,
+		"CreationDate": "2020-10-07T15:09:59",
+		"OperationDate": "2021-03-03T04:30:23",
+		"CompanyName": "GOLD & KO INDUSTRIA, COMERCIO, IMPORTACAO E EXPORTACAO DE ALIMENTOS LTDA.",
+		"TradingName": "GOLD & KO INDUSTRIA, COMERCIO, IMPORTACAO E EXPORTACAO DE ALIMENTOS LTDA.",
+		"City": null,
+		"Complement": null,
+		"Country": null,
+		"State": null,
+		"Address": null,
+		"District": null,
+		"Number": null,
+		"PostalCode": null,
+		"Licences": null,
+		"ParentAccountName": null,
+		"InactivationDate": null,
+		"Platform": "vtex"
+	}
+}

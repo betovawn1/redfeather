@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <!-- partial:partials/html-head.hbs --><!-- partial -->
+	<body>
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+            <!-- Header -->
+            <tr>
+              <td class="w-100 ph4-ns pb4 bb b--light-gray tc">
+                    <!-- partial:partials/logo.hbs --><!-- partial -->
+                
+                    {{#eq aditionalData.locale "pt-BR"}}
+                    <div class="color-white p20 tc access-key">
+                        <p>
+                            <strong class="access-title">Código de Acesso</strong>
+                        </p>
+                        <p>
+                            <strong class="access-code">{{aditionalData.accessKey}}</strong>
+                        </p>
+                    </div>
+                    <p style="font-size:14px;">
+                        Olá, {{to.0.name}},</p>
+                    <p style="font-size:14px; width: 80%; margin: auto; text-align: center;">
+                        Por favor, retorne à página de login e insira o código acima para confirmar
+                        sua identidade.
+                    </p>
+                    {{else eq aditionalData.locale "es-AR"}}
+                    <p style="font-size:24px;color:#25354d;margin-bottom:0px">
+                        <strong>Su clave de acceso es:</strong>
+                    </p>
+                    <p style="color:#dd1659;font-size:42px;margin-top:0px;margin-bottom:2rem;display:none">
+                        <strong>{{aditionalData.accessKey}}</strong>
+                    </p>
+                    <p style="font-size:16px;color:#3f3f40">
+                        Hola, {{to.0.name}},</p>
+                    <p style="font-size:16px;color:#3f3f40">
+                        Regrese a la página de login e ingrese el código de arriba para confirmar su
+                        identidad.
+                    </p>
+                    {{else}}
+                    <p style="font-size:24px;color:#25354d;margin-bottom:0px">
+                        <strong>Your access code is:</strong>
+                    </p>
+                    <p style="color:#dd1659;font-size:42px;margin-top:0px;margin-bottom:2rem">
+                        <strong>{{aditionalData.accessKey}}</strong>
+                    </p>
+                    <p style="font-size:16px;color:#3f3f40">
+                        Hello, {{to.0.name}},</p>
+                    <p style="font-size:16px;color:#3f3f40">
+                        Please, return to the login page and insert the code above to verify your
+                        identity.
+                    </p>
+                    {{/eq}}
+                
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ph4-ns pv3 bt b--light-gray">
+                    <!-- partial:partials/messages/regards.hbs --><!-- partial -->
+                </td>
+            </tr>
+					
+		</table>
+	</body>
+</html>

@@ -1,0 +1,601 @@
+{
+	"orders": [
+		{
+			"package": null,
+			"subjectItemAttachment": {
+				"item": "Combo misto bombons ...",
+				"totalItems": 1
+			},
+			"cancellationReason": null,
+			"items": [
+				{
+					"additionalInfo": {
+						"categoriesIds": "/5/",
+						"productClusterId": "140",
+						"commercialConditionId": "1",
+						"dimension": {
+							"cubicweight": 1,
+							"height": 16,
+							"length": 38,
+							"weight": 69,
+							"width": 28
+						},
+						"brandName": "Gold Ko",
+						"brandId": "2000001",
+						"offeringInfo": null,
+						"offeringType": null,
+						"offeringTypeId": null
+					},
+					"sellerSku": "30",
+					"priceTable": null,
+					"priceValidUntil": "2022-03-03T02:14:46Z",
+					"callCenterOperator": null,
+					"commission": 0,
+					"freightCommission": 0,
+					"taxCode": "",
+					"catalogProvider": "vrn:vtex.catalog-api-proxy:-:goldko:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/30",
+					"costPrice": null,
+					"uniqueId": "4C585C0E826E403695407E1F4708E04B",
+					"id": "30",
+					"productId": "31",
+					"productRefId": "teste12345",
+					"refId": "000teste12345",
+					"ean": null,
+					"name": "Combo misto bombons 3 sabores zero adição de açúcares – 18 bombons por caixa Combo misto bombons 3 sabores zero adição de açúcares",
+					"skuName": "Combo misto bombons 3 sabores zero adição de açúcares",
+					"modalType": null,
+					"parentItemIndex": null,
+					"parentAssemblyBinding": null,
+					"assemblies": [],
+					"tax": 0,
+					"priceDefinitions": null,
+					"price": 18498,
+					"listPrice": 19470,
+					"manualPrice": null,
+					"manualPriceAppliedBy": null,
+					"sellingPrice": 18498,
+					"skuSpecifications": null,
+					"orderRewardStatus": null,
+					"rewardValue": 0,
+					"isGift": false,
+					"preSaleDate": null,
+					"productCategoryIds": "/5/",
+					"productCategories": {
+						"3": "Chocolates",
+						"5": "Combos",
+						"10": "Bombom"
+					},
+					"quantity": 1,
+					"seller": "1",
+					"sellerChain": [
+						"1"
+					],
+					"imageUrl": "http://goldko.vteximg.com.br/arquivos/ids/157353-150-150/Combo-misto-bombons-3-sabores.jpg?v=637492514414970000",
+					"detailUrl": "/combo-misto-bombons-3-sabores-zero-adicao-de-acucares-/p",
+					"components": [
+						{
+							"uniqueId": "56D91FCB760E4DB691321E5907280871",
+							"id": "25",
+							"productId": null,
+							"productRefId": null,
+							"refId": "0003218",
+							"ean": "",
+							"name": "Caixa de bombom creme de avelã zero adição de açúcares (70Kcal por unidade) – 18 unidades",
+							"skuName": null,
+							"modalType": null,
+							"parentItemIndex": null,
+							"parentAssemblyBinding": null,
+							"assemblies": [],
+							"priceValidUntil": null,
+							"tax": 0,
+							"priceDefinitions": null,
+							"price": 6166,
+							"listPrice": null,
+							"manualPrice": null,
+							"manualPriceAppliedBy": null,
+							"sellingPrice": 6166,
+							"skuSpecifications": null,
+							"orderRewardStatus": null,
+							"rewardValue": 0,
+							"isGift": false,
+							"additionalInfo": {
+								"dimension": {
+									"cubicweight": 23,
+									"height": 11.5,
+									"length": 11.5,
+									"weight": 23,
+									"width": 11.5
+								},
+								"brandName": null,
+								"brandId": null,
+								"offeringInfo": null,
+								"offeringType": null,
+								"offeringTypeId": null
+							},
+							"preSaleDate": null,
+							"productCategoryIds": null,
+							"productCategories": {},
+							"quantity": 1,
+							"seller": null,
+							"sellerChain": [
+								null
+							],
+							"imageUrl": null,
+							"detailUrl": null,
+							"components": [],
+							"bundleItems": [],
+							"attachments": [],
+							"attachmentOfferings": [],
+							"offerings": [],
+							"priceTags": [],
+							"availability": null,
+							"measurementUnit": "un",
+							"unitMultiplier": 1,
+							"manufacturerCode": null
+						},
+						{
+							"uniqueId": "EAE13FB4370D41EF8ED3C945BD1DB1A6",
+							"id": "26",
+							"productId": null,
+							"productRefId": null,
+							"refId": "0003220",
+							"ean": "",
+							"name": "Caixa de bombom pasta de amendoim zero adição de açúcares (67Kcal por unidade) – 18 unidades",
+							"skuName": null,
+							"modalType": null,
+							"parentItemIndex": null,
+							"parentAssemblyBinding": null,
+							"assemblies": [],
+							"priceValidUntil": null,
+							"tax": 0,
+							"priceDefinitions": null,
+							"price": 6166,
+							"listPrice": null,
+							"manualPrice": null,
+							"manualPriceAppliedBy": null,
+							"sellingPrice": 6166,
+							"skuSpecifications": null,
+							"orderRewardStatus": null,
+							"rewardValue": 0,
+							"isGift": false,
+							"additionalInfo": {
+								"dimension": {
+									"cubicweight": 23,
+									"height": 11.5,
+									"length": 11.5,
+									"weight": 23,
+									"width": 11.5
+								},
+								"brandName": null,
+								"brandId": null,
+								"offeringInfo": null,
+								"offeringType": null,
+								"offeringTypeId": null
+							},
+							"preSaleDate": null,
+							"productCategoryIds": null,
+							"productCategories": {},
+							"quantity": 1,
+							"seller": null,
+							"sellerChain": [
+								null
+							],
+							"imageUrl": null,
+							"detailUrl": null,
+							"components": [],
+							"bundleItems": [],
+							"attachments": [],
+							"attachmentOfferings": [],
+							"offerings": [],
+							"priceTags": [],
+							"availability": null,
+							"measurementUnit": "un",
+							"unitMultiplier": 1,
+							"manufacturerCode": null
+						},
+						{
+							"uniqueId": "BFA0B406B8D840B1A1DA7419FAE36E28",
+							"id": "24",
+							"productId": null,
+							"productRefId": null,
+							"refId": "0003222",
+							"ean": "",
+							"name": "Caixa de bombom de marshmallow zero adição de açúcares (38Kcal por unidade) - 18 unidades",
+							"skuName": null,
+							"modalType": null,
+							"parentItemIndex": null,
+							"parentAssemblyBinding": null,
+							"assemblies": [],
+							"priceValidUntil": null,
+							"tax": 0,
+							"priceDefinitions": null,
+							"price": 6166,
+							"listPrice": null,
+							"manualPrice": null,
+							"manualPriceAppliedBy": null,
+							"sellingPrice": 6166,
+							"skuSpecifications": null,
+							"orderRewardStatus": null,
+							"rewardValue": 0,
+							"isGift": false,
+							"additionalInfo": {
+								"dimension": {
+									"cubicweight": 23,
+									"height": 11.5,
+									"length": 11.5,
+									"weight": 23,
+									"width": 11.5
+								},
+								"brandName": null,
+								"brandId": null,
+								"offeringInfo": null,
+								"offeringType": null,
+								"offeringTypeId": null
+							},
+							"preSaleDate": null,
+							"productCategoryIds": null,
+							"productCategories": {},
+							"quantity": 1,
+							"seller": null,
+							"sellerChain": [
+								null
+							],
+							"imageUrl": null,
+							"detailUrl": null,
+							"components": [],
+							"bundleItems": [],
+							"attachments": [],
+							"attachmentOfferings": [],
+							"offerings": [],
+							"priceTags": [],
+							"availability": null,
+							"measurementUnit": "un",
+							"unitMultiplier": 1,
+							"manufacturerCode": null
+						}
+					],
+					"bundleItems": [],
+					"attachments": [],
+					"attachmentOfferings": [],
+					"offerings": [],
+					"priceTags": [],
+					"availability": "available",
+					"measurementUnit": "un",
+					"unitMultiplier": 1,
+					"manufacturerCode": "000teste12345"
+				}
+			],
+			"sellers": [
+				{
+					"subSellerId": "1",
+					"fulfillmentEndpoint": "http://fulfillment.vtexcommerce.com.br/api/fulfillment?sc=1&an=goldko",
+					"id": "1",
+					"name": "GOLD & KO INDUSTRIA, COMERCIO, IMPORTACAO E EXPORTACAO DE ALIMENTOS LTDA.",
+					"logo": ""
+				}
+			],
+			"giftRegistryData": null,
+			"receiptData": null,
+			"contextData": null,
+			"marketPlaceOrderId": "",
+			"marketPlaceOrderGroup": null,
+			"marketplaceServicesEndpoint": null,
+			"orderFormId": "a639b430e39849f69efe9c7736563b60",
+			"sequence": "500239",
+			"affiliateId": "",
+			"status": "",
+			"callCenterOperator": "",
+			"userProfileId": "06ace1e3-9b2a-41a3-988d-2bba03d7dc0d",
+			"hostName": "goldko",
+			"creationVersion": null,
+			"creationEnvironment": null,
+			"lastChangeVersion": null,
+			"workflowInstanceId": null,
+			"marketplacePaymentValue": null,
+			"orderId": "1114661081528-01",
+			"orderGroup": "1114661081528",
+			"state": "payment-pending",
+			"isCheckedIn": false,
+			"sellerOrderId": "00-1114661081528-01",
+			"storeId": null,
+			"checkedInPickupPointId": null,
+			"value": 19327,
+			"totals": [
+				{
+					"id": "Items",
+					"name": "Total dos Itens",
+					"value": 18498
+				},
+				{
+					"id": "Discounts",
+					"name": "Total dos Descontos",
+					"value": 0
+				},
+				{
+					"id": "Shipping",
+					"name": "Total do Frete",
+					"value": 829
+				},
+				{
+					"id": "Tax",
+					"name": "Total da Taxa",
+					"value": 0
+				}
+			],
+			"clientProfileData": {
+				"email": "04cd27a3fc33464abd636fd90ccb8e30@ct.vtex.com.br",
+				"firstName": "Luiz Henrique",
+				"lastName": "Santos",
+				"document": "36244160819",
+				"documentType": "cpf",
+				"phone": "+5511992179949",
+				"corporateName": null,
+				"tradeName": null,
+				"corporateDocument": null,
+				"stateInscription": null,
+				"corporatePhone": null,
+				"isCorporate": false,
+				"profileCompleteOnLoading": true,
+				"profileErrorOnLoading": false,
+				"customerClass": null
+			},
+			"ratesAndBenefitsData": {
+				"rateAndBenefitsIdentifiers": [],
+				"teaser": []
+			},
+			"shippingData": {
+				"address": {
+					"addressType": "residential",
+					"receiverName": "Luiz Henrique Santos",
+					"addressId": "1613086294948",
+					"isDisposable": false,
+					"postalCode": "03556-050",
+					"city": "São Paulo",
+					"state": "SP",
+					"country": "BRA",
+					"street": "Praça Padre Léo Morin",
+					"number": "264",
+					"neighborhood": "Cidade Patriarca",
+					"complement": null,
+					"reference": null,
+					"geoCoordinates": [
+						-46.755706787109375,
+						-23.472562789916992
+					]
+				},
+				"logisticsInfo": [
+					{
+						"itemIndex": 0,
+						"selectedSla": "Transportadora - Total Express",
+						"selectedDeliveryChannel": "delivery",
+						"addressId": "1613086294948",
+						"slas": [
+							{
+								"id": "Transportadora - Total Express",
+								"deliveryChannel": "delivery",
+								"name": "Transportadora - Total Express",
+								"deliveryIds": [
+									{
+										"courierId": "1232a93",
+										"warehouseId": "1_1",
+										"dockId": "1",
+										"courierName": "Total Express selecionada 7",
+										"quantity": 1,
+										"kitItemDetails": [
+											{
+												"itemId": "24",
+												"warehouseId": "1_1"
+											},
+											{
+												"itemId": "25",
+												"warehouseId": "1_1"
+											},
+											{
+												"itemId": "26",
+												"warehouseId": "1_1"
+											}
+										],
+										"totalListPrice": 0
+									}
+								],
+								"shippingEstimate": "3bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "12d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 829,
+								"listPrice": 829,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								},
+								"pickupPointId": null,
+								"pickupDistance": 0,
+								"polygonName": null,
+								"transitTime": "2bd"
+							}
+						],
+						"shipsTo": [
+							"BRA"
+						],
+						"itemId": "30",
+						"deliveryChannels": [
+							{
+								"id": "delivery",
+								"stockBalance": 0
+							}
+						]
+					}
+				],
+				"selectedAddresses": [
+					{
+						"addressType": "residential",
+						"receiverName": "Luiz Henrique Santos",
+						"addressId": "1613086294948",
+						"isDisposable": false,
+						"postalCode": "03556-050",
+						"city": "São Paulo",
+						"state": "SP",
+						"country": "BRA",
+						"street": "Praça Padre Léo Morin",
+						"number": "264",
+						"neighborhood": "Cidade Patriarca",
+						"complement": null,
+						"reference": null,
+						"geoCoordinates": [
+							-46.755706787109375,
+							-23.472562789916992
+						]
+					}
+				],
+				"availableAddresses": [
+					{
+						"addressType": "residential",
+						"receiverName": "Luiz Henrique Santos",
+						"addressId": "1613086294948",
+						"isDisposable": false,
+						"postalCode": "03556-050",
+						"city": "São Paulo",
+						"state": "SP",
+						"country": "BRA",
+						"street": "Praça Padre Léo Morin",
+						"number": "264",
+						"neighborhood": "Cidade Patriarca",
+						"complement": null,
+						"reference": null,
+						"geoCoordinates": [
+							-46.755706787109375,
+							-23.472562789916992
+						]
+					}
+				],
+				"pickupPoints": []
+			},
+			"paymentData": {
+				"giftCards": [],
+				"transactions": [
+					{
+						"isActive": true,
+						"transactionId": "F7E4607F09C249C6966373EBE90246C4",
+						"merchantName": "GOLDKO",
+						"payments": [
+							{
+								"id": "F8E7226347964F588A245373A541EEAA",
+								"paymentSystem": "6",
+								"paymentSystemName": "Boleto Bancário",
+								"value": 19327,
+								"installments": 1,
+								"connectorResponses": {},
+								"referenceValue": 19327,
+								"cardHolder": null,
+								"cardNumber": null,
+								"firstDigits": null,
+								"lastDigits": null,
+								"cvv2": null,
+								"expireMonth": null,
+								"expireYear": null,
+								"url": "https://homolog.meiosdepagamentobradesco.com.br/apiboleto/Bradesco?token=cWxMTmY3S1FJdk9vZWZwblZ4eEV2cWVtUFZjOURpOTNLMjVaUG9BKzFybHR0RzdXOCt6cC9KbHBRYmRoRTFTKw..",
+								"koinUrl": null,
+								"tid": "500239-nkpzdj-1w17",
+								"redemptionCode": null,
+								"giftCardId": null,
+								"giftCardProvider": null,
+								"giftCardAsDiscount": null,
+								"group": "bankInvoice",
+								"dueDate": null,
+								"accountId": null,
+								"parentAccountId": null,
+								"bankIssuedInvoiceIdentificationNumber": "23790001246000000000443123456709785480000019327",
+								"bankIssuedInvoiceIdentificationNumberFormatted": "23790.00124 60000.000004 43123.456709 7 85480000019327",
+								"bankIssuedInvoiceBarCodeNumber": "23797854800000193270001260000000004312345670",
+								"bankIssuedInvoiceBarCodeType": "i25",
+								"billingAddress": null
+							}
+						],
+						"sharedTransaction": false
+					}
+				]
+			},
+			"clientPreferencesData": {
+				"locale": "pt-BR",
+				"optinNewsLetter": false
+			},
+			"commercialConditionData": null,
+			"marketingData": null,
+			"storePreferencesData": {
+				"countryCode": "BRA",
+				"saveUserData": false,
+				"timeZone": "E. South America Standard Time",
+				"currencyCode": "BRL",
+				"currencyLocale": 1046,
+				"currencySymbol": "R$",
+				"currencyFormatInfo": {
+					"currencyDecimalDigits": 2,
+					"currencyDecimalSeparator": ",",
+					"currencyGroupSeparator": ".",
+					"currencyGroupSize": 3,
+					"startsWithCurrencySymbol": true
+				}
+			},
+			"openTextField": null,
+			"invoiceData": null,
+			"itemMetadata": null,
+			"taxData": null,
+			"customData": null,
+			"hooksData": null,
+			"changeData": null,
+			"subscriptionData": null,
+			"salesChannel": "1",
+			"followUpEmail": "00b6f765ba5e43029729acca7f732d08@ct.vtex.com.br",
+			"creationDate": "2021-03-03T02:18:05.9469423Z",
+			"lastChange": "2021-03-03T02:18:12.9450446Z",
+			"timeZoneCreationDate": "2021-03-02T23:18:05.9469423",
+			"timeZoneLastChange": "2021-03-02T23:18:12.9450446",
+			"isCompleted": true,
+			"merchantName": null,
+			"userType": "",
+			"roundingError": 0,
+			"allowEdition": false,
+			"allowCancellation": false,
+			"isUserDataVisible": false,
+			"allowChangeSeller": false
+		}
+	],
+	"ordersUrl": "http://goldko.myvtex.com/account#/orders",
+	"orderGroup": "1114661081528",
+	"subjectItemAttachment": {
+		"item": "Combo misto bombons ...",
+		"totalItems": 1
+	},
+	"split": false,
+	"totalValue": 19327,
+	"callCenterOperatorData": null,
+	"_accountInfo": {
+		"MainAccountName": "goldko",
+		"AccountName": "goldko",
+		"Cnpj": "06021902000190",
+		"Id": "cab8933d-d947-477c-bed8-5f2784f8bdaf",
+		"IsActive": true,
+		"IsOperating": true,
+		"CreationDate": "2020-10-07T15:09:59",
+		"OperationDate": "2021-03-03T04:30:23",
+		"CompanyName": "GOLD & KO INDUSTRIA, COMERCIO, IMPORTACAO E EXPORTACAO DE ALIMENTOS LTDA.",
+		"TradingName": "GOLD & KO INDUSTRIA, COMERCIO, IMPORTACAO E EXPORTACAO DE ALIMENTOS LTDA.",
+		"City": null,
+		"Complement": null,
+		"Country": null,
+		"State": null,
+		"Address": null,
+		"District": null,
+		"Number": null,
+		"PostalCode": null,
+		"Licences": null,
+		"ParentAccountName": null,
+		"InactivationDate": null,
+		"Platform": "vtex"
+	}
+}

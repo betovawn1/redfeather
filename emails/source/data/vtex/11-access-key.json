@@ -1,0 +1,43 @@
+{
+	"to": [
+		{
+			"name": "amorimsueli",
+			"email": "amorimsueli@outlook.com"
+		}
+	],
+	"aditionalData": {
+		"accessKey": "144107",
+		"locale": "pt-BR",
+		"userAgent": "Chrome, Windows",
+		"geolocation": {
+			"country": "Brazil",
+			"region": "SP",
+			"city": "São Paulo",
+			"ip": "179.93.56.145"
+		}
+	},
+	"_accountInfo": {
+		"MainAccountName": "matsumoto",
+		"AccountName": "matsumoto",
+		"Cnpj": "22685304000172",
+		"Id": "46cd405a-23de-486d-acc6-6a091437e620",
+		"IsActive": true,
+		"IsOperating": true,
+		"CreationDate": "2021-01-15T18:42:08",
+		"OperationDate": "2021-03-06T00:08:29",
+		"CompanyName": "NAZIH TAHA GHUNEIM EIRELI",
+		"TradingName": "Lojas Matsumoto",
+		"City": null,
+		"Complement": null,
+		"Country": null,
+		"State": null,
+		"Address": null,
+		"District": null,
+		"Number": null,
+		"PostalCode": null,
+		"Licences": null,
+		"ParentAccountName": null,
+		"InactivationDate": null,
+		"Platform": "vtex"
+	}
+}
