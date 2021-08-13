@@ -76,6 +76,14 @@
     "props": {
       "showNavigationArrows": "never",
       "aspectRatio": "auto",
+      "width": {
+        "desktop": "440",
+        "mobile": "300"
+      },
+      "height": {
+        "desktop": "636",
+        "mobile": "424"
+      },
       "showBadge": false
     }
   },
