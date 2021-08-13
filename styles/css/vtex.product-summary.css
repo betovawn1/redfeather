@@ -133,18 +133,22 @@
   display: flex;
   align-items: center;
   justify-content: center; }
-  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--p {
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--pp {
     order: 1; }
-  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--m {
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--p {
     order: 2; }
-  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--g {
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--m {
     order: 3; }
-  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--gg {
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--g {
     order: 4; }
-  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--xgg {
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--gg {
     order: 5; }
-  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--4g {
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--xgg {
     order: 6; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--xxgg {
+    order: 7; }
+  .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--4g {
+    order: 8; }
   .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--1 {
     order: 1; }
   .skuSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) .skuSelectorItem--2 {

@@ -595,7 +595,8 @@
   },
   "flex-layout.row#mobile": {
     "children": [
-      "flex-layout.row#row-1-header-mobile"
+      "flex-layout.row#row-1-header-mobile",
+      "flex-layout.row#row-2-header-mobile"
     ],
     "props": {
       "blockClass": "main-header-mobile"
@@ -610,6 +611,15 @@
       "flex-layout.col#menu-mobile",
       "flex-layout.col#logo-mobile",
       "flex-layout.col#utils-mobile"
+    ]
+  },
+  "flex-layout.row#row-2-header-mobile": {
+    "props": {
+      "blockClass": "2-header-mobile",
+      "colSizing": "auto"
+    },
+    "children": [
+      "search-bar"
     ]
   },
   "flex-layout.col#menu-mobile": {

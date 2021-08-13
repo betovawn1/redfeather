@@ -187,16 +187,33 @@
     list-style: none;
     overflow-x: auto;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 .utmUrl li {
     margin: 0 15px 15px 0;
     padding: 10px 20px;
+    font-size: .75rem;
     border-radius: 25px;
     background-color: #f3f3f3;
 }
+.titleLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titleLine h3 {
+    white-space: nowrap;
+    margin-right: 30px;
+}
 @media (max-width: 767px) {
-    .utmUrl li {
-        font-size: .825rem;
+    .titleLine {
+        display: block;
+    }
+    .titleLine h3 {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .utmUrl {
+        justify-content: flex-start;
     }
 }

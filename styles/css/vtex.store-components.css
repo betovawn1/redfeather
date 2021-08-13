@@ -53,6 +53,10 @@
   @media (min-width: 767px) and (max-width: 1025px) {
     .searchBarContainer {
       margin-top: 30px; } }
+  @media (max-width: 767px) {
+    .searchBarContainer {
+      border: 0;
+      padding: 0; } }
   .searchBarContainer .searchBarInnerContainer {
     width: 100%; }
     .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer {
@@ -65,6 +69,11 @@
         @media (max-width: 768px) {
           .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
             margin-top: 15px; } }
+        @media (max-width: 767px) {
+          .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
+            padding: 0 15px;
+            margin-top: 0;
+            background-color: #f3f3f3; } }
         .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
           min-width: 180px;
           padding: 0;
@@ -75,9 +84,15 @@
           .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
             color: #000;
             font-family: "Montserrat", sans-serif !important; }
+          @media (max-width: 767px) {
+            .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+              background-color: #f3f3f3; } }
         .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-input__suffix) {
           padding: 0;
           background-color: #fff; }
+          @media (max-width: 767px) {
+            .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) :global(.vtex-input__suffix) {
+              background-color: #f3f3f3; } }
         .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) .suffixWrapper .searchBarIcon {
           padding: 0; }
           .searchBarContainer .searchBarInnerContainer .autoCompleteOuterContainer :global(.vtex-input-prefix__group) .suffixWrapper .searchBarIcon::before {
@@ -337,6 +352,78 @@
 .shippingTable .shippingTableRadioBtn {
   display: none !important; }
 
+.skuSelectorOptionsList .skuSelectorItem--pp {
+  order: 1; }
+
+.skuSelectorOptionsList .skuSelectorItem--p {
+  order: 2; }
+
+.skuSelectorOptionsList .skuSelectorItem--m {
+  order: 3; }
+
+.skuSelectorOptionsList .skuSelectorItem--g {
+  order: 4; }
+
+.skuSelectorOptionsList .skuSelectorItem--gg {
+  order: 5; }
+
+.skuSelectorOptionsList .skuSelectorItem--xgg {
+  order: 6; }
+
+.skuSelectorOptionsList .skuSelectorItem--xxgg {
+  order: 7; }
+
+.skuSelectorOptionsList .skuSelectorItem--4g {
+  order: 8; }
+
+.skuSelectorOptionsList .skuSelectorItem--1 {
+  order: 1; }
+
+.skuSelectorOptionsList .skuSelectorItem--2 {
+  order: 2; }
+
+.skuSelectorOptionsList .skuSelectorItem--3 {
+  order: 3; }
+
+.skuSelectorOptionsList .skuSelectorItem--4 {
+  order: 4; }
+
+.skuSelectorOptionsList .skuSelectorItem--5 {
+  order: 5; }
+
+.skuSelectorOptionsList .skuSelectorItem--6 {
+  order: 6; }
+
+.skuSelectorOptionsList .skuSelectorItem--8 {
+  order: 8; }
+
+.skuSelectorOptionsList .skuSelectorItem--10 {
+  order: 10; }
+
+.skuSelectorOptionsList .skuSelectorItem--38 {
+  order: 1; }
+
+.skuSelectorOptionsList .skuSelectorItem--38b {
+  order: 2; }
+
+.skuSelectorOptionsList .skuSelectorItem--40 {
+  order: 3; }
+
+.skuSelectorOptionsList .skuSelectorItem--42 {
+  order: 4; }
+
+.skuSelectorOptionsList .skuSelectorItem--44 {
+  order: 5; }
+
+.skuSelectorOptionsList .skuSelectorItem--46 {
+  order: 6; }
+
+.skuSelectorOptionsList .skuSelectorItem--48 {
+  order: 7; }
+
+.skuSelectorOptionsList .skuSelectorItem--48b {
+  order: 8; }
+
 .skuSelectorOptionsList .skuSelectorInternalBox {
   border-radius: 0; }
 
@@ -346,6 +433,7 @@
 .skuSelectorOptionsList .diagonalCross {
   width: 100%;
   height: 100%;
+  z-index: 2;
   position: absolute;
   pointer-events: none;
   background-image: unset; }
@@ -361,26 +449,36 @@
     background-color: #cecece;
     transform: rotate(45deg); }
 
+.skuSelectorItem .frameAround {
+  border: 0; }
+
 .skuSelectorItem .skuSelectorInternalBox {
+  border: 0 !important;
   border-color: rgba(0, 0, 0, 0.4);
   background-color: #fff; }
   .skuSelectorItem .skuSelectorInternalBox .valueWrapper {
     color: #000;
-    background-color: #fff; }
+    height: 36px;
+    border: 1px solid #000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .skuSelectorItem .skuSelectorInternalBox .valueWrapper.valueWrapper--unavailable {
+      color: #dedede !important;
+      border: 1px solid #dedede; }
 
 .skuSelectorNameContainer {
   margin: 0; }
   .skuSelectorNameContainer .skuSelectorOptionsList {
     margin: 0; }
 
-.skuSelectorItem--selected .skuSelectorInternalBox {
-  padding: 10px;
-  border-color: #000 !important;
+.skuSelectorItem--selected .skuSelectorInternalBox .valueWrapper {
+  color: #fff !important;
   background-color: #000 !important; }
-  .skuSelectorItem--selected .skuSelectorInternalBox .valueWrapper {
-    color: #fff !important;
-    background-color: #000 !important;
-    padding: 2px; }
+  .skuSelectorItem--selected .skuSelectorInternalBox .valueWrapper.valueWrapper--unavailable {
+    color: #dedede !important;
+    background-color: #f3f3f3 !important; }
 
 .skuSelectorName {
   color: #000;
@@ -389,12 +487,14 @@
   text-transform: uppercase; }
 
 .skuSelectorItem .skuSelectorInternalBox {
+  padding: 0;
   position: relative; }
   .skuSelectorItem .skuSelectorInternalBox .skuSelectorItemImageValue {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 10px;
     position: absolute; }
 
 .productDescriptionContainer .productDescriptionTitle {

@@ -143,9 +143,118 @@ function Paytable() {
                         data = await (await getOrder(orders[index].orderId)).json()
                     }
 
-                    if (data != null && data.marketingData != null) {
-                        if (data.marketingData.utmSource != null && affiliate.person == "admin") {
-                            if (affiliatesUTM.includes(data.marketingData.utmSource)) {
+                    if (data !== null && data.marketingData !== null) {
+                        if (data.marketingData.utmSource !== null && affiliate.person === "admin") {
+                            const keys = Object.keys(items)
+                            let notRepeated = true
+                            if (keys.length > 0) {
+                                keys.forEach(key => {
+                                    items[key].forEach(item => {
+                                        if (item.orderId === data.orderId) notRepeated = false
+                                    })
+                                })
+                            }
+                            if (notRepeated) {
+                                if (affiliatesUTM.includes(data.marketingData.utmSource)) {
+                                    if (items[data.marketingData.utmSource] == undefined) {
+                                        items[data.marketingData.utmSource] = []
+                                    }
+                                    data.selectedUTM = 'utmSource'
+                                    items[data.marketingData.utmSource].push(data)
+                                }
+                            }
+                        }
+                        if (data.marketingData.utmCampaign !== null && affiliate.person === "admin") {
+                            const keys = Object.keys(items)
+                            let notRepeated = true
+                            if (keys.length > 0) {
+                                keys.forEach(key => {
+                                    items[key].forEach(item => {
+                                        if (item.orderId === data.orderId) notRepeated = false
+                                    })
+                                })
+                            }
+                            if (notRepeated) {
+                                if (affiliatesUTM.includes(data.marketingData.utmCampaign)) {
+                                    if (items[data.marketingData.utmCampaign] == undefined) {
+                                        items[data.marketingData.utmCampaign] = []
+                                    }
+                                    data.selectedUTM = 'utmCampaign'
+                                    items[data.marketingData.utmCampaign].push(data)
+                                }
+                            }
+                        }
+                        if (data.marketingData.utmMedium !== null && affiliate.person === "admin") {
+                            const keys = Object.keys(items)
+                            let notRepeated = true
+                            if (keys.length > 0) {
+                                keys.forEach(key => {
+                                    items[key].forEach(item => {
+                                        if (item.orderId === data.orderId) notRepeated = false
+                                    })
+                                })
+                            }
+                            if (notRepeated) {
+                                if (affiliatesUTM.includes(data.marketingData.utmMedium)) {
+                                    if (items[data.marketingData.utmMedium] == undefined) {
+                                        items[data.marketingData.utmMedium] = []
+                                    }
+                                    data.selectedUTM = 'utmMedium'
+                                    items[data.marketingData.utmMedium].push(data)
+                                }
+                            }
+                        }
+                        if (data.marketingData.utmPartner !== null && affiliate.person === "admin") {
+                            const keys = Object.keys(items)
+                            let notRepeated = true
+                            if (keys.length > 0) {
+                                keys.forEach(key => {
+                                    items[key].forEach(item => {
+                                        if (item.orderId === data.orderId) notRepeated = false
+                                    })
+                                })
+                            }
+                            if (notRepeated) {
+                                if (affiliatesUTM.includes(data.marketingData.utmPartner)) {
+                                    if (items[data.marketingData.utmPartner] == undefined) {
+                                        items[data.marketingData.utmPartner] = []
+                                    }
+                                    data.selectedUTM = 'utmPartner'
+                                    items[data.marketingData.utmPartner].push(data)
+                                }
+                            }
+                        }
+                        if (data.marketingData.coupon !== null && affiliate.person === "admin") {
+                            const keys = Object.keys(items)
+                            let notRepeated = true
+                            if (keys.length > 0) {
+                                keys.forEach(key => {
+                                    items[key].forEach(item => {
+                                        if (item.orderId === data.orderId) notRepeated = false
+                                    })
+                                })
+                            }
+                            if (notRepeated) {
+                                if (affiliatesUTM.includes(data.marketingData.coupon)) {
+                                    if (items[data.marketingData.coupon] == undefined) {
+                                        items[data.marketingData.coupon] = []
+                                    }
+                                    data.selectedUTM = 'coupon'
+                                    items[data.marketingData.coupon].push(data)
+                                }
+                            }
+                        }
+                        if (data.marketingData.utmSource != null && data.marketingData.utmSource == affiliate.utm && affiliate.person !== "admin") {
+                            const keys = Object.keys(items)
+                            let notRepeated = true
+                            if (keys.length > 0) {
+                                keys.forEach(key => {
+                                    items[key].forEach(item => {
+                                        if (item.orderId === data.orderId) notRepeated = false
+                                    })
+                                })
+                            }
+                            if (notRepeated) {
                                 if (items[data.marketingData.utmSource] == undefined) {
                                     items[data.marketingData.utmSource] = []
                                 }
@@ -153,8 +262,17 @@ function Paytable() {
                                 items[data.marketingData.utmSource].push(data)
                             }
                         }
-                        if (data.marketingData.utmCampaign != null && affiliate.person == "admin") {
-                            if (affiliatesUTM.includes(data.marketingData.utmCampaign)) {
+                        if (data.marketingData.utmCampaign != null && data.marketingData.utmCampaign == affiliate.utm && affiliate.person !== "admin") {
+                            const keys = Object.keys(items)
+                            let notRepeated = true
+                            if (keys.length > 0) {
+                                keys.forEach(key => {
+                                    items[key].forEach(item => {
+                                        if (item.orderId === data.orderId) notRepeated = false
+                                    })
+                                })
+                            }
+                            if (notRepeated) {
                                 if (items[data.marketingData.utmCampaign] == undefined) {
                                     items[data.marketingData.utmCampaign] = []
                                 }
@@ -162,8 +280,17 @@ function Paytable() {
                                 items[data.marketingData.utmCampaign].push(data)
                             }
                         }
-                        if (data.marketingData.utmMedium != null && affiliate.person == "admin") {
-                            if (affiliatesUTM.includes(data.marketingData.utmMedium)) {
+                        if (data.marketingData.utmMedium != null && data.marketingData.utmMedium == affiliate.utm && affiliate.person !== "admin") {
+                            const keys = Object.keys(items)
+                            let notRepeated = true
+                            if (keys.length > 0) {
+                                keys.forEach(key => {
+                                    items[key].forEach(item => {
+                                        if (item.orderId === data.orderId) notRepeated = false
+                                    })
+                                })
+                            }
+                            if (notRepeated) {
                                 if (items[data.marketingData.utmMedium] == undefined) {
                                     items[data.marketingData.utmMedium] = []
                                 }
@@ -171,8 +298,17 @@ function Paytable() {
                                 items[data.marketingData.utmMedium].push(data)
                             }
                         }
-                        if (data.marketingData.utmPartner != null && affiliate.person == "admin") {
-                            if (affiliatesUTM.includes(data.marketingData.utmPartner)) {
+                        if (data.marketingData.utmPartner != null && data.marketingData.utmPartner == affiliate.utm && affiliate.person !== "admin") {
+                            const keys = Object.keys(items)
+                            let notRepeated = true
+                            if (keys.length > 0) {
+                                keys.forEach(key => {
+                                    items[key].forEach(item => {
+                                        if (item.orderId === data.orderId) notRepeated = false
+                                    })
+                                })
+                            }
+                            if (notRepeated) {
                                 if (items[data.marketingData.utmPartner] == undefined) {
                                     items[data.marketingData.utmPartner] = []
                                 }
@@ -180,49 +316,23 @@ function Paytable() {
                                 items[data.marketingData.utmPartner].push(data)
                             }
                         }
-                        if (data.marketingData.coupon != null && affiliate.person == "admin") {
-                            if (affiliatesUTM.includes(data.marketingData.coupon)) {
+                        if (data.marketingData.coupon != null && data.marketingData.coupon == affiliate.utm && affiliate.person !== "admin") {
+                            const keys = Object.keys(items)
+                            let notRepeated = true
+                            if (keys.length > 0) {
+                                keys.forEach(key => {
+                                    items[key].forEach(item => {
+                                        if (item.orderId === data.orderId) notRepeated = false
+                                    })
+                                })
+                            }
+                            if (notRepeated) {
                                 if (items[data.marketingData.coupon] == undefined) {
                                     items[data.marketingData.coupon] = []
                                 }
                                 data.selectedUTM = 'coupon'
                                 items[data.marketingData.coupon].push(data)
                             }
-                        }
-                        if (data.marketingData.utmSource != null && data.marketingData.utmSource == affiliate.utm && affiliate.person !== "admin") {
-                            if (items[data.marketingData.utmSource] == undefined) {
-                                items[data.marketingData.utmSource] = []
-                            }
-                            data.selectedUTM = 'utmSource'
-                            items[data.marketingData.utmSource].push(data)
-                        }
-                        if (data.marketingData.utmCampaign != null && data.marketingData.utmCampaign == affiliate.utm && affiliate.person !== "admin") {
-                            if (items[data.marketingData.utmCampaign] == undefined) {
-                                items[data.marketingData.utmCampaign] = []
-                            }
-                            data.selectedUTM = 'utmCampaign'
-                            items[data.marketingData.utmCampaign].push(data)
-                        }
-                        if (data.marketingData.utmMedium != null && data.marketingData.utmMedium == affiliate.utm && affiliate.person !== "admin") {
-                            if (items[data.marketingData.utmMedium] == undefined) {
-                                items[data.marketingData.utmMedium] = []
-                            }
-                            data.selectedUTM = 'utmMedium'
-                            items[data.marketingData.utmMedium].push(data)
-                        }
-                        if (data.marketingData.utmPartner != null && data.marketingData.utmPartner == affiliate.utm && affiliate.person !== "admin") {
-                            if (items[data.marketingData.utmPartner] == undefined) {
-                                items[data.marketingData.utmPartner] = []
-                            }
-                            data.selectedUTM = 'utmPartner'
-                            items[data.marketingData.utmPartner].push(data)
-                        }
-                        if (data.marketingData.coupon != null && data.marketingData.coupon == affiliate.utm && affiliate.person !== "admin") {
-                            if (items[data.marketingData.coupon] == undefined) {
-                                items[data.marketingData.coupon] = []
-                            }
-                            data.selectedUTM = 'coupon'
-                            items[data.marketingData.coupon].push(data)
                         }
                     }
 
@@ -360,13 +470,15 @@ function Paytable() {
                                                             Object.keys(orderItems).map(key => {
                                                                 return (
                                                                     <>
-                                                                        <h3>UTM: {key}</h3>
-                                                                        <ul className={styles.utmUrl}>
-                                                                            <li>{`https://www.redfeather.com.br/?utm_source=whatsapp&utm_campaign=${key}`}</li>
-                                                                            <li>{`https://www.redfeather.com.br/?utm_source=facebook&utm_campaign=${key}`}</li>
-                                                                            <li>{`https://www.redfeather.com.br/?utm_source=email&utm_campaign=${key}`}</li>
-                                                                            <li>{`https://www.redfeather.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=${key}`}</li>
-                                                                        </ul>
+                                                                        <div className={styles.titleLine}>
+                                                                            <h3>UTM: {key}</h3>
+                                                                            <ul className={styles.utmUrl}>
+                                                                                <li>{`https://www.redfeather.com.br/?utm_source=whatsapp&utm_campaign=${key}`}</li>
+                                                                                <li>{`https://www.redfeather.com.br/?utm_source=facebook&utm_campaign=${key}`}</li>
+                                                                                <li>{`https://www.redfeather.com.br/?utm_source=email&utm_campaign=${key}`}</li>
+                                                                                <li>{`https://www.redfeather.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=${key}`}</li>
+                                                                            </ul>
+                                                                        </div>
                                                                         <div className={styles.ordersWrapper}>
                                                                             <table className={styles.orders}>
                                                                                 <thead>

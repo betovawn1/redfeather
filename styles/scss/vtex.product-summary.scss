@@ -182,23 +182,29 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        .skuSelectorItem--p {
+        .skuSelectorItem--pp {
             order: 1;
         }
-        .skuSelectorItem--m {
+        .skuSelectorItem--p {
             order: 2;
         }
-        .skuSelectorItem--g {
+        .skuSelectorItem--m {
             order: 3;
         }
-        .skuSelectorItem--gg {
+        .skuSelectorItem--g {
             order: 4;
         }
-        .skuSelectorItem--xgg {
+        .skuSelectorItem--gg {
             order: 5;
         }
-        .skuSelectorItem--4g {
+        .skuSelectorItem--xgg {
             order: 6;
+        }
+        .skuSelectorItem--xxgg {
+            order: 7;
+        }
+        .skuSelectorItem--4g {
+            order: 8;
         }
         .skuSelectorItem--1 {
             order: 1;
